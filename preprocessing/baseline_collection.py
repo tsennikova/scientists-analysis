@@ -32,12 +32,9 @@ def wiki_search(keyword):
         for key, value in result['query']['search'][0].iteritems():
             if key=='title':
                 title=value
-        print title
-        
         params = {'action':'query',  'prop':'info', 'titles':title, 'inprop':'url'}
         req = api.APIRequest(site, params)
         result = req.query()
-        print result
         for pidkey in result['query']['pages']:
             for key, value in result['query']['pages'][pidkey].iteritems():
                 if key=='fullurl':
@@ -48,8 +45,8 @@ base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
-csv_path =os.path.join(baseline_dir, '2001_HCR_as_of_September_8_2015.csv')
-print csv_path
+csv_path =os.path.join(baseline_dir, 'prominent_scientists_(mearged_2001,2014,2015_TR).csv')
+count=0
 csvfile = open(csv_path , 'r')
 reader = csv.reader(csvfile)
 data=[]
@@ -59,7 +56,8 @@ for row in reader:
     if url is not None:
         csv_row = [keyword, url, row[3]]
         data.append(csv_row)
-        print "Match found"
+    count+=1
+    print float(count)/30653
 csvfile.close()
 
 output_path =  os.path.join(data_dir, 'baseline.csv')
