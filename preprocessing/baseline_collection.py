@@ -57,10 +57,10 @@ for row in reader:
         csv_row = [keyword, url, row[3]]
         data.append(csv_row)
     count+=1
-    print float(count)/30653
+    print float(count)/11251
 csvfile.close()
 
-output_path =  os.path.join(data_dir, 'baseline.csv')
+output_path =  os.path.join(baseline_dir, 'baseline.csv')
 
 with open(output_path, 'w') as fp:
     a = csv.writer(fp, delimiter=',')
