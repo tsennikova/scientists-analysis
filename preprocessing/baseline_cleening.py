@@ -13,8 +13,8 @@ seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
 seed_path = os.path.join(seed_dir, 'seed_data_with_the_research_field.csv')
-baseline_path = os.path.join(baseline_dir, 'baseline_relevant_fields.csv')
-output_path = os.path.join(baseline_dir, 'baseline_without_seed_data.csv')
+baseline_path = os.path.join(baseline_dir, 'baseline_manually_checked.csv')
+output_path = os.path.join(baseline_dir, 'baseline_manually_checked2.csv')
 
 f1 = file(seed_path, 'r')
 f2 = file(baseline_path, 'r')
