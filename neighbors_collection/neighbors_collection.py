@@ -3,7 +3,6 @@ Created on 15 Jan. 2016
 
 @author: Tania Sennikova
 '''
-# TODO fix encoding
 
 from wikitools import wiki, api
 import wikipedia
@@ -14,6 +13,7 @@ import mwparserfromhell
 from mwparserfromhell.nodes import Wikilink
 import os
 from networkx.classes.function import neighbors
+import urllib2
 
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
@@ -28,8 +28,9 @@ def load_simple_json(filename):
         return json.load(f)
     
 def send_request(language, title): 
-    k = 0           
+    k = 0            
     site = wiki.Wiki("http://" + language + ".wikipedia.org/w/api.php")
+#    site.setUserAgent("Mozilla/5.0") 
     # Get the article text in wiki format
     params = {'action':'parse', 'page':title, 'prop':'wikitext'}
     req = api.APIRequest(site, params) 
@@ -69,6 +70,8 @@ def send_request(language, title):
         print title
         
 def get_title(link):
+    link = link.encode("utf-8")
+    link = urllib2.unquote(link).decode("utf-8")
     title = link.rstrip().split('/')[-1]
     return title
 
