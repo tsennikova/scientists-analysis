@@ -60,12 +60,18 @@ def send_request(language, neighbor):
     cat_list = []
 #    neighbor = neighbor.encode("utf-8")
 #    neighbor = urllib2.unquote(neighbor).decode("utf-8")
+   
     neighbor = neighbor.replace('_', ' ')
     neighbor = neighbor.title()
-    neighbor = neighbor.replace(' ', '_')
-    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=categories&list=&indexpageids=1&titles=%s" %neighbor
-    site = iriToUri(site)
-# TODO: Strange redirect
+    print neighbor
+    neighbor = urllib.quote_plus(neighbor.encode("utf-8"))
+#    neighbor = neighbor.replace(' ', '_')
+    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=categories&list=&indexpageids=1&redirects=1&titles=%s" %neighbor
+    
+    #site = urllib.quote(site)
+    #print site
+    #site = iriToUri(site)
+# TODO: Big letters + redirects=1 + unicode encoding
     print site
     
     hdr = {'User-Agent': 'Mozilla/5.0'}
@@ -113,6 +119,7 @@ Dump = {}
 filename =  os.path.join(neighbors_dir, 'test.json')
 scientists = load_simple_json(filename)
 for link, neighbors_list in scientists.iteritems():
+    print link
     clean_list = [] 
     for neighbor in neighbors_list:
         cat_list= send_request(language, neighbor)
