@@ -16,8 +16,7 @@ import urllib2
 import ast
 import urllib
 
-# TODO: fix encoding
-
+# list and authors can make filtering softer
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -61,17 +60,11 @@ def send_request(language, neighbor):
 #    neighbor = neighbor.encode("utf-8")
 #    neighbor = urllib2.unquote(neighbor).decode("utf-8")
    
-    neighbor = neighbor.replace('_', ' ')
-    neighbor = neighbor.title()
-    print neighbor
+#     neighbor = neighbor.replace('_', ' ')
+#     neighbor = neighbor.title()
     neighbor = urllib.quote_plus(neighbor.encode("utf-8"))
-#    neighbor = neighbor.replace(' ', '_')
-    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=categories&list=&indexpageids=1&redirects=1&titles=%s" %neighbor
     
-    #site = urllib.quote(site)
-    #print site
-    #site = iriToUri(site)
-# TODO: Big letters + redirects=1 + unicode encoding
+    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=categories&list=&indexpageids=1&redirects=1&cllimit=500&titles=%s" %neighbor
     print site
     
     hdr = {'User-Agent': 'Mozilla/5.0'}
@@ -81,17 +74,15 @@ def send_request(language, neighbor):
     except urllib2.HTTPError, e:
         print e.fp.read()
     res = page.read()    
-    print res
+#    print res
     res = ast.literal_eval(res)
-     
-    
-    for pidkey in res['pages']:
-        
-        if 'categories' in res['query']['pages'][pidkey]:
-            for key in res['query']['pages'][pidkey]['categories']:
-                cat = key["title"]
-                cat = cat.rstrip().split(':')[-1]
-                cat_list.append(cat)
+    if 'pages' in res['query']:
+        for pidkey in  res['query']['pages']:      
+            if 'categories' in res['query']['pages'][pidkey]:
+                for key in res['query']['pages'][pidkey]['categories']:
+                    cat = key["title"]
+                    cat = cat.rstrip().split(':')[-1]
+                    cat_list.append(cat)
     print cat_list
     return cat_list
     
@@ -99,6 +90,10 @@ def send_request(language, neighbor):
 def clean_up(cat_list, stop_list):
     print "in cleaning function"
     state = False
+    print len(cat_list)
+    if not cat_list:
+        state = True
+        return state
     for item in cat_list:
         print item
         word_list = item.rstrip().split(' ')
@@ -116,7 +111,7 @@ stop_list = text_file.read().split(',')
 
 language = "en"
 Dump = {}
-filename =  os.path.join(neighbors_dir, 'test.json')
+filename =  os.path.join(neighbors_dir, 'neighbors_list_en.json')
 scientists = load_simple_json(filename)
 for link, neighbors_list in scientists.iteritems():
     print link
@@ -128,6 +123,6 @@ for link, neighbors_list in scientists.iteritems():
             clean_list.append(neighbor)
     Dump.update({link:clean_list})
 
-output_path =  os.path.join(neighbors_dir, 'neighbors_list_clean_en.json')    
+output_path =  os.path.join(neighbors_dir, 'neighbors_list_clean_soft_en.json')    
 with open(output_path, 'w') as out:
     json.dump(Dump, out, indent=4, sort_keys=True)  

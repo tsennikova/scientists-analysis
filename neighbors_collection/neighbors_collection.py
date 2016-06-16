@@ -50,15 +50,16 @@ def send_request(language, title):
             if ":" not in link:
                 if link is not None:
                     strlink = link.encode("utf-8")
-                    strlink = strlink.decode("utf-8").lower()
-                    strlink = strlink.replace(' ', '_')
+                    strlink = strlink.decode("utf-8")
+#                     strlink = strlink.decode("utf-8").lower()
+#                     strlink = strlink.replace(' ', '_')
                     #strlink = language + "/" + strlink
                     # strlink=urllib.quote(strlink.encode("utf-8"))
                     if strlink not in linklist:
                         linklist.append(strlink)
  
-        title = title.lower()
-        title = title.replace(' ', '_')
+#         title = title.lower()
+#         title = title.replace(' ', '_')
         #print title
         if title not in linklist:
             linklist.append(title)
