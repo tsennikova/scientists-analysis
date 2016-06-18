@@ -1,0 +1,1397 @@
+{
+    "https://en.wikipedia.org/wiki/Achim_Muller": {
+        "Field": "Chemistry", 
+        "Name": "Achim Muller", 
+        "Page_created": "2006-03-04T13:58:19Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Akiko_Iwasaki": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Akiko Iwasaki", 
+        "Page_created": "2015-03-30T18:22:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alan_Aderem": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Alan Aderem", 
+        "Page_created": "2006-10-09T08:31:47Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alan_Ashworth": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Alan Ashworth", 
+        "Page_created": "2010-01-28T10:46:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Albert-Laszlo_Barabasi": {
+        "Field": "Physics", 
+        "Name": "Albert-Laszlo Barabasi", 
+        "Page_created": "2006-12-17T21:53:17Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Albert_Meyers": {
+        "Field": "Chemistry", 
+        "Name": "Albert Meyers", 
+        "Page_created": "2005-11-14T03:43:34Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alex_Bateman": {
+        "Field": "Biology", 
+        "Name": "Alex Bateman", 
+        "Page_created": "2015-01-17T22:54:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alex_Zettl": {
+        "Field": "Physics", 
+        "Name": "Alex Zettl", 
+        "Page_created": "2007-11-05T16:11:04Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alexander_Zamolodchikov": {
+        "Field": "Physics", 
+        "Name": "Alexander Zamolodchikov", 
+        "Page_created": "2008-10-21T08:29:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ali_Khademhosseini": {
+        "Field": "Physics", 
+        "Name": "Ali Khademhosseini", 
+        "Page_created": "2007-05-27T04:12:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Allen_Steere": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Allen Steere", 
+        "Page_created": "2007-05-28T17:21:48Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Amir_Yacoby": {
+        "Field": "Physics", 
+        "Name": "Amir Yacoby", 
+        "Page_created": "2014-04-30T08:31:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Andrei_Shleifer": {
+        "Field": "Economics", 
+        "Name": "Andrei Shleifer", 
+        "Page_created": "2005-01-30T23:19:23Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Andrew_B_Bernard": {
+        "Field": "Economics", 
+        "Name": "Andrew B Bernard", 
+        "Page_created": "2007-05-19T02:06:26Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Andrew_Bernard": {
+        "Field": "Economics", 
+        "Name": "Andrew Bernard", 
+        "Page_created": "2007-05-18T00:23:26Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Andrew_Van_de_Ven": {
+        "Field": "Economics", 
+        "Name": "Andrew Van de Ven", 
+        "Page_created": "2013-11-11T14:19:37Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Annarosa_Leri": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Annarosa Leri", 
+        "Page_created": "2015-05-07T09:53:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Anne_O%27Garra": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Anne O'Garra", 
+        "Page_created": "2008-07-20T00:49:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Antonio_Lanzavecchia": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Antonio Lanzavecchia", 
+        "Page_created": "2007-04-10T08:35:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ariel_Rubinstein": {
+        "Field": "Economics", 
+        "Name": "Ariel Rubinstein", 
+        "Page_created": "2005-03-26T00:10:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Armin_Falk": {
+        "Field": "Economics", 
+        "Name": "Armin Falk", 
+        "Page_created": "2010-04-04T19:43:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Arun_Majumdar": {
+        "Field": "Physics", 
+        "Name": "Arun Majumdar", 
+        "Page_created": "2009-09-20T04:33:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Axel_Becke": {
+        "Field": "Chemistry", 
+        "Name": "Axel Becke", 
+        "Page_created": "2007-11-10T06:27:23Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Axel_Ullrich": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Axel Ullrich", 
+        "Page_created": "2006-06-03T05:26:49Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Babak_Hassibi": {
+        "Field": "Computer Science", 
+        "Name": "Babak Hassibi", 
+        "Page_created": "2006-12-30T09:47:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Barry_Everitt": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Barry Everitt", 
+        "Page_created": "2007-08-13T22:02:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Bengt_Holmstrom": {
+        "Field": "Economics", 
+        "Name": "Bengt Holmstrom", 
+        "Page_created": "2006-09-30T19:52:48Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Bernhard_Keimer": {
+        "Field": "Physics", 
+        "Name": "Bernhard Keimer", 
+        "Page_created": "2014-02-01T14:05:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Bernhard_Keller": {
+        "Field": "Mathematics", 
+        "Name": "Bernhard Keller", 
+        "Page_created": "2016-04-02T01:10:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Beth_Levine_(physician)": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Beth Levine", 
+        "Page_created": "2012-05-04T18:35:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Birger_Wernerfelt": {
+        "Field": "Economics", 
+        "Name": "Birger Wernerfelt", 
+        "Page_created": "2007-12-10T19:31:07Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Biswanath_Mukherjee": {
+        "Field": "Computer Science", 
+        "Name": "Biswanath Mukherjee", 
+        "Page_created": "2015-02-05T20:17:24Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Bradley_Efron": {
+        "Field": "Mathematics", 
+        "Name": "Bradley Efron", 
+        "Page_created": "2006-10-02T06:51:38Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Brigitta_Stockinger": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Brigitta Stockinger", 
+        "Page_created": "2013-10-11T16:50:07Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Bruce_D_Walker": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Bruce D Walker", 
+        "Page_created": "2016-03-14T01:21:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/C_N_R_Rao": {
+        "Field": "Chemistry", 
+        "Name": "C N R Rao", 
+        "Page_created": "2007-12-30T13:40:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Campbell_Harvey": {
+        "Field": "Economics", 
+        "Name": "Campbell Harvey", 
+        "Page_created": "2011-11-28T16:36:41Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Carlo_La_Vecchia": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Carlo La Vecchia", 
+        "Page_created": "2009-11-17T20:30:32Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Cees_Dekker": {
+        "Field": "Physics", 
+        "Name": "Cees Dekker", 
+        "Page_created": "2007-12-14T18:15:22Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Charles_Lieber": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Charles Lieber", 
+        "Page_created": "2012-07-10T01:58:22Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Chih-Jen_Lin": {
+        "Field": "Computer Science", 
+        "Name": "Chih-Jen Lin", 
+        "Page_created": "2016-02-02T15:00:19Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Christoph_Gerber": {
+        "Field": "Physics", 
+        "Name": "Christoph Gerber", 
+        "Page_created": "2008-07-04T08:29:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Cisca_Wijmenga": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Cisca Wijmenga", 
+        "Page_created": "2015-06-12T22:51:30Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Claire_Berger": {
+        "Field": "Physics", 
+        "Name": "Claire Berger", 
+        "Page_created": "2014-09-27T23:42:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Cumrun_Vafa": {
+        "Field": "Physics", 
+        "Name": "Cumrun Vafa", 
+        "Page_created": "2004-05-09T21:28:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dale_L._Boger": {
+        "Field": "Chemistry", 
+        "Name": "Dale Boger", 
+        "Page_created": "2007-08-22T07:30:31Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dam_Thanh_Son": {
+        "Field": "Physics", 
+        "Name": "Dam Thanh Son", 
+        "Page_created": "2013-02-20T06:09:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dan_Ariely": {
+        "Field": "Economics", 
+        "Name": "Dan Ariely", 
+        "Page_created": "2007-01-05T20:19:10Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dan_Boneh": {
+        "Field": "Computer Science", 
+        "Name": "Dan Boneh", 
+        "Page_created": "2006-10-04T00:07:08Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Daniel_Rios": {
+        "Field": "Biology", 
+        "Name": "Daniel Rios", 
+        "Page_created": "2009-03-15T09:58:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dariush_Mozaffarian": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Dariush Mozaffarian", 
+        "Page_created": "2015-07-23T18:01:22Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Daron_Acemoglu": {
+        "Field": "Economics", 
+        "Name": "Daron Acemoglu", 
+        "Page_created": "2009-06-02T16:16:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/David_Haussler": {
+        "Field": "Physiology or Medicine", 
+        "Name": "David Haussler", 
+        "Page_created": "2007-04-04T05:35:10Z"
+    }, 
+    "https://en.wikipedia.org/wiki/David_Milstein": {
+        "Field": "Chemistry", 
+        "Name": "David Milstein", 
+        "Page_created": "2009-06-03T21:20:46Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Deborah_Estrin": {
+        "Field": "Computer Science", 
+        "Name": "Deborah Estrin", 
+        "Page_created": "2008-03-09T09:31:42Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dennis_Curran": {
+        "Field": "Chemistry", 
+        "Name": "Dennis Curran", 
+        "Page_created": "2015-11-04T17:49:37Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Didier_Astruc": {
+        "Field": "Chemistry", 
+        "Name": "Didier Astruc", 
+        "Page_created": "2010-10-04T11:00:35Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dieter_Enders": {
+        "Field": "Chemistry", 
+        "Name": "Dieter Enders", 
+        "Page_created": "2007-03-21T13:26:48Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Dimitri_Nanopoulos": {
+        "Field": "Physics", 
+        "Name": "Dimitri Nanopoulos", 
+        "Page_created": "2005-10-06T08:59:32Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Donal_Bradley": {
+        "Field": "Physics", 
+        "Name": "Donal Bradley", 
+        "Page_created": "2011-03-01T16:50:19Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Douglas_Green": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Douglas Green", 
+        "Page_created": "2006-12-06T11:00:06Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Edward_Glaeser": {
+        "Field": "Economics", 
+        "Name": "Edward Glaeser", 
+        "Page_created": "2005-08-12T17:21:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Edward_Miguel": {
+        "Field": "Economics", 
+        "Name": "Edward Miguel", 
+        "Page_created": "2011-09-19T22:11:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Edward_Ott": {
+        "Field": "Physics", 
+        "Name": "Edward Ott", 
+        "Page_created": "2014-02-16T22:55:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Edward_R_Dougherty": {
+        "Field": "Computer Science", 
+        "Name": "Edward R Dougherty", 
+        "Page_created": "2014-10-06T14:51:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Elias_Corey": {
+        "Field": "Chemistry", 
+        "Name": "Elias Corey", 
+        "Page_created": "2004-06-01T04:03:36Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Elza_Erkip": {
+        "Field": "Computer Science", 
+        "Name": "Elza Erkip", 
+        "Page_created": "2015-03-18T00:14:09Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Eric_Hanushek": {
+        "Field": "Economics", 
+        "Name": "Eric Hanushek", 
+        "Page_created": "2007-08-05T00:39:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Esther_Duflo": {
+        "Field": "Economics", 
+        "Name": "Esther Duflo", 
+        "Page_created": "2008-04-02T22:58:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Eugene_Braunwald": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Eugene Braunwald", 
+        "Page_created": "2006-06-17T11:49:46Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ewan_Birney": {
+        "Field": "Biology", 
+        "Name": "Ewan Birney", 
+        "Page_created": "2006-03-03T14:41:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Federica_Sallusto": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Federica Sallusto", 
+        "Page_created": "2007-04-10T06:12:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Fiona_Powrie": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Fiona Powrie", 
+        "Page_created": "2012-11-12T16:06:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Francois_Diederich": {
+        "Field": "Chemistry", 
+        "Name": "Francois Diederich", 
+        "Page_created": "2007-02-11T13:05:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Frank_Glorius": {
+        "Field": "Chemistry", 
+        "Name": "Frank Glorius", 
+        "Page_created": "2014-11-09T18:17:49Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Frank_Neese": {
+        "Field": "Chemistry", 
+        "Name": "Frank Neese", 
+        "Page_created": "2010-08-20T19:14:33Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Frans_Van_de_Werf": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Frans Van de Werf", 
+        "Page_created": "2009-03-30T20:02:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Gabor_Somorjai": {
+        "Field": "Chemistry", 
+        "Name": "Gabor Somorjai", 
+        "Page_created": "2005-08-10T12:39:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/George_Davey_Smith": {
+        "Field": "Physiology or Medicine", 
+        "Name": "George Davey Smith", 
+        "Page_created": "2015-09-14T00:02:23Z"
+    }, 
+    "https://en.wikipedia.org/wiki/George_Loewenstein": {
+        "Field": "Economics", 
+        "Name": "George Loewenstein", 
+        "Page_created": "2005-10-23T15:52:42Z"
+    }, 
+    "https://en.wikipedia.org/wiki/George_Sawatzky": {
+        "Field": "Physics", 
+        "Name": "George Sawatzky", 
+        "Page_created": "2014-02-05T16:36:39Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Gerald_Bastard": {
+        "Field": "Physics", 
+        "Name": "Gerald Bastard", 
+        "Page_created": "2011-01-26T10:01:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Gerard_Ferey": {
+        "Field": "Chemistry", 
+        "Name": "Gerard Ferey", 
+        "Page_created": "2012-10-27T15:24:25Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Giorgio_Parisi": {
+        "Field": "Physics", 
+        "Name": "Giorgio Parisi", 
+        "Page_created": "2006-10-01T21:11:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Giuseppe_Mingione": {
+        "Field": "Mathematics", 
+        "Name": "Giuseppe Mingione", 
+        "Page_created": "2013-05-05T17:44:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Gon%C3%A7alo_R_Abecasis": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Goncalo R Abecasis", 
+        "Page_created": "2013-12-17T19:54:22Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Graham_Colditz": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Graham Colditz", 
+        "Page_created": "2009-02-28T18:59:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Graham_Fleming": {
+        "Field": "Chemistry", 
+        "Name": "Graham Fleming", 
+        "Page_created": "2009-03-22T08:11:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Guanrong_Chen": {
+        "Field": "Physics", 
+        "Name": "Guanrong Chen", 
+        "Page_created": "2014-10-21T03:56:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Guido_Imbens": {
+        "Field": "Economics", 
+        "Name": "Guido Imbens", 
+        "Page_created": "2014-04-20T16:32:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Hans_Clevers": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Hans Clevers", 
+        "Page_created": "2012-03-15T01:24:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Helmut_Ringsdorf": {
+        "Field": "Chemistry", 
+        "Name": "Helmut Ringsdorf", 
+        "Page_created": "2005-05-29T12:34:19Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Helmut_Schwarz": {
+        "Field": "Chemistry", 
+        "Name": "Helmut Schwarz", 
+        "Page_created": "2011-01-25T21:47:37Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Heng_Li": {
+        "Field": "Computer Science", 
+        "Name": "Heng Li", 
+        "Page_created": "2012-03-14T11:53:49Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Henk_Volberda": {
+        "Field": "Economics", 
+        "Name": "Henk Volberda", 
+        "Page_created": "2013-09-05T10:46:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Henri_Berestycki": {
+        "Field": "Mathematics", 
+        "Name": "Henri Berestycki", 
+        "Page_created": "2013-03-27T10:50:30Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Henry_Chesbrough": {
+        "Field": "Economics", 
+        "Name": "Henry Chesbrough", 
+        "Page_created": "2007-04-24T07:32:08Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Hongjie_Dai": {
+        "Field": "Chemistry", 
+        "Name": "Hongjie Dai", 
+        "Page_created": "2007-01-16T15:52:24Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Horst_Stocker": {
+        "Field": "Physics", 
+        "Name": "Horst Stocker", 
+        "Page_created": "2007-02-11T20:48:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Huanming_Yang": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Huanming Yang", 
+        "Page_created": "2015-02-11T01:51:04Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ian_Affleck": {
+        "Field": "Physics", 
+        "Name": "Ian Affleck", 
+        "Page_created": "2012-09-29T04:53:24Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ian_Ford": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Ian Ford", 
+        "Page_created": "2010-10-28T20:06:25Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ian_f_akyildiz": {
+        "Field": "Computer Science", 
+        "Name": "Ian F Akyildiz", 
+        "Page_created": "2009-08-12T12:56:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Idun_Reiten": {
+        "Field": "Mathematics", 
+        "Name": "Idun Reiten", 
+        "Page_created": "2009-05-31T09:52:54Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Igor_Jurisica": {
+        "Field": "Computer Science", 
+        "Name": "Igor Jurisica", 
+        "Page_created": "2016-04-12T04:10:45Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Immanuel_Bloch": {
+        "Field": "Physics", 
+        "Name": "Immanuel Bloch", 
+        "Page_created": "2012-11-26T21:16:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ingrid_Daubechies": {
+        "Field": "Mathematics", 
+        "Name": "Ingrid Daubechies", 
+        "Page_created": "2005-01-25T18:16:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ira_Pastan": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Ira Pastan", 
+        "Page_created": "2007-07-16T15:59:59Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Irun_Cohen": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Irun Cohen", 
+        "Page_created": "2005-08-25T14:35:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ivan_Schuller": {
+        "Field": "Physics", 
+        "Name": "Ivan Schuller", 
+        "Page_created": "2015-09-08T08:12:35Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jack_Cuzick": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Jack Cuzick", 
+        "Page_created": "2015-09-03T23:20:50Z"
+    }, 
+    "https://en.wikipedia.org/wiki/James_R._Heath": {
+        "Field": "Chemistry", 
+        "Name": "James Heath", 
+        "Page_created": "2007-11-06T04:57:56Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean-Louis_Vincent": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Jean-Louis Vincent", 
+        "Page_created": "2014-09-22T18:17:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean-Luc_Bredas": {
+        "Field": "Chemistry", 
+        "Name": "Jean-Luc Bredas", 
+        "Page_created": "2006-12-12T21:03:12Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean-Marie_Tarascon": {
+        "Field": "Physics", 
+        "Name": "Jean-Marie Tarascon", 
+        "Page_created": "2014-12-19T05:03:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean-Michel_Saveant": {
+        "Field": "Chemistry", 
+        "Name": "Jean-Michel Saveant", 
+        "Page_created": "2009-05-13T08:07:32Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean-Pierre_Sauvage": {
+        "Field": "Chemistry", 
+        "Name": "Jean-Pierre Sauvage", 
+        "Page_created": "2005-12-02T17:25:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jean_Frechet": {
+        "Field": "Chemistry", 
+        "Name": "Jean Frechet", 
+        "Page_created": "2006-09-28T21:20:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jeffrey_A._Harvey": {
+        "Field": "Physics", 
+        "Name": "Jeffrey Harvey", 
+        "Page_created": "2004-11-20T14:56:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jenny_Nelson": {
+        "Field": "Physics", 
+        "Name": "Jenny Nelson", 
+        "Page_created": "2014-05-26T11:52:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jens_Nielsen": {
+        "Field": "Biology", 
+        "Name": "Jens Nielsen", 
+        "Page_created": "2012-12-10T14:42:24Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jerome_Groopman": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Jerome Groopman", 
+        "Page_created": "2007-02-22T18:48:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jian-Wei_Pan": {
+        "Field": "Physics", 
+        "Name": "Jian-Wei Pan", 
+        "Page_created": "2014-09-24T07:21:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jianqing_Fan": {
+        "Field": "Mathematics", 
+        "Name": "Jianqing Fan", 
+        "Page_created": "2010-08-06T22:33:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jing_Li_(chemist)": {
+        "Field": "Chemistry", 
+        "Name": "Jing Li", 
+        "Page_created": "2008-06-23T14:42:38Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Joan_Massague": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Joan Massague", 
+        "Page_created": "2012-09-01T10:01:39Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Joann_E_Manson": {
+        "Field": "Physiology or Medicine", 
+        "Name": "JoAnn E Manson", 
+        "Page_created": "2014-09-29T15:21:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/John_A_List": {
+        "Field": "Economics", 
+        "Name": "John A List", 
+        "Page_created": "2013-11-01T08:50:50Z"
+    }, 
+    "https://en.wikipedia.org/wiki/John_Danesh": {
+        "Field": "Physiology or Medicine", 
+        "Name": "John Danesh", 
+        "Page_created": "2015-12-15T06:45:33Z"
+    }, 
+    "https://en.wikipedia.org/wiki/John_Perdew": {
+        "Field": "Physics", 
+        "Name": "John Perdew", 
+        "Page_created": "2010-01-09T21:36:00Z"
+    }, 
+    "https://en.wikipedia.org/wiki/John_Robertson_(physicist)": {
+        "Field": "Physics", 
+        "Name": "John Robertson", 
+        "Page_created": "2014-10-08T02:39:32Z"
+    }, 
+    "https://en.wikipedia.org/wiki/John_Y._Campbell": {
+        "Field": "Economics", 
+        "Name": "John Campbell", 
+        "Page_created": "2007-10-19T14:04:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jon_Clardy": {
+        "Field": "Chemistry", 
+        "Name": "Jon Clardy", 
+        "Page_created": "2013-05-15T03:49:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jose_Baselga": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Jose Baselga", 
+        "Page_created": "2007-03-16T03:35:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Joseph_Schlessinger": {
+        "Field": "Biology", 
+        "Name": "Joseph Schlessinger", 
+        "Page_created": "2007-10-22T20:24:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Joseph_Wang": {
+        "Field": "Chemistry", 
+        "Name": "Joseph Wang", 
+        "Page_created": "2008-06-26T15:50:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Joshua_Jortner": {
+        "Field": "Chemistry", 
+        "Name": "Joshua Jortner", 
+        "Page_created": "2007-08-27T03:38:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Juan_Maldacena": {
+        "Field": "Physics", 
+        "Name": "Juan Maldacena", 
+        "Page_created": "2006-07-17T04:10:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Julian_Birkinshaw": {
+        "Field": "Economics", 
+        "Name": "Julian Birkinshaw", 
+        "Page_created": "2016-06-03T21:19:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Jun_Ye": {
+        "Field": "Physics", 
+        "Name": "Jun Ye", 
+        "Page_created": "2015-11-25T07:58:58Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kari_Stefansson": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Kari Stefansson", 
+        "Page_created": "2006-01-02T08:22:22Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Keith_Fagnou": {
+        "Field": "Chemistry", 
+        "Name": "Keith Fagnou", 
+        "Page_created": "2010-03-09T03:54:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Keith_Ingold": {
+        "Field": "Chemistry", 
+        "Name": "Keith Ingold", 
+        "Page_created": "2008-12-18T22:42:36Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Keith_Olive": {
+        "Field": "Physics", 
+        "Name": "Keith Olive", 
+        "Page_created": "2014-03-19T19:01:34Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kendall_Houk": {
+        "Field": "Chemistry", 
+        "Name": "Kendall Houk", 
+        "Page_created": "2006-03-03T00:13:04Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kenneth_Kendler": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Kenneth Kendler", 
+        "Page_created": "2010-10-25T06:39:37Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kimoon_kim": {
+        "Field": "Chemistry", 
+        "Name": "Kimoon Kim", 
+        "Page_created": "2013-06-18T05:16:17Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kun-Liang_Guan": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Kun-Liang Guan", 
+        "Page_created": "2008-08-05T22:57:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Kurt_Binder": {
+        "Field": "Physics", 
+        "Name": "Kurt Binder", 
+        "Page_created": "2008-05-04T02:01:41Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Lars_E._O._Svensson": {
+        "Field": "Economics", 
+        "Name": "Lars Svensson", 
+        "Page_created": "2007-10-11T13:12:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Leo_Paquette": {
+        "Field": "Chemistry", 
+        "Name": "Leo Paquette", 
+        "Page_created": "2007-07-09T21:48:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Luigi_Zingales": {
+        "Field": "Economics", 
+        "Name": "Luigi Zingales", 
+        "Page_created": "2009-08-23T00:17:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Luis_Oro": {
+        "Field": "Chemistry", 
+        "Name": "Luis Oro", 
+        "Page_created": "2013-01-29T08:41:46Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Lynn_Schneemeyer": {
+        "Field": "Physics", 
+        "Name": "Lynn Schneemeyer", 
+        "Page_created": "2008-02-13T15:45:35Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Malcolm_Chisholm": {
+        "Field": "Chemistry", 
+        "Name": "Malcolm Chisholm", 
+        "Page_created": "2004-02-02T20:32:34Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Malcolm_Green_(chemist)": {
+        "Field": "Chemistry", 
+        "Name": "Malcolm Green", 
+        "Page_created": "2006-07-02T15:20:45Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Marc_Kastner": {
+        "Field": "Physics", 
+        "Name": "Marc Kastner", 
+        "Page_created": "2007-10-18T12:38:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Marc_Melitz": {
+        "Field": "Economics", 
+        "Name": "Marc Melitz", 
+        "Page_created": "2009-03-30T16:38:54Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Marianne_Bertrand": {
+        "Field": "Economics", 
+        "Name": "Marianne Bertrand", 
+        "Page_created": "2014-04-23T08:28:32Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Marlan_Scully": {
+        "Field": "Physics", 
+        "Name": "Marlan Scully", 
+        "Page_created": "2006-02-09T05:19:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Martin_Eichenbaum": {
+        "Field": "Economics", 
+        "Name": "Martin Eichenbaum", 
+        "Page_created": "2013-04-23T00:29:45Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Masaru_Tomita": {
+        "Field": "Computer Science", 
+        "Name": "Masaru Tomita", 
+        "Page_created": "2006-08-30T10:37:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Matja%C5%BE_Perc": {
+        "Field": "Physics", 
+        "Name": "Matjaz Perc", 
+        "Page_created": "2014-10-04T21:03:07Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Matthias_Egger": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Matthias Egger", 
+        "Page_created": "2015-05-26T02:12:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Matthias_Mann": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Matthias Mann", 
+        "Page_created": "2006-10-30T21:56:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Menachem_Elimelech": {
+        "Field": "Chemistry", 
+        "Name": "Menachem Elimelech", 
+        "Page_created": "2006-12-25T22:08:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_Boehnke": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Michael Boehnke", 
+        "Page_created": "2013-02-22T19:28:42Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_L._Gross_(chemist)": {
+        "Field": "Chemistry", 
+        "Name": "Michael Gross", 
+        "Page_created": "2008-04-10T21:07:54Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_L._Klein": {
+        "Field": "Chemistry", 
+        "Name": "Michael Klein", 
+        "Page_created": "2009-02-21T12:18:47Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_Lappert": {
+        "Field": "Chemistry", 
+        "Name": "Michael Lappert", 
+        "Page_created": "2011-07-20T18:24:58Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_Lounsbury": {
+        "Field": "Economics", 
+        "Name": "Michael Lounsbury", 
+        "Page_created": "2007-08-09T15:05:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_Tushman": {
+        "Field": "Economics", 
+        "Name": "Michael Tushman", 
+        "Page_created": "2015-02-04T09:26:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michael_i_jordan": {
+        "Field": "Computer Science", 
+        "Name": "Michael I Jordan", 
+        "Page_created": "2005-02-16T18:23:42Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michal_Lipson": {
+        "Field": "Physics", 
+        "Name": "Michal Lipson", 
+        "Page_created": "2008-12-04T20:53:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Michele_Parrinello": {
+        "Field": "Physics", 
+        "Name": "Michele Parrinello", 
+        "Page_created": "2011-10-11T16:10:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Mietek_Jaroniec": {
+        "Field": "Chemistry", 
+        "Name": "Mietek Jaroniec", 
+        "Page_created": "2013-12-21T06:10:00Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Murray_Brennan": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Murray Brennan", 
+        "Page_created": "2015-02-04T17:25:33Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Napoleone_Ferrara": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Napoleone Ferrara", 
+        "Page_created": "2008-12-22T23:59:43Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Nathan_Seiberg": {
+        "Field": "Physics", 
+        "Name": "Nathan Seiberg", 
+        "Page_created": "2004-05-09T23:55:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Nello_Cristianini": {
+        "Field": "Computer Science", 
+        "Name": "Nello Cristianini", 
+        "Page_created": "2005-08-29T22:58:49Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Nicholas_Bloom": {
+        "Field": "Economics", 
+        "Name": "Nicholas Bloom", 
+        "Page_created": "2014-08-19T04:31:35Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Nicholas_Handy": {
+        "Field": "Chemistry", 
+        "Name": "Nicholas Handy", 
+        "Page_created": "2007-02-01T12:16:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Oded_Schramm": {
+        "Field": "Mathematics", 
+        "Name": "Oded Schramm", 
+        "Page_created": "2007-02-20T06:06:13Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Oliver_Blanchard": {
+        "Field": "Economics", 
+        "Name": "Oliver Blanchard", 
+        "Page_created": "2009-09-09T00:41:26Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Paul_M_Ridker": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Paul M Ridker", 
+        "Page_created": "2011-10-12T18:57:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Paul_McEuen": {
+        "Field": "Physics", 
+        "Name": "Paul McEuen", 
+        "Page_created": "2006-08-02T09:20:27Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Paul_Volberding": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Paul Volberding", 
+        "Page_created": "2011-07-03T01:02:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Pauline_van_den_Driessche": {
+        "Field": "Mathematics", 
+        "Name": "Pauline Van Den Driessche", 
+        "Page_created": "2015-09-13T23:32:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peer_Bork": {
+        "Field": "Biology", 
+        "Name": "Peer Bork", 
+        "Page_created": "2009-07-04T12:45:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Gavin_Hall": {
+        "Field": "Mathematics", 
+        "Name": "Peter Gavin Hall", 
+        "Page_created": "2007-09-07T07:00:31Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Grassberger": {
+        "Field": "Physics", 
+        "Name": "Peter Grassberger", 
+        "Page_created": "2011-05-17T18:40:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Kalmus": {
+        "Field": "Physics", 
+        "Name": "Peter Kalmus", 
+        "Page_created": "2013-01-11T21:05:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Knight_(scientist)": {
+        "Field": "Physics", 
+        "Name": "Peter Knight", 
+        "Page_created": "2007-01-09T12:48:19Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Ozsvath": {
+        "Field": "Mathematics", 
+        "Name": "Peter Ozsvath", 
+        "Page_created": "2006-05-06T03:25:11Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Reinhard_Hansen": {
+        "Field": "Economics", 
+        "Name": "Peter Hansen", 
+        "Page_created": "2008-09-23T22:18:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Peter_Sleight": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Peter Sleight", 
+        "Page_created": "2013-12-06T12:24:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Phaedon_Avouris": {
+        "Field": "Physics", 
+        "Name": "Phaedon Avouris", 
+        "Page_created": "2005-07-03T23:26:54Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Philip_Kim": {
+        "Field": "Physics", 
+        "Name": "Philip Kim", 
+        "Page_created": "2010-01-11T05:28:47Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Rainer_Blatt": {
+        "Field": "Physics", 
+        "Name": "Rainer Blatt", 
+        "Page_created": "2006-05-06T18:04:34Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ralph_Nuzzo": {
+        "Field": "Chemistry", 
+        "Name": "Ralph Nuzzo", 
+        "Page_created": "2007-03-25T04:36:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ralph_Weissleder": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Ralph Weissleder", 
+        "Page_created": "2008-11-24T19:54:24Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Reinhart_Ahlrichs": {
+        "Field": "Chemistry", 
+        "Name": "Reinhart Ahlrichs", 
+        "Page_created": "2005-08-10T18:42:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Richard_H._Holm": {
+        "Field": "Chemistry", 
+        "Name": "Richard Holm", 
+        "Page_created": "2007-10-18T02:29:30Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Richard_Roll": {
+        "Field": "Economics", 
+        "Name": "Richard Roll", 
+        "Page_created": "2007-10-10T01:19:56Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Richard_Wilson_(physicist)": {
+        "Field": "Physics", 
+        "Name": "Richard Wilson", 
+        "Page_created": "2010-12-08T16:45:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_Birgeneau": {
+        "Field": "Physics", 
+        "Name": "Robert Birgeneau", 
+        "Page_created": "2008-11-22T01:13:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_Crabtree": {
+        "Field": "Chemistry", 
+        "Name": "Robert Crabtree", 
+        "Page_created": "2012-04-14T20:50:01Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_Lusch": {
+        "Field": "Economics", 
+        "Name": "Robert Lusch", 
+        "Page_created": "2009-10-22T21:17:43Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_Peter_Gale": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Robert Gale", 
+        "Page_created": "2008-06-19T03:51:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_Tibshirani": {
+        "Field": "Mathematics", 
+        "Name": "Robert Tibshirani", 
+        "Page_created": "2011-04-05T16:11:39Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Robert_West_(chemist)": {
+        "Field": "Chemistry", 
+        "Name": "Robert West", 
+        "Page_created": "2005-10-20T05:20:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Roberto_Car": {
+        "Field": "Physics", 
+        "Name": "Roberto Car", 
+        "Page_created": "2010-07-02T22:17:39Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Rodney_bartlett": {
+        "Field": "Chemistry", 
+        "Name": "Rodney Bartlett", 
+        "Page_created": "2006-08-02T05:06:20Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Rolf_Apweiler": {
+        "Field": "Biology", 
+        "Name": "Rolf Apweiler", 
+        "Page_created": "2011-06-27T16:42:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Roman_Jackiw": {
+        "Field": "Physics", 
+        "Name": "Roman Jackiw", 
+        "Page_created": "2006-03-11T09:20:20Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ronald_Fedkiw": {
+        "Field": "Computer Science", 
+        "Name": "Ronald Fedkiw", 
+        "Page_created": "2006-08-20T23:39:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ross_Levine": {
+        "Field": "Economics", 
+        "Name": "Ross Levine", 
+        "Page_created": "2010-12-12T04:50:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Rudolf_Grimm": {
+        "Field": "Physics", 
+        "Name": "Rudolf Grimm", 
+        "Page_created": "2005-07-17T14:10:56Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Rudolf_Jaenisch": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Rudolf Jaenisch", 
+        "Page_created": "2006-03-09T22:41:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ruedi_Aebersold": {
+        "Field": "Biology", 
+        "Name": "Ruedi Aebersold", 
+        "Page_created": "2006-09-12T16:00:38Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ruslan_Medzhitov": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Ruslan Medzhitov", 
+        "Page_created": "2011-10-04T17:09:17Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Saeid_Abbasbandy": {
+        "Field": "Mathematics", 
+        "Name": "Saeid Abbasbandy", 
+        "Page_created": "2012-08-30T10:37:45Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Salim_Yusuf": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Salim Yusuf", 
+        "Page_created": "2014-08-20T12:35:04Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Salvador_Moncada": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Salvador Moncada", 
+        "Page_created": "2005-11-19T06:28:43Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Samuel_Broder": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Samuel Broder", 
+        "Page_created": "2006-01-05T20:19:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sang-Wook_Cheong": {
+        "Field": "Physics", 
+        "Name": "Sang-Wook Cheong", 
+        "Page_created": "2014-03-31T06:14:40Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sankar_Das_Sarma": {
+        "Field": "Physics", 
+        "Name": "Sankar Das Sarma", 
+        "Page_created": "2006-07-08T23:02:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sendhil_Mullainathan": {
+        "Field": "Economics", 
+        "Name": "Sendhil Mullainathan", 
+        "Page_created": "2004-12-16T17:19:06Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sergey_Fomin": {
+        "Field": "Mathematics", 
+        "Name": "Sergey Fomin", 
+        "Page_created": "2011-09-11T00:20:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sergio_Ferrara": {
+        "Field": "Physics", 
+        "Name": "Sergio Ferrara", 
+        "Page_created": "2007-07-15T05:58:41Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Sharon_Ann_Hunt": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Sharon Ann Hunt", 
+        "Page_created": "2015-02-10T10:02:16Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Shijun_Liao": {
+        "Field": "Mathematics", 
+        "Name": "Shijun Liao", 
+        "Page_created": "2013-11-02T19:53:25Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Shin%27ichi_Nojiri": {
+        "Field": "Physics", 
+        "Name": "Shin'Ichi Nojiri", 
+        "Page_created": "2009-12-27T17:40:54Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Shlomo_Shamai": {
+        "Field": "Computer Science", 
+        "Name": "Shlomo Shamai", 
+        "Page_created": "2011-06-30T19:02:21Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Shuji_Ogino": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Shuji Ogino", 
+        "Page_created": "2014-09-18T21:26:25Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Siamon_Gordon": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Siamon Gordon", 
+        "Page_created": "2011-12-21T18:57:46Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Simeon_Djankov": {
+        "Field": "Economics", 
+        "Name": "Simeon Djankov", 
+        "Page_created": "2006-11-19T16:27:31Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Simon_Johnson_(economist)": {
+        "Field": "Economics", 
+        "Name": "Simon Johnson", 
+        "Page_created": "2009-03-04T00:20:31Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Simon_White": {
+        "Field": "Biology", 
+        "Name": "Simon White", 
+        "Page_created": "2008-02-03T10:18:09Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Spyros_Makridakis": {
+        "Field": "Economics", 
+        "Name": "Spyros Makridakis", 
+        "Page_created": "2014-04-19T17:42:52Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stefanie_Dimmeler": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Stefanie Dimmeler", 
+        "Page_created": "2010-05-28T21:08:30Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_Buchwald": {
+        "Field": "Chemistry", 
+        "Name": "Stephen Buchwald", 
+        "Page_created": "2015-08-10T00:58:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_Dunnett": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Stephen Dunnett", 
+        "Page_created": "2009-09-02T17:14:17Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_Lippard": {
+        "Field": "Chemistry", 
+        "Name": "Stephen Lippard", 
+        "Page_created": "2014-03-19T14:51:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_MacMahon": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Stephen MacMahon", 
+        "Page_created": "2012-04-20T14:31:56Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_R._Bloom": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Stephen Bloom", 
+        "Page_created": "2015-06-27T20:34:57Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stephen_Vargo": {
+        "Field": "Economics", 
+        "Name": "Stephen Vargo", 
+        "Page_created": "2009-10-22T21:59:04Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Steven_Kaplan_(economist)": {
+        "Field": "Economics", 
+        "Name": "Steven Kaplan", 
+        "Page_created": "2007-01-23T00:10:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stuart_Parkin": {
+        "Field": "Physics", 
+        "Name": "Stuart Parkin", 
+        "Page_created": "2005-10-10T17:38:38Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Stuart_Rice": {
+        "Field": "Chemistry", 
+        "Name": "Stuart Rice", 
+        "Page_created": "2005-08-02T18:34:48Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Subir_Sachdev": {
+        "Field": "Physics", 
+        "Name": "Subir Sachdev", 
+        "Page_created": "2009-05-03T12:52:18Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Subra_Suresh": {
+        "Field": "Physics", 
+        "Name": "Subra Suresh", 
+        "Page_created": "2009-10-06T12:31:21Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tadamitsu_Kishimoto": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Tadamitsu Kishimoto", 
+        "Page_created": "2006-06-01T09:06:50Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tadatsugu_Taniguchi": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Tadatsugu Taniguchi", 
+        "Page_created": "2013-10-11T04:49:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Taeghwan_Hyeon": {
+        "Field": "Chemistry", 
+        "Name": "Taeghwan Hyeon", 
+        "Page_created": "2014-05-22T18:17:31Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Takuzo_Aida": {
+        "Field": "Chemistry", 
+        "Name": "Takuzo Aida", 
+        "Page_created": "2009-03-20T08:32:25Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tasawar_Hayat": {
+        "Field": "Mathematics", 
+        "Name": "Tasawar Hayat", 
+        "Page_created": "2010-05-08T09:12:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Theodore_H._Geballe": {
+        "Field": "Physics", 
+        "Name": "Theodore Geballe", 
+        "Page_created": "2013-08-17T23:48:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Thomas_JR_Hughes": {
+        "Field": "Computer Science", 
+        "Name": "Thomas JR Hughes", 
+        "Page_created": "2008-01-31T21:31:43Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Thomas_Starzl": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Thomas Starzl", 
+        "Page_created": "2005-08-19T08:51:55Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tilman_Esslinger": {
+        "Field": "Physics", 
+        "Name": "Tilman Esslinger", 
+        "Page_created": "2013-03-24T18:49:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tim_Bollerslev": {
+        "Field": "Economics", 
+        "Name": "Tim Bollerslev", 
+        "Page_created": "2006-10-06T21:22:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Tomas_Hokfelt": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Tomas Hokfelt", 
+        "Page_created": "2008-05-05T14:01:10Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Trevor_Hastie": {
+        "Field": "Computer Science", 
+        "Name": "Trevor Hastie", 
+        "Page_created": "2012-04-10T06:41:05Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Ulrike_Malmendier": {
+        "Field": "Economics", 
+        "Name": "Ulrike Malmendier", 
+        "Page_created": "2012-08-05T22:40:44Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Uri_Gneezy": {
+        "Field": "Economics", 
+        "Name": "Uri Gneezy", 
+        "Page_created": "2013-08-05T18:44:46Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Valarie_Zeithaml": {
+        "Field": "Economics", 
+        "Name": "Valarie Zeithaml", 
+        "Page_created": "2015-08-29T02:42:48Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Valentin_Fuster": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Valentin Fuster", 
+        "Page_created": "2008-04-29T21:18:10Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Victor_Dzau": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Victor Dzau", 
+        "Page_created": "2008-03-08T20:44:14Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Vincenzo_Balzani": {
+        "Field": "Chemistry", 
+        "Name": "Vincenzo Balzani", 
+        "Page_created": "2011-01-25T17:51:20Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Wayne_Fuller": {
+        "Field": "Economics", 
+        "Name": "Wayne Fuller", 
+        "Page_created": "2009-08-27T10:22:28Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Werner_Hacke": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Werner Hacke", 
+        "Page_created": "2007-10-26T14:21:21Z"
+    }, 
+    "https://en.wikipedia.org/wiki/William_Easterly": {
+        "Field": "Economics", 
+        "Name": "William Easterly", 
+        "Page_created": "2006-06-26T19:45:15Z"
+    }, 
+    "https://en.wikipedia.org/wiki/William_H._Miller_(chemistry)": {
+        "Field": "Chemistry", 
+        "Name": "William Miller", 
+        "Page_created": "2008-05-18T08:04:17Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Witold_Nazarewicz": {
+        "Field": "Physics", 
+        "Name": "Witold Nazarewicz", 
+        "Page_created": "2007-08-25T14:38:59Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Xavier_Gabaix": {
+        "Field": "Economics", 
+        "Name": "Xavier Gabaix", 
+        "Page_created": "2009-07-27T21:37:29Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Younan_Xia": {
+        "Field": "Physics", 
+        "Name": "Younan Xia", 
+        "Page_created": "2011-08-02T17:10:03Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Zeljko_Reiner": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Zeljko Reiner", 
+        "Page_created": "2014-09-22T23:34:51Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Zolt%C3%A1n_Szab%C3%B3_(mathematician)": {
+        "Field": "Mathematics", 
+        "Name": "Zoltan Szabo", 
+        "Page_created": "2007-02-13T10:24:47Z"
+    }
+}

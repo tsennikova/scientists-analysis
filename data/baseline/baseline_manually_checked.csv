@@ -1,12 +1,13 @@
-Simon White,https://en.wikipedia.org/wiki/Simon_White,Biology & Biochemistry
-Jens Nielsen,https://en.wikipedia.org/wiki/Jens_Nielsen,Biology & Biochemistry
-Ruedi Aebersold,https://en.wikipedia.org/wiki/Ruedi_Aebersold,Biology & Biochemistry
-Daniel Rios,https://en.wikipedia.org/wiki/Daniel_Rios,Biology & Biochemistry
-Peer Bork,https://en.wikipedia.org/wiki/Peer_Bork,Biology & Biochemistry
-Rolf Apweiler,https://en.wikipedia.org/wiki/Rolf_Apweiler,Biology & Biochemistry
-Alex Bateman,https://en.wikipedia.org/wiki/Alex_Bateman,Biology & Biochemistry
-Ewan Birney,https://en.wikipedia.org/wiki/Ewan_Birney,Biology & Biochemistry
-Joseph Schlessinger,https://en.wikipedia.org/wiki/Joseph_Schlessinger,Molecular Biology & Genetics
+Name,Wikipage,Field
+Simon White,https://en.wikipedia.org/wiki/Simon_White,Biology
+Jens Nielsen,https://en.wikipedia.org/wiki/Jens_Nielsen,Biology
+Ruedi Aebersold,https://en.wikipedia.org/wiki/Ruedi_Aebersold,Biology
+Daniel Rios,https://en.wikipedia.org/wiki/Daniel_Rios,Biology
+Peer Bork,https://en.wikipedia.org/wiki/Peer_Bork,Biology
+Rolf Apweiler,https://en.wikipedia.org/wiki/Rolf_Apweiler,Biology
+Alex Bateman,https://en.wikipedia.org/wiki/Alex_Bateman,Biology
+Ewan Birney,https://en.wikipedia.org/wiki/Ewan_Birney,Biology
+Joseph Schlessinger,https://en.wikipedia.org/wiki/Joseph_Schlessinger,Biology
 Mietek Jaroniec,https://en.wikipedia.org/wiki/Mietek_Jaroniec,Chemistry
 Frank Neese,https://en.wikipedia.org/wiki/Frank_Neese,Chemistry
 Kimoon Kim,https://en.wikipedia.org/wiki/Kimoon_kim,Chemistry
@@ -62,76 +63,76 @@ Leo Paquette,https://en.wikipedia.org/wiki/Leo_Paquette,Chemistry
 Helmut Ringsdorf,https://en.wikipedia.org/wiki/Helmut_Ringsdorf,Chemistry
 Jean-Michel Saveant,https://en.wikipedia.org/wiki/Jean-Michel_Saveant,Chemistry
 Helmut Schwarz,https://en.wikipedia.org/wiki/Helmut_Schwarz,Chemistry
-Eugene Braunwald,https://en.wikipedia.org/wiki/Eugene_Braunwald,Clinical Medicine
-Paul M Ridker,https://en.wikipedia.org/wiki/Paul_M_Ridker,Clinical Medicine
-Shuji Ogino,https://en.wikipedia.org/wiki/Shuji_Ogino,Clinical Medicine
-Jean-Louis Vincent,https://en.wikipedia.org/wiki/Jean-Louis_Vincent,Clinical Medicine
-Stefanie Dimmeler,https://en.wikipedia.org/wiki/Stefanie_Dimmeler,Clinical Medicine
-Annarosa Leri,https://en.wikipedia.org/wiki/Annarosa_Leri,Clinical Medicine
-JoAnn E Manson,https://en.wikipedia.org/wiki/Joann_E_Manson,Clinical Medicine
-Peter Sleight,https://en.wikipedia.org/wiki/Peter_Sleight,Clinical Medicine
-Frans Van de Werf,https://en.wikipedia.org/wiki/Frans_Van_de_Werf,Clinical Medicine
-Salim Yusuf,https://en.wikipedia.org/wiki/Salim_Yusuf,Clinical Medicine
-Jose Baselga,https://en.wikipedia.org/wiki/Jose_Baselga,Clinical Medicine
-Valentin Fuster,https://en.wikipedia.org/wiki/Valentin_Fuster,Clinical Medicine
-Jack Cuzick,https://en.wikipedia.org/wiki/Jack_Cuzick,Clinical Medicine
-Sharon Ann Hunt,https://en.wikipedia.org/wiki/Sharon_Ann_Hunt,Clinical Medicine
-Dariush Mozaffarian,https://en.wikipedia.org/wiki/Dariush_Mozaffarian,Clinical Medicine
-Matthias Egger,https://en.wikipedia.org/wiki/Matthias_Egger,Clinical Medicine
-John Danesh,https://en.wikipedia.org/wiki/John_Danesh,Clinical Medicine
-Ian Ford,https://en.wikipedia.org/wiki/Ian_Ford,Clinical Medicine
-Stephen MacMahon,https://en.wikipedia.org/wiki/Stephen_MacMahon,Clinical Medicine
-Zeljko Reiner,https://en.wikipedia.org/wiki/Zeljko_Reiner,Clinical Medicine
-Alan Ashworth,https://en.wikipedia.org/wiki/Alan_Ashworth,Clinical Medicine
-Hans Clevers,https://en.wikipedia.org/wiki/Hans_Clevers,Clinical Medicine
-Napoleone Ferrara,https://en.wikipedia.org/wiki/Napoleone_Ferrara,Clinical Medicine
-Ralph Weissleder,https://en.wikipedia.org/wiki/Ralph_Weissleder,Clinical Medicine
-Rudolf Jaenisch,https://en.wikipedia.org/wiki/Rudolf_Jaenisch,Clinical Medicine
-Werner Hacke,https://en.wikipedia.org/wiki/Werner_Hacke,Clinical Medicine
-George Davey Smith,https://en.wikipedia.org/wiki/George_Davey_Smith,Clinical Medicine
-Graham Colditz,https://en.wikipedia.org/wiki/Graham_Colditz,Clinical Medicine
-Tadamitsu Kishimoto,https://en.wikipedia.org/wiki/Tadamitsu_Kishimoto,Clinical Medicine
-Stephen Bloom,https://en.wikipedia.org/wiki/Stephen_R._Bloom,Clinical Medicine
-Salvador Moncada,https://en.wikipedia.org/wiki/Salvador_Moncada,Clinical Medicine
-Axel Ullrich,https://en.wikipedia.org/wiki/Axel_Ullrich,Clinical Medicine
-Ira Pastan,https://en.wikipedia.org/wiki/Ira_Pastan,Clinical Medicine
-Kenneth Kendler,https://en.wikipedia.org/wiki/Kenneth_Kendler,Clinical Medicine
-Thomas Starzl,https://en.wikipedia.org/wiki/Thomas_Starzl,Clinical Medicine
-Allen Steere,https://en.wikipedia.org/wiki/Allen_Steere,Clinical Medicine
-Samuel Broder,https://en.wikipedia.org/wiki/Samuel_Broder,Clinical Medicine
-Carlo La Vecchia,https://en.wikipedia.org/wiki/Carlo_La_Vecchia,Clinical Medicine
-Paul Volberding,https://en.wikipedia.org/wiki/Paul_Volberding,Clinical Medicine
-Murray Brennan,https://en.wikipedia.org/wiki/Murray_Brennan,Clinical Medicine
-Victor Dzau,https://en.wikipedia.org/wiki/Victor_Dzau,Clinical Medicine
-Robert Gale,https://en.wikipedia.org/wiki/Robert_Peter_Gale,Clinical Medicine
-Jerome Groopman,https://en.wikipedia.org/wiki/Jerome_Groopman,Clinical Medicine
-Charles Lieber,https://en.wikipedia.org/wiki/Charles_Lieber,Clinical Medicine
-Anne O'Garra,https://en.wikipedia.org/wiki/Anne_O%27Garra,Immunology
-Antonio Lanzavecchia,https://en.wikipedia.org/wiki/Antonio_Lanzavecchia,Immunology
-Federica Sallusto,https://en.wikipedia.org/wiki/Federica_Sallusto,Immunology
-Brigitta Stockinger,https://en.wikipedia.org/wiki/Brigitta_Stockinger,Immunology
-Siamon Gordon,https://en.wikipedia.org/wiki/Siamon_Gordon,Immunology
-Fiona Powrie,https://en.wikipedia.org/wiki/Fiona_Powrie,Immunology
-Tadatsugu Taniguchi,https://en.wikipedia.org/wiki/Tadatsugu_Taniguchi,Immunology
-Akiko Iwasaki,https://en.wikipedia.org/wiki/Akiko_Iwasaki,Immunology
-Ruslan Medzhitov,https://en.wikipedia.org/wiki/Ruslan_Medzhitov,Immunology
-Alan Aderem,https://en.wikipedia.org/wiki/Alan_Aderem,Immunology
-Bruce D Walker,https://en.wikipedia.org/wiki/Bruce_D_Walker,Immunology
-Irun Cohen,https://en.wikipedia.org/wiki/Irun_Cohen,Immunology
-Douglas Green,https://en.wikipedia.org/wiki/Douglas_Green,Immunology
-Huanming Yang,https://en.wikipedia.org/wiki/Huanming_Yang,Molecular Biology & Genetics
-Kari Stefansson,https://en.wikipedia.org/wiki/Kari_Stefansson,Molecular Biology & Genetics
-Matthias Mann,https://en.wikipedia.org/wiki/Matthias_Mann,Molecular Biology & Genetics
-Joan Massague,https://en.wikipedia.org/wiki/Joan_Massague,Molecular Biology & Genetics
-Kun-Liang Guan,https://en.wikipedia.org/wiki/Kun-Liang_Guan,Molecular Biology & Genetics
-David Haussler,https://en.wikipedia.org/wiki/David_Haussler,Molecular Biology & Genetics
-Cisca Wijmenga,https://en.wikipedia.org/wiki/Cisca_Wijmenga,Molecular Biology & Genetics
-Goncalo R Abecasis,https://en.wikipedia.org/wiki/Gon%C3%A7alo_R_Abecasis,Molecular Biology & Genetics
-Michael Boehnke,https://en.wikipedia.org/wiki/Michael_Boehnke,Molecular Biology & Genetics
-Beth Levine,https://en.wikipedia.org/wiki/Beth_Levine_(physician),Molecular Biology & Genetics
-Barry Everitt,https://en.wikipedia.org/wiki/Barry_Everitt,Neuroscience
-Stephen Dunnett,https://en.wikipedia.org/wiki/Stephen_Dunnett,Neuroscience
-Tomas Hokfelt,https://en.wikipedia.org/wiki/Tomas_Hokfelt,Neuroscience
+Eugene Braunwald,https://en.wikipedia.org/wiki/Eugene_Braunwald,Physiology or Medicine
+Paul M Ridker,https://en.wikipedia.org/wiki/Paul_M_Ridker,Physiology or Medicine
+Shuji Ogino,https://en.wikipedia.org/wiki/Shuji_Ogino,Physiology or Medicine
+Jean-Louis Vincent,https://en.wikipedia.org/wiki/Jean-Louis_Vincent,Physiology or Medicine
+Stefanie Dimmeler,https://en.wikipedia.org/wiki/Stefanie_Dimmeler,Physiology or Medicine
+Annarosa Leri,https://en.wikipedia.org/wiki/Annarosa_Leri,Physiology or Medicine
+JoAnn E Manson,https://en.wikipedia.org/wiki/Joann_E_Manson,Physiology or Medicine
+Peter Sleight,https://en.wikipedia.org/wiki/Peter_Sleight,Physiology or Medicine
+Frans Van de Werf,https://en.wikipedia.org/wiki/Frans_Van_de_Werf,Physiology or Medicine
+Salim Yusuf,https://en.wikipedia.org/wiki/Salim_Yusuf,Physiology or Medicine
+Jose Baselga,https://en.wikipedia.org/wiki/Jose_Baselga,Physiology or Medicine
+Valentin Fuster,https://en.wikipedia.org/wiki/Valentin_Fuster,Physiology or Medicine
+Jack Cuzick,https://en.wikipedia.org/wiki/Jack_Cuzick,Physiology or Medicine
+Sharon Ann Hunt,https://en.wikipedia.org/wiki/Sharon_Ann_Hunt,Physiology or Medicine
+Dariush Mozaffarian,https://en.wikipedia.org/wiki/Dariush_Mozaffarian,Physiology or Medicine
+Matthias Egger,https://en.wikipedia.org/wiki/Matthias_Egger,Physiology or Medicine
+John Danesh,https://en.wikipedia.org/wiki/John_Danesh,Physiology or Medicine
+Ian Ford,https://en.wikipedia.org/wiki/Ian_Ford,Physiology or Medicine
+Stephen MacMahon,https://en.wikipedia.org/wiki/Stephen_MacMahon,Physiology or Medicine
+Zeljko Reiner,https://en.wikipedia.org/wiki/Zeljko_Reiner,Physiology or Medicine
+Alan Ashworth,https://en.wikipedia.org/wiki/Alan_Ashworth,Physiology or Medicine
+Hans Clevers,https://en.wikipedia.org/wiki/Hans_Clevers,Physiology or Medicine
+Napoleone Ferrara,https://en.wikipedia.org/wiki/Napoleone_Ferrara,Physiology or Medicine
+Ralph Weissleder,https://en.wikipedia.org/wiki/Ralph_Weissleder,Physiology or Medicine
+Rudolf Jaenisch,https://en.wikipedia.org/wiki/Rudolf_Jaenisch,Physiology or Medicine
+Werner Hacke,https://en.wikipedia.org/wiki/Werner_Hacke,Physiology or Medicine
+George Davey Smith,https://en.wikipedia.org/wiki/George_Davey_Smith,Physiology or Medicine
+Graham Colditz,https://en.wikipedia.org/wiki/Graham_Colditz,Physiology or Medicine
+Tadamitsu Kishimoto,https://en.wikipedia.org/wiki/Tadamitsu_Kishimoto,Physiology or Medicine
+Stephen Bloom,https://en.wikipedia.org/wiki/Stephen_R._Bloom,Physiology or Medicine
+Salvador Moncada,https://en.wikipedia.org/wiki/Salvador_Moncada,Physiology or Medicine
+Axel Ullrich,https://en.wikipedia.org/wiki/Axel_Ullrich,Physiology or Medicine
+Ira Pastan,https://en.wikipedia.org/wiki/Ira_Pastan,Physiology or Medicine
+Kenneth Kendler,https://en.wikipedia.org/wiki/Kenneth_Kendler,Physiology or Medicine
+Thomas Starzl,https://en.wikipedia.org/wiki/Thomas_Starzl,Physiology or Medicine
+Allen Steere,https://en.wikipedia.org/wiki/Allen_Steere,Physiology or Medicine
+Samuel Broder,https://en.wikipedia.org/wiki/Samuel_Broder,Physiology or Medicine
+Carlo La Vecchia,https://en.wikipedia.org/wiki/Carlo_La_Vecchia,Physiology or Medicine
+Paul Volberding,https://en.wikipedia.org/wiki/Paul_Volberding,Physiology or Medicine
+Murray Brennan,https://en.wikipedia.org/wiki/Murray_Brennan,Physiology or Medicine
+Victor Dzau,https://en.wikipedia.org/wiki/Victor_Dzau,Physiology or Medicine
+Robert Gale,https://en.wikipedia.org/wiki/Robert_Peter_Gale,Physiology or Medicine
+Jerome Groopman,https://en.wikipedia.org/wiki/Jerome_Groopman,Physiology or Medicine
+Charles Lieber,https://en.wikipedia.org/wiki/Charles_Lieber,Physiology or Medicine
+Anne O'Garra,https://en.wikipedia.org/wiki/Anne_O%27Garra,Physiology or Medicine
+Antonio Lanzavecchia,https://en.wikipedia.org/wiki/Antonio_Lanzavecchia,Physiology or Medicine
+Federica Sallusto,https://en.wikipedia.org/wiki/Federica_Sallusto,Physiology or Medicine
+Brigitta Stockinger,https://en.wikipedia.org/wiki/Brigitta_Stockinger,Physiology or Medicine
+Siamon Gordon,https://en.wikipedia.org/wiki/Siamon_Gordon,Physiology or Medicine
+Fiona Powrie,https://en.wikipedia.org/wiki/Fiona_Powrie,Physiology or Medicine
+Tadatsugu Taniguchi,https://en.wikipedia.org/wiki/Tadatsugu_Taniguchi,Physiology or Medicine
+Akiko Iwasaki,https://en.wikipedia.org/wiki/Akiko_Iwasaki,Physiology or Medicine
+Ruslan Medzhitov,https://en.wikipedia.org/wiki/Ruslan_Medzhitov,Physiology or Medicine
+Alan Aderem,https://en.wikipedia.org/wiki/Alan_Aderem,Physiology or Medicine
+Bruce D Walker,https://en.wikipedia.org/wiki/Bruce_D_Walker,Physiology or Medicine
+Irun Cohen,https://en.wikipedia.org/wiki/Irun_Cohen,Physiology or Medicine
+Douglas Green,https://en.wikipedia.org/wiki/Douglas_Green,Physiology or Medicine
+Huanming Yang,https://en.wikipedia.org/wiki/Huanming_Yang,Physiology or Medicine
+Kari Stefansson,https://en.wikipedia.org/wiki/Kari_Stefansson,Physiology or Medicine
+Matthias Mann,https://en.wikipedia.org/wiki/Matthias_Mann,Physiology or Medicine
+Joan Massague,https://en.wikipedia.org/wiki/Joan_Massague,Physiology or Medicine
+Kun-Liang Guan,https://en.wikipedia.org/wiki/Kun-Liang_Guan,Physiology or Medicine
+David Haussler,https://en.wikipedia.org/wiki/David_Haussler,Physiology or Medicine
+Cisca Wijmenga,https://en.wikipedia.org/wiki/Cisca_Wijmenga,Physiology or Medicine
+Goncalo R Abecasis,https://en.wikipedia.org/wiki/Gon%C3%A7alo_R_Abecasis,Physiology or Medicine
+Michael Boehnke,https://en.wikipedia.org/wiki/Michael_Boehnke,Physiology or Medicine
+Beth Levine,https://en.wikipedia.org/wiki/Beth_Levine_(physician),Physiology or Medicine
+Barry Everitt,https://en.wikipedia.org/wiki/Barry_Everitt,Physiology or Medicine
+Stephen Dunnett,https://en.wikipedia.org/wiki/Stephen_Dunnett,Physiology or Medicine
+Tomas Hokfelt,https://en.wikipedia.org/wiki/Tomas_Hokfelt,Physiology or Medicine
 Heng Li,https://en.wikipedia.org/wiki/Heng_Li,Computer Science
 Babak Hassibi,https://en.wikipedia.org/wiki/Babak_Hassibi,Computer Science
 Ian F Akyildiz,https://en.wikipedia.org/wiki/Ian_f_akyildiz,Computer Science
@@ -149,59 +150,59 @@ Nello Cristianini,https://en.wikipedia.org/wiki/Nello_Cristianini,Computer Scien
 Ronald Fedkiw,https://en.wikipedia.org/wiki/Ronald_Fedkiw,Computer Science
 Shlomo Shamai,https://en.wikipedia.org/wiki/Shlomo_Shamai,Computer Science
 Edward R Dougherty,https://en.wikipedia.org/wiki/Edward_R_Dougherty,Computer Science
-Tim Bollerslev,https://en.wikipedia.org/wiki/Tim_Bollerslev,Economics/Business
-Campbell Harvey,https://en.wikipedia.org/wiki/Campbell_Harvey,Economics/Business
-Dan Ariely,https://en.wikipedia.org/wiki/Dan_Ariely,Economics/Business
-Henk Volberda,https://en.wikipedia.org/wiki/Henk_Volberda,Economics/Business
-Peter Hansen,https://en.wikipedia.org/wiki/Peter_Reinhard_Hansen,Economics/Business
-Edward Glaeser,https://en.wikipedia.org/wiki/Edward_Glaeser,Economics/Business
-John Campbell,https://en.wikipedia.org/wiki/John_Y._Campbell,Economics/Business
-Andrei Shleifer,https://en.wikipedia.org/wiki/Andrei_Shleifer,Economics/Business
-Marc Melitz,https://en.wikipedia.org/wiki/Marc_Melitz,Economics/Business
-Sendhil Mullainathan,https://en.wikipedia.org/wiki/Sendhil_Mullainathan,Economics/Business
-Michael Tushman,https://en.wikipedia.org/wiki/Michael_Tushman,Economics/Business
-Julian Birkinshaw,https://en.wikipedia.org/wiki/Julian_Birkinshaw,Economics/Business
-Esther Duflo,https://en.wikipedia.org/wiki/Esther_Duflo,Economics/Business
-Daron Acemoglu,https://en.wikipedia.org/wiki/Daron_Acemoglu,Economics/Business
-Simon Johnson,https://en.wikipedia.org/wiki/Simon_Johnson_(economist),Economics/Business
-Eric Hanushek,https://en.wikipedia.org/wiki/Eric_Hanushek,Economics/Business
-Xavier Gabaix,https://en.wikipedia.org/wiki/Xavier_Gabaix,Economics/Business
-Steven Kaplan,https://en.wikipedia.org/wiki/Steven_Kaplan_(economist),Economics/Business
-Simeon Djankov,https://en.wikipedia.org/wiki/Simeon_Djankov,Economics/Business
-Martin Eichenbaum,https://en.wikipedia.org/wiki/Martin_Eichenbaum,Economics/Business
-Nicholas Bloom,https://en.wikipedia.org/wiki/Nicholas_Bloom,Economics/Business
-Guido Imbens,https://en.wikipedia.org/wiki/Guido_Imbens,Economics/Business
-Andrew Bernard,https://en.wikipedia.org/wiki/Andrew_Bernard,Economics/Business
-Michael Lounsbury,https://en.wikipedia.org/wiki/Michael_Lounsbury,Economics/Business
-Robert Lusch,https://en.wikipedia.org/wiki/Robert_Lusch,Economics/Business
-Armin Falk,https://en.wikipedia.org/wiki/Armin_Falk,Economics/Business
-Henry Chesbrough,https://en.wikipedia.org/wiki/Henry_Chesbrough,Economics/Business
-Ulrike Malmendier,https://en.wikipedia.org/wiki/Ulrike_Malmendier,Economics/Business
-Uri Gneezy,https://en.wikipedia.org/wiki/Uri_Gneezy,Economics/Business
-Luigi Zingales,https://en.wikipedia.org/wiki/Luigi_Zingales,Economics/Business
-Marianne Bertrand,https://en.wikipedia.org/wiki/Marianne_Bertrand,Economics/Business
-Stephen Vargo,https://en.wikipedia.org/wiki/Stephen_Vargo,Economics/Business
-Andrew B Bernard,https://en.wikipedia.org/wiki/Andrew_B_Bernard,Economics/Business
-John A List,https://en.wikipedia.org/wiki/John_A_List,Economics/Business
-Ross Levine,https://en.wikipedia.org/wiki/Ross_Levine,Economics/Business
-William Easterly,https://en.wikipedia.org/wiki/William_Easterly,Economics/Business
-Edward Miguel,https://en.wikipedia.org/wiki/Edward_Miguel,Economics/Business
-George Loewenstein,https://en.wikipedia.org/wiki/George_Loewenstein,Economics/Business
-Oliver Blanchard,https://en.wikipedia.org/wiki/Oliver_Blanchard,Economics/Business
-Valarie Zeithaml,https://en.wikipedia.org/wiki/Valarie_Zeithaml,Economics/Business
-Richard Roll,https://en.wikipedia.org/wiki/Richard_Roll,Economics/Business
-Birger Wernerfelt,https://en.wikipedia.org/wiki/Birger_Wernerfelt,Economics/Business
-Ariel Rubinstein,https://en.wikipedia.org/wiki/Ariel_Rubinstein,Economics/Business
-Spyros Makridakis,https://en.wikipedia.org/wiki/Spyros_Makridakis,Economics/Business
-Lars Svensson,https://en.wikipedia.org/wiki/Lars_E._O._Svensson,Economics/Business
-Andrew Van de Ven,https://en.wikipedia.org/wiki/Andrew_Van_de_Ven,Economics/Business
-Bengt Holmstrom,https://en.wikipedia.org/wiki/Bengt_Holmstrom,Economics/Business
-Wayne Fuller,https://en.wikipedia.org/wiki/Wayne_Fuller,Economics/Business
-Ali Khademhosseini,https://en.wikipedia.org/wiki/Ali_Khademhosseini,Materials Science
-Subra Suresh,https://en.wikipedia.org/wiki/Subra_Suresh,Materials Science
-Jean-Marie Tarascon,https://en.wikipedia.org/wiki/Jean-Marie_Tarascon,Materials Science
-Younan Xia,https://en.wikipedia.org/wiki/Younan_Xia,Materials Science
-Jenny Nelson,https://en.wikipedia.org/wiki/Jenny_Nelson,Materials Science
+Tim Bollerslev,https://en.wikipedia.org/wiki/Tim_Bollerslev,Economics
+Campbell Harvey,https://en.wikipedia.org/wiki/Campbell_Harvey,Economics
+Dan Ariely,https://en.wikipedia.org/wiki/Dan_Ariely,Economics
+Henk Volberda,https://en.wikipedia.org/wiki/Henk_Volberda,Economics
+Peter Hansen,https://en.wikipedia.org/wiki/Peter_Reinhard_Hansen,Economics
+Edward Glaeser,https://en.wikipedia.org/wiki/Edward_Glaeser,Economics
+John Campbell,https://en.wikipedia.org/wiki/John_Y._Campbell,Economics
+Andrei Shleifer,https://en.wikipedia.org/wiki/Andrei_Shleifer,Economics
+Marc Melitz,https://en.wikipedia.org/wiki/Marc_Melitz,Economics
+Sendhil Mullainathan,https://en.wikipedia.org/wiki/Sendhil_Mullainathan,Economics
+Michael Tushman,https://en.wikipedia.org/wiki/Michael_Tushman,Economics
+Julian Birkinshaw,https://en.wikipedia.org/wiki/Julian_Birkinshaw,Economics
+Esther Duflo,https://en.wikipedia.org/wiki/Esther_Duflo,Economics
+Daron Acemoglu,https://en.wikipedia.org/wiki/Daron_Acemoglu,Economics
+Simon Johnson,https://en.wikipedia.org/wiki/Simon_Johnson_(economist),Economics
+Eric Hanushek,https://en.wikipedia.org/wiki/Eric_Hanushek,Economics
+Xavier Gabaix,https://en.wikipedia.org/wiki/Xavier_Gabaix,Economics
+Steven Kaplan,https://en.wikipedia.org/wiki/Steven_Kaplan_(economist),Economics
+Simeon Djankov,https://en.wikipedia.org/wiki/Simeon_Djankov,Economics
+Martin Eichenbaum,https://en.wikipedia.org/wiki/Martin_Eichenbaum,Economics
+Nicholas Bloom,https://en.wikipedia.org/wiki/Nicholas_Bloom,Economics
+Guido Imbens,https://en.wikipedia.org/wiki/Guido_Imbens,Economics
+Andrew Bernard,https://en.wikipedia.org/wiki/Andrew_Bernard,Economics
+Michael Lounsbury,https://en.wikipedia.org/wiki/Michael_Lounsbury,Economics
+Robert Lusch,https://en.wikipedia.org/wiki/Robert_Lusch,Economics
+Armin Falk,https://en.wikipedia.org/wiki/Armin_Falk,Economics
+Henry Chesbrough,https://en.wikipedia.org/wiki/Henry_Chesbrough,Economics
+Ulrike Malmendier,https://en.wikipedia.org/wiki/Ulrike_Malmendier,Economics
+Uri Gneezy,https://en.wikipedia.org/wiki/Uri_Gneezy,Economics
+Luigi Zingales,https://en.wikipedia.org/wiki/Luigi_Zingales,Economics
+Marianne Bertrand,https://en.wikipedia.org/wiki/Marianne_Bertrand,Economics
+Stephen Vargo,https://en.wikipedia.org/wiki/Stephen_Vargo,Economics
+Andrew B Bernard,https://en.wikipedia.org/wiki/Andrew_B_Bernard,Economics
+John A List,https://en.wikipedia.org/wiki/John_A_List,Economics
+Ross Levine,https://en.wikipedia.org/wiki/Ross_Levine,Economics
+William Easterly,https://en.wikipedia.org/wiki/William_Easterly,Economics
+Edward Miguel,https://en.wikipedia.org/wiki/Edward_Miguel,Economics
+George Loewenstein,https://en.wikipedia.org/wiki/George_Loewenstein,Economics
+Oliver Blanchard,https://en.wikipedia.org/wiki/Oliver_Blanchard,Economics
+Valarie Zeithaml,https://en.wikipedia.org/wiki/Valarie_Zeithaml,Economics
+Richard Roll,https://en.wikipedia.org/wiki/Richard_Roll,Economics
+Birger Wernerfelt,https://en.wikipedia.org/wiki/Birger_Wernerfelt,Economics
+Ariel Rubinstein,https://en.wikipedia.org/wiki/Ariel_Rubinstein,Economics
+Spyros Makridakis,https://en.wikipedia.org/wiki/Spyros_Makridakis,Economics
+Lars Svensson,https://en.wikipedia.org/wiki/Lars_E._O._Svensson,Economics
+Andrew Van de Ven,https://en.wikipedia.org/wiki/Andrew_Van_de_Ven,Economics
+Bengt Holmstrom,https://en.wikipedia.org/wiki/Bengt_Holmstrom,Economics
+Wayne Fuller,https://en.wikipedia.org/wiki/Wayne_Fuller,Economics
+Ali Khademhosseini,https://en.wikipedia.org/wiki/Ali_Khademhosseini,Physics
+Subra Suresh,https://en.wikipedia.org/wiki/Subra_Suresh,Physics
+Jean-Marie Tarascon,https://en.wikipedia.org/wiki/Jean-Marie_Tarascon,Physics
+Younan Xia,https://en.wikipedia.org/wiki/Younan_Xia,Physics
+Jenny Nelson,https://en.wikipedia.org/wiki/Jenny_Nelson,Physics
 Ingrid Daubechies,https://en.wikipedia.org/wiki/Ingrid_Daubechies,Mathematics
 Tasawar Hayat,https://en.wikipedia.org/wiki/Tasawar_Hayat,Mathematics
 Jianqing Fan,https://en.wikipedia.org/wiki/Jianqing_Fan,Mathematics
