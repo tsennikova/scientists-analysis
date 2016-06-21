@@ -7,6 +7,6 @@ import urllib
 import urllib2
 import chardet
 
-a = u'mukawa,_hokkaid\u014d'
+a = u'C\\u00e9dric Villani'
 
-print a
+print a.encode('utf-8')

@@ -1,0 +1,536 @@
+Xavier Gabaix
+Bernd Giese
+Helmut Schwarz
+Albert Meyers
+Uri Gneezy
+Shinya Yamanaka
+William H. Miller (chemistry)
+Charles L. Bennett
+Jing Li (chemist)
+David Julius
+C\u00e9dric Villani
+Arun Majumdar
+Giuseppe Mingione
+Peter Howitt (economist)
+Keith Olive
+Menachem Elimelech
+Barbara Liskov
+Eric Hanushek
+Thomas Ebbesen
+Tu Youyou
+Irwin M. Jacobs
+Ian Ford
+Leslie Lamport
+Frank Glorius
+Ralph Weissleder
+Olivier Blanchard
+Nello Cristianini
+C. N. R. Rao
+John G. Thompson
+Richard Roll
+Louis Nirenberg
+Bruce Beutler
+John Milnor
+Simeon Djankov
+Matthew Rabin
+Christoph Gerber
+Hideo Hosono
+Andrew H. Van de Ven
+Immanuel Bloch
+Andrew Bernard
+Peter Ozsv\u00e1th
+Ada Yonath
+Patrick O. Brown
+Cumrun Vafa
+Igor Jurisica
+Harold Demsetz
+Sang-Wook Cheong
+Murray Brennan
+Aziz Sancar
+Donal Bradley
+Anne Osborn Krueger
+Jean-Michel Sav\u00e9ant
+Hans Clevers
+Malcolm Green (chemist)
+Malcolm Chisholm
+Robert J. Birgeneau
+David R. Smith
+Martin Hellman
+Ernest McCulloch
+Jean-Pierre Sauvage
+Jacques Tits
+Shizuo Akira
+John A. List
+Michael Lounsbury
+Takaaki Kajita
+Harald zur Hausen
+Alex Zettl
+Sharon Ann Hunt
+Saul Perlmutter
+Chih-Jen Lin
+Axel D. Becke
+Gon\u00e7alo Abecasis
+Jordi Gal\u00ed
+Juan Mart\u00edn Maldacena
+Takuzo Aida
+Dennis P. Curran
+Makoto Kobayashi (physicist)
+Michael Levitt
+Kendall Houk
+Lars Peter Hansen
+Michael L. Klein
+Ryoo Ryong
+Arthur B. McDonald
+Didier Astruc
+Peter Knight (scientist)
+Michele Parrinello
+Stephen MacMahon
+Julian Birkinshaw
+Alvin E. Roth
+Achim M\u00fcller
+Pierre Deligne
+Guido Imbens
+Ivan K. Schuller
+Ronald Fedkiw
+Robert H. Dennard
+Akira Fujishima
+Randy Schekman
+Morris Chang
+William Wootters
+John Gurdon
+Stephen Ross (economist)
+Steven Van Slyke
+Jules A. Hoffmann
+Stephen L. Buchwald
+Bradley Efron
+Ralph Nuzzo
+Elon Lindenstrauss
+Joshua Angrist
+Michal Lipson
+David Card
+John Danesh
+Sergio Ferrara
+Peter Grassberger
+Edward R. Dougherty
+Pan Jianwei
+Israel Kirzner
+Henry Chesbrough
+Peter Walter
+Shimon Sakaguchi
+Louis E. Brus
+Chen Guanrong
+Martin Feldstein
+Marianne Bertrand
+Michael L. Gross (chemist)
+Napoleone Ferrara
+Brigitta Stockinger
+Alain Aspect
+Younan Xia
+Martin Karplus
+John Clauser
+Ewan Birney
+Simon Johnson (economist)
+John Y. Campbell
+Laurens W. Molenkamp
+Shafi Goldwasser
+Phaedon Avouris
+Willard Boyle
+Michael Berry (physicist)
+Charles M. Lieber
+Keith Usherwood Ingold
+Andrei Shleifer
+Alan Ashworth
+Roberto Car
+Elinor Ostrom
+Federica Sallusto
+Sankar Das Sarma
+Idun Reiten
+Robert Lefkowitz
+Paul Krugman
+Jean-Louis Vincent
+Ross Levine
+Dale T. Mortensen
+Jennifer Doudna
+Joshua Jortner
+Paul Ridker
+Valentin Fuster
+Stuart Parkin
+Michael L. Tushman
+M Stanley Whittingham
+Lloyd Shapley
+John Perdew
+Dale L. Boger
+Rodney J. Bartlett
+Frank Neese
+Ulrike Malmendier
+Rainer Blatt
+Dan Shechtman
+John Forbes Nash Jr.
+James R. Heath
+Halbert White
+Ruslan Medzhitov
+Tadatsugu Taniguchi
+Paul Volberding
+Hongjie Dai
+Esther Duflo
+B. Jayant Baliga
+Peter Higgs
+Judea Pearl
+Philip Kim
+Philippe Aghion
+Anton Zeilinger
+Michael Grunstein
+John Pendry
+Charles David Allis
+Stephen Vargo
+George Sawatzky
+Yang Huanming
+Peter Sleight
+Satoshi \u014cmura
+Oliver E. Williamson
+Charles P. Thacker
+Charles K. Kao
+Richard Wilson (physicist)
+Stanislav Smirnov
+Bengt R. Holmstr\u00f6m
+Ralph M. Steinman
+Arieh Warshel
+Martin Hairer
+Howard Cedar
+Doug Green
+Valarie Zeithaml
+Richard H. Holm
+Henri Berestycki
+Liao Shijun
+Bernhard Keimer
+Masatoshi Takeichi
+Hyeon Taeghwan
+Claire Berger
+Daniel Andr\u00e9s R\u00edos
+Angus Deaton
+Lynn Schneemeyer
+Steven Kaplan (economist)
+Axel Ullrich
+William Easterly
+Cees Dekker
+Peter Gavin Hall
+Maryam Mirzakhani
+Keith Fagnou
+Edward Miguel
+Lene Hau
+Charles F. Manski
+Annarosa Leri
+\u017deljko Reiner
+Carlo La Vecchia
+Tim Bollerslev
+Lyman Page
+M. Hashem Pesaran
+Victor Dzau
+Joseph Wang
+Yoshinori Tokura
+Trevor Hastie
+Robert H. Crabtree
+Stephen J. Lippard
+Osamu Shimomura
+Shoucheng Zhang
+Jenny Nelson
+Fran\u00e7oise Barr\u00e9-Sinoussi
+Thomas A. Steitz
+David Milstein
+Hideo Ohno
+Ei-ichi Negishi
+Giorgio Parisi
+Frans Van de Werf
+Edward Glaeser
+Nicholas Lydon
+Sendhil Mullainathan
+William Baumol
+Roger Y. Tsien
+Didier Queloz
+Sajeev John
+Mark Granovetter
+Charles H. Bennett (computer scientist)
+Christopher A. Pissarides
+Jon Clardy
+Leo Paquette
+Jean-Luc Br\u00e9das
+Graham Fleming
+Roman Jackiw
+Richard Blundell
+Venkatraman Ramakrishnan
+Marlan Scully
+Jean Fr\u00e9chet
+Shuji Ogino
+Paul McEuen
+Luc Montagnier
+James E. Darnell
+Kazutoshi Mori
+Dan Boneh
+George Loewenstein
+William E. Moerner
+Fiona Powrie
+Ng\u00f4 B\u1ea3o Ch\u00e2u
+Robert Lusch
+Dan Ariely
+Zhong Lin Wang
+Christopher A. Sims
+Yakov Sinai
+Toshihide Maskawa
+Tomas H\u00f6kfelt
+Salim Yusuf
+Jose Baselga
+Tony Atkinson
+Beth Levine (physician)
+John Tate
+Eugene Braunwald
+Nobuhiro Kiyotaki
+G\u00e9rald Bastard
+Shlomo Shamai
+Richard Hynes
+Mikhail Leonidovich Gromov
+Allen Steere
+Theodore H. Geballe
+Stephen E. Harris
+Nancy A. Moran
+Edward Ott
+Bruce Ames
+Ching W. Tang
+Charles Sawyers
+Jeffrey M. Friedman
+Stephen R. Bloom
+Ferenc Krausz
+William Nordhaus
+John Robertson (physicist)
+Matja\u017e Perc
+Paul Corkum
+Ariel Rubinstein
+Jack W. Szostak
+Michael Boehnke
+Oded Schramm
+Wayne Fuller
+Jacques Miller
+Rudolf Grimm
+Siamon Gordon
+Ingrid Daubechies
+Endre Szemer\u00e9di
+G\u00e9rard F\u00e9rey
+Dimitri Nanopoulos
+Bruce D. Walker
+Pauline van den Driessche
+Sam Peltzman
+Chad Mirkin
+James Rothman
+Martin Eichenbaum
+Alan Krueger
+Amir Yacoby
+John B. Goodenough
+Peter C. B. Phillips
+Alexander Zamolodchikov
+Charles L. Kane
+Eric H. Davidson
+Nicholas C. Handy
+Tilman Esslinger
+Paul Alivisatos
+Henk Volberda
+Reinhart Ahlrichs
+Peter Diamond
+Martin Weitzman
+Isamu Akasaki
+George E. Smith
+Geoffrey Marcy
+Fran\u00e7ois Diederich
+Vera Rubin
+Elza Erkip
+Daron Acemo\u011flu
+Eric Betzig
+Gordon Tullock
+Galen D. Stucky
+Matthias Egger
+Andre Geim
+Manjul Bhargava
+Robert Edwards (physiologist)
+Barry Everitt
+Charles Lee (scientist)
+Robert S. Langer
+Alan Aderem
+Birger Wernerfelt
+Graham Colditz
+Erkki Ruoslahti
+Marc A. Kastner
+Robert Tjian
+Shin'ichi Nojiri
+Ruedi Aebersold
+Emmanuelle Charpentier
+Aharon Razin
+Heng Li
+Robert Tibshirani
+Rolf Apweiler
+Andrew Viterbi
+Thomas J.R. Hughes
+Rory Collins
+Samuel Broder
+John L. Hennessy
+Fran\u00e7ois Englert
+Peter Crane
+Antonio Lanzavecchia
+Carol W. Greider
+Silvio Micali
+Dieter Enders
+May-Britt Moser
+David Forbes Hendry
+Peter Zoller
+Thomas Starzl
+\u0110\u00e0m Thanh S\u01a1n
+Jun Ye
+Brian Druker
+Campbell Harvey
+Stefanie Dimmeler
+Stephen W. Scherer
+Babak Hassibi
+Krzysztof Matyjaszewski
+George Davey Smith
+Ian Affleck
+Stephen Dunnett
+Jianqing Fan
+Mietek Jaroniec
+Alberto Alesina
+Albert-L\u00e1szl\u00f3 Barab\u00e1si
+Kun-Liang Guan
+Nicholas Bloom
+Deborah S. Jin
+Elias James Corey
+Ian F. Akyildiz
+Mildred Dresselhaus
+Yakir Aharonov
+Hiroshi Amano
+Saeid Abbasbandy
+Dennis Slamon
+Serge Haroche
+Witold Nazarewicz
+Gary Ruvkun
+Eugene Fama
+David Haussler
+Marc Melitz
+Jeffrey I. Gordon
+David J. Wineland
+Eli Yablonovitch
+Joseph Altman
+Brian Schmidt
+Irun Cohen
+Simon White
+Shuji Nakamura
+Luis Oro
+Masaru Tomita
+Robert J. Shiller
+Leigh Canham
+Kim Kimoon
+Anthony Pawson
+Tadamitsu Kishimoto
+Jerome Groopman
+Roger Penrose
+Douglas Diamond
+Yoichiro Nambu
+Salvador Moncada
+Luigi Zingales
+Peter Reinhard Hansen
+Tasawar Hayat
+Jacqueline Barton
+Peer Bork
+Bernhard Keller
+Subir Sachdev
+Michael Stonebraker
+John Hardman Moore
+Omar M. Yaghi
+Richard F. Heck
+Paul L. Modrich
+Thomas C. S\u00fcdhof
+Kenneth Kendler
+Yoshinori Ohsumi
+Michael I. Jordan
+Thomas J. Sargent
+G\u00e1bor A. Somorjai
+Jeffrey A. Harvey
+Alex Bateman
+Peidong Yang
+David Spergel
+Mark Gertler (economist)
+Brian Kobilka
+Stuart A. Rice
+Deborah Estrin
+Jack Cuzick
+Allen J. Bard
+Douglas L. Coleman
+Robert Peter Gale
+Whitfield Diffie
+Jerry A. Hausman
+Carolyn R. Bertozzi
+Kurt Binder
+Leslie Valiant
+Werner Hacke
+Nathan Seiberg
+Akira Suzuki (chemist)
+Rudolf Jaenisch
+James Till
+Nadrian Seeman
+Jean Tirole
+Anthony R. Hunter
+Vincenzo Balzani
+Winslow Briggs
+Cisca Wijmenga
+Ira Pastan
+Richard Posner
+Ernst Fehr
+Subra Suresh
+Horst St\u00f6cker
+Michael Gr\u00e4tzel
+Robert G. Roeder
+Jean-Marie Tarascon
+Tomas Lindahl
+Martin Chalfie
+William C. Campbell (scientist)
+Graeme Moad
+JoAnn E. Manson
+G. David Tilman
+Joan Massagu\u00e9 Sol\u00e9
+Matthias Mann
+Edvard Moser
+Dariush Mozaffarian
+Biswanath Mukherjee
+Lars E. O. Svensson
+Gordon Moore
+Joseph Schlessinger
+Spyros Makridakis
+Victor Ambros
+Ramamoorthy Ramesh
+Elizabeth Blackburn
+Jens Nielsen
+Helmut Ringsdorf
+Joseph Felsenstein
+Seiji Ogawa
+Zolt\u00e1n Szab\u00f3 (mathematician)
+Michael F. Lappert
+Adrian Bird
+Armin Falk
+Anne O'Garra
+Artur Avila
+Gilles Brassard
+Robert West (chemist)
+John O'Keefe (neuroscientist)
+Adam Riess
+Karl Barry Sharpless
+Gary Schuster
+Michel Mayor
+Michael Wigler
+K\u00e1ri Stef\u00e1nsson
+Sergey Fomin
+Charles T. Kresge
+Konstantin Novoselov
+Graham Hutchings
+Armen Alchian
+Kevin M. Murphy
+Ali Khademhosseini
+Juan Ignacio Cirac Sasturain
+Richard Peto
+Peter Kalmus
+Akiko Iwasaki
+Stefan Hell
