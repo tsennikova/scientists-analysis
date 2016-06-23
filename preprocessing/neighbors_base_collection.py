@@ -35,7 +35,7 @@ def get_name(link):
 def get_title(name):
     
     name = urllib.quote_plus(name.encode("utf-8"))
-    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info&indexpageids=1&redirects=1&converttitles=1&titles=%s" %name
+    site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info&inprop=url&indexpageids=1&redirects=1&converttitles=1&titles=%s" %name
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = urllib2.Request(site,headers=hdr)
     try:
@@ -45,7 +45,9 @@ def get_title(name):
     res = page.read()    
     res = ast.literal_eval(res)
     for pidkey in  res['query']['pages']:  
-        return res['query']['pages'][pidkey]['title']
+        url = res['query']['pages'][pidkey]['canonicalurl']
+        title = url.rstrip().split('/')[-1]
+        return title
        
          
 

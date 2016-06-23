@@ -62,12 +62,11 @@ def send_request(language, neighbor):
    
 #     neighbor = neighbor.replace('_', ' ')
 #     neighbor = neighbor.title()
-    print neighbor
+
     neighbor = urllib.quote_plus(neighbor.encode("utf-8"))
-    print neighbor
+ 
     
     site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=categories&list=&indexpageids=1&redirects=1&cllimit=500&titles=%s" %neighbor
-    print site
     
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = urllib2.Request(site,headers=hdr)
@@ -85,24 +84,22 @@ def send_request(language, neighbor):
                     cat = key["title"]
                     cat = cat.rstrip().split(':')[-1]
                     cat_list.append(cat)
-    print cat_list
     return cat_list
     
 
 def clean_up(cat_list, stop_list):
-    print "in cleaning function"
+   
     state = False
-    print len(cat_list)
     if not cat_list:
         state = True
         return state
     for item in cat_list:
-        print item
+        
         word_list = item.rstrip().split(' ')
         for word in word_list:
             word = word.lower()
             if word in stop_list:
-                print word
+                
                 state = True
                 return state
     return state
@@ -113,10 +110,12 @@ stop_list = text_file.read().split(',')
 
 language = "en"
 Dump = {}
-filename =  os.path.join(neighbors_dir, 'seed_ backlinks_list_en.json')
+count = 0
+filename =  os.path.join(neighbors_dir, 'seed_backlinks_list_en.json')
 scientists = load_simple_json(filename)
 for link, neighbors_list in scientists.iteritems():
-    print link
+    count += 1 
+    print count
     clean_list = [] 
     for neighbor in neighbors_list:
         cat_list= send_request(language, neighbor)

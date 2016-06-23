@@ -1,1985 +1,1985 @@
-Behavioral economics
+Behavioral_economics
 Finance
 Macroeconomics
-Valuation (finance)
-Financial economics
-Lagrange Prize
-Social network
+Valuation_(finance)
+Financial_economics
+Lagrange_Prize
+Social_network
 Chemistry
-Organic chemistry
+Organic_chemistry
 DNA
-Heterocyclic compound
-Meyers synthesis
+Heterocyclic_compound
+Meyers_synthesis
 Negotiation
 Strategy
 Economics
-Experimental economics
-Stem cell
-Induced pluripotent stem cell
-Cardiac muscle cell
-Cardiovascular disease
+Experimental_economics
+Stem_cell
+Induced_pluripotent_stem_cell
+Cardiac_muscle_cell
+Cardiovascular_disease
 Fibroblast
-Embryonic stem cell
+Embryonic_stem_cell
 Blastocyst
-Transcription factor
+Transcription_factor
 Transfection
 SOX2
 Oct-4
 Myc
-Stem cell research policy
-Theoretical chemistry
+Stem_cell_research_policy
+Theoretical_chemistry
 Astrophysics
-Structure formation
-Lambda-CDM model
-Solid-state chemistry
-Materials science
-Impact factor
-Transition metal
-Rare earth element
+Structure_formation
+Lambda-CDM_model
+Solid-state_chemistry
+Materials_science
+Impact_factor
+Transition_metal
+Rare_earth_element
 Pyridine
 Semiconductor
-Light-emitting diode
+Light-emitting_diode
 Physiology
-List of life sciences
+List_of_life_sciences
 Medicine
 TRPV1
-Ion channel
+Ion_channel
 Nociception
-Boltzmann equation
-Kinetic theory of gases
-Landau damping
-Transportation theory (mathematics)
-Partial differential equation
-Riemannian geometry
-Mathematical physics
-Statistical mechanics
-Ricci curvature
-Mechanical engineering
-Thermoelectric effect
-Heat transfer
-Mass transfer
-Thermal management (electronics)
-Waste heat
+Boltzmann_equation
+Kinetic_theory_of_gases
+Landau_damping
+Transportation_theory_(mathematics)
+Partial_differential_equation
+Riemannian_geometry
+Mathematical_physics
+Statistical_mechanics
+Ricci_curvature
+Mechanical_engineering
+Thermoelectric_effect
+Heat_transfer
+Mass_transfer
+Thermal_management_(electronics)
+Waste_heat
 Mathematics
-Calculus of variations
-Hausdorff dimension
-Elliptic partial differential equation
-Null set
-Geometric measure theory
-Potential theory
-Parabolic partial differential equation
-Economic growth
-Monetary economics
-Particle physics
+Calculus_of_variations
+Hausdorff_dimension
+Elliptic_partial_differential_equation
+Null_set
+Geometric_measure_theory
+Potential_theory
+Parabolic_partial_differential_equation
+Economic_growth
+Monetary_economics
+Particle_physics
 Cosmology
-Chemical engineering
-Environmental engineering
-Computer science
-Operating system
-Object-oriented programming
+Chemical_engineering
+Environmental_engineering
+Computer_science
+Operating_system
+Object-oriented_programming
 Database
-Liskov substitution principle
-Electrical engineering
-Chess endgame
-Futures and promises
-Object database
+Liskov_substitution_principle
+Electrical_engineering
+Chess_endgame
+Futures_and_promises
+Object_database
 Subtyping
-Byzantine fault tolerance
-Distributed computing
-Systems design
-Abstraction (software engineering)
-Fault tolerance
-Think tank
+Byzantine_fault_tolerance
+Distributed_computing
+Systems_design
+Abstraction_(software_engineering)
+Fault_tolerance
+Think_tank
 Meta-analysis
-Millennium Development Goals
-Physical chemistry
-Extraordinary optical transmission
-Surface plasmon
-Nationality law of the People's Republic of China
-Han Chinese
-Medicinal chemistry
-Chinese herbology
-Antimalarial medication
-Clinical research
+Millennium_Development_Goals
+Physical_chemistry
+Extraordinary_optical_transmission
+Surface_plasmon
+Nationality_law_of_the_People%27s_Republic_of_China
+Han_Chinese
+Medicinal_chemistry
+Chinese_herbology
+Antimalarial_medication
+Clinical_research
 Artemisinin
 Dihydroartemisinin
 Pharmacognosy
-Tu (surname)
-Tropical medicine
-Natural science
-Stinking Old Ninth
+Tu_(surname)
+Tropical_medicine
+Natural_science
+Stinking_Old_Ninth
 Maoism
-Down to the Countryside Movement
+Down_to_the_Countryside_Movement
 Extract
-Artemisia annua
-Animal testing
+Artemisia_annua
+Animal_testing
 Apartment
-Dongcheng District, Beijing
+Dongcheng_District,_Beijing
 Metallurgy
-Keynesian economics
-Artemisia (genus)
-Lobelia chinensis
+Keynesian_economics
+Artemisia_(genus)
+Lobelia_chinensis
 Schistosomiasis
 Helminths
-Urinary system
-Gastrointestinal tract
+Urinary_system
+Gastrointestinal_tract
 Plasmodium
-Chemical structure
+Chemical_structure
 Carbonyl
-Drug discovery
+Drug_discovery
 Pyronaridine
 Lumefantrine
 Naphthoquinone
-Arsenic trioxide
+Arsenic_trioxide
 Leukemia
-Chlamydia trachomatis
+Chlamydia_trachomatis
 1,000,000,000
-Computer engineering
-Woodrow Wilson Awards
+Computer_engineering
+Woodrow_Wilson_Awards
 Biostatistics
-Sequential consistency
-Lamport's bakery algorithm
-Paxos (computer science)
-Lamport signature
+Sequential_consistency
+Lamport%27s_bakery_algorithm
+Paxos_(computer_science)
+Lamport_signature
 Algorithm
-Logical clock
+Logical_clock
 Happened-before
-Consensus (computer science)
-Mutual exclusion
-Snapshot algorithm
-Temporal logic
-Temporal logic of actions
+Consensus_(computer_science)
+Mutual_exclusion
+Snapshot_algorithm
+Temporal_logic
+Temporal_logic_of_actions
 Quixotism
-Symposium on Principles of Distributed Computing
-Total synthesis
+Symposium_on_Principles_of_Distributed_Computing
+Total_synthesis
 Catalysis
-Persistent carbene
-Carbon\u2013hydrogen bond activation
+Persistent_carbene
+Carbon%E2%80%93hydrogen_bond_activation
 Organocatalysis
-Photoredox catalysis
-Heterogeneous catalysis
-Molecular imaging
-Systems biology
-Artificial intelligence
-Support vector machine
-Big data
-Machine learning
+Photoredox_catalysis
+Heterogeneous_catalysis
+Molecular_imaging
+Systems_biology
+Artificial_intelligence
+Support_vector_machine
+Big_data
+Machine_learning
 Bioinformatics
-Kernel method
-Group theory
-Finite group
-Pure mathematics
-Nilpotent group
-Frobenius group
-Abelian group
-Simple group
-Order (group theory)
-Feit\u2013Thompson theorem
-N-group (finite group theory)
-Centralizer and normalizer
-Solvable group
+Kernel_method
+Group_theory
+Finite_group
+Pure_mathematics
+Nilpotent_group
+Frobenius_group
+Abelian_group
+Simple_group
+Order_(group_theory)
+Feit%E2%80%93Thompson_theorem
+N-group_(finite_group_theory)
+Centralizer_and_normalizer
+Solvable_group
 Subgroup
-Thompson sporadic group
-Sporadic group
-Inverse Galois problem
-Galois group
-Monster group
-Monstrous moonshine
-Quadratic pair
-Thompson factorization
-Thompson order formula
-Thompson subgroup
-Thompson transitivity theorem
-Thompson uniqueness theorem
-Modern portfolio theory
-Aerospace engineering
-Event study
-Roll's critique
-Gagliardo\u2013Nirenberg interpolation inequality
-Sobolev inequality
-Bounded mean oscillation
-Mathematical analysis
-Complex analysis
+Thompson_sporadic_group
+Sporadic_group
+Inverse_Galois_problem
+Galois_group
+Monster_group
+Monstrous_moonshine
+Quadratic_pair
+Thompson_factorization
+Thompson_order_formula
+Thompson_subgroup
+Thompson_transitivity_theorem
+Thompson_uniqueness_theorem
+Modern_portfolio_theory
+Aerospace_engineering
+Event_study
+Roll%27s_critique
+Gagliardo%E2%80%93Nirenberg_interpolation_inequality
+Sobolev_inequality
+Bounded_mean_oscillation
+Mathematical_analysis
+Complex_analysis
 Geometry
-Elasticity (physics)
-Game of chance
-Martingale (probability theory)
-Fluid mechanics
+Elasticity_(physics)
+Game_of_chance
+Martingale_(probability_theory)
+Fluid_mechanics
 Turbulence
-List of unsolved problems in physics
+List_of_unsolved_problems_in_physics
 Immunology
-Adaptive immune system
+Adaptive_immune_system
 Lipopolysaccharide
-Herpes simplex virus
-Innate immune system
-Tumor necrosis factor alpha
+Herpes_simplex_virus
+Innate_immune_system
+Tumor_necrosis_factor_alpha
 Etanercept
-Rheumatoid arthritis
-Crohn's disease
+Rheumatoid_arthritis
+Crohn%27s_disease
 Psoriasis
-Genetic screen
-Toll-like receptor
-Systemic lupus erythematosus
+Genetic_screen
+Toll-like_receptor
+Systemic_lupus_erythematosus
 ENU
 Cytomegalovirus
-ATP-sensitive potassium channel
-Smooth muscle tissue
-Coronary circulation
-Human iron metabolism
+ATP-sensitive_potassium_channel
+Smooth_muscle_tissue
+Coronary_circulation
+Human_iron_metabolism
 Hearing
 Embryogenesis
-Exotic sphere
-Fary\u2013Milnor theorem
-Milnor\u2013Thurston kneading theory
-Differential topology
+Exotic_sphere
+Fary%E2%80%93Milnor_theorem
+Milnor%E2%80%93Thurston_kneading_theory
+Differential_topology
 K-theory
-Dynamical system
-Regular isotopy
-Link (knot theory)
-Link group
-Seven-dimensional space
+Dynamical_system
+Regular_isotopy
+Link_(knot_theory)
+Link_group
+Seven-dimensional_space
 Hypersphere
-Differential structure
-Singular point of a curve
+Differential_structure
+Singular_point_of_a_curve
 Topology
-Milnor map
+Milnor_map
 Homotopy
-Milnor number
+Milnor_number
 Hauptvermutung
-Simplicial complex
+Simplicial_complex
 Homeomorphism
-Combinatorial topology
+Combinatorial_topology
 Diffeomorphism
-List of things named after John Milnor
-Orbit portrait
-Government of Bulgaria
-Finance minister
-Access to finance
-Doing Business Report
-Debt-to-GDP ratio
-Game theory
-Rabin fairness
-Atomic-force microscopy
-Scanning tunneling microscope
+List_of_things_named_after_John_Milnor
+Orbit_portrait
+Government_of_Bulgaria
+Finance_minister
+Access_to_finance
+Doing_Business_Report
+Debt-to-GDP_ratio
+Game_theory
+Rabin_fairness
+Atomic-force_microscopy
+Scanning_tunneling_microscope
 Nanomechanics
 Nanorobotics
 Self-organization
 Self-assembly
 Nanometre
-Iron-based superconductor
-Electron mobility
-Thin-film transistor
+Iron-based_superconductor
+Electron_mobility
+Thin-film_transistor
 Superconductivity
-Ultracold atom
-Optical lattice
-Experimental physics
-Quantum phase transition
+Ultracold_atom
+Optical_lattice
+Experimental_physics
+Quantum_phase_transition
 Superfluidity
-Mott insulator
-Strongly correlated material
-Tonks\u2013Girardeau gas
-Bose\u2013Einstein condensate
-Hanbury Brown and Twiss effect
-International economics
-Andy Bernard
+Mott_insulator
+Strongly_correlated_material
+Tonks%E2%80%93Girardeau_gas
+Bose%E2%80%93Einstein_condensate
+Hanbury_Brown_and_Twiss_effect
+International_economics
+Andy_Bernard
 Crystallography
 Biochemistry
 X-ray
 Collagen
 Protein
-Protein biosynthesis
+Protein_biosynthesis
 RNA
 Ribozyme
 Stereochemistry
 Antibiotics
-Drug resistance
+Drug_resistance
 Synergy
-Drug design
-Cryo bio-crystallography
-List of RNA biologists
-DNA microarray
+Drug_design
+Cryo_bio-crystallography
+List_of_RNA_biologists
+DNA_microarray
 Topoisomerase
-Gene expression
+Gene_expression
 Cancer
 Physics
-String theory
+String_theory
 F-theory
-Cosmological constant
-Topological string theory
-Vafa\u2013Witten theorem
-Computational biology
-New institutional economics
-Managerial economics
-Right to property
-Law and economics
-Competition law
+Cosmological_constant
+Topological_string_theory
+Vafa%E2%80%93Witten_theorem
+Computational_biology
+New_institutional_economics
+Managerial_economics
+Right_to_property
+Law_and_economics
+Competition_law
 Regulation
-Emissions trading
-Exhaust gas
+Emissions_trading
+Exhaust_gas
 Pollutant
-Nirvana fallacy
+Nirvana_fallacy
 Oncology
-Molecular biology
-DNA repair
-Molecular biophysics
-Cancer research
-Circadian clock
+Molecular_biology
+DNA_repair
+Molecular_biophysics
+Cancer_research
+Circadian_clock
 Photolyase
-Pyrimidine dimer
+Pyrimidine_dimer
 Biophysics
-Period (gene)
+Period_(gene)
 Cryptochrome
-Jet lag
-Seasonal affective disorder
-Printed electronics
-Poly(p-phenylene vinylene)
+Jet_lag
+Seasonal_affective_disorder
+Printed_electronics
+Poly(p-phenylene_vinylene)
 OLED
-Innovation, Universities, Science and Skills Select Committee
-World Bank Chief Economist
-Undergraduate education
+Innovation,_Universities,_Science_and_Skills_Select_Committee
+World_Bank_Chief_Economist
+Undergraduate_education
 Rent-seeking
-International political economy
-Political economy
-Commercial policy
-Molecular genetics
-Dutch Cancer Society
+International_political_economy
+Political_economy
+Commercial_policy
+Molecular_genetics
+Dutch_Cancer_Society
 HNF1A
-Inorganic chemistry
-Organometallic chemistry
-Ziegler\u2013Natta catalyst
-Agostic interaction
+Inorganic_chemistry
+Organometallic_chemistry
+Ziegler%E2%80%93Natta_catalyst
+Agostic_interaction
 Methane
-Carbon nanotube
-Single-walled carbon nanohorn
-Green\u2013Davies\u2013Mingos rules
-Member of the Scottish Parliament
-Scotland Act 1998
-Member of parliament
-Under-Secretary of State for Scotland
-Cabinet Secretary for Health and Sport
-Minister for Housing and Welfare
+Carbon_nanotube
+Single-walled_carbon_nanohorn
+Green%E2%80%93Davies%E2%80%93Mingos_rules
+Member_of_the_Scottish_Parliament
+Scotland_Act_1998
+Member_of_parliament
+Under-Secretary_of_State_for_Scotland
+Cabinet_Secretary_for_Health_and_Sport
+Minister_for_Housing_and_Welfare
 Trident
-First Minister of Scotland
-United Kingdom general election, 1992
-United Kingdom general election, 1997
-United Kingdom general election, 2001
-Scottish Parliament election, 1999
-Electromagnetic spectrum
+First_Minister_of_Scotland
+United_Kingdom_general_election,_1992
+United_Kingdom_general_election,_1997
+United_Kingdom_general_election,_2001
+Scottish_Parliament_election,_1999
+Electromagnetic_spectrum
 Metamaterial
-Refractive index
-Cloak of invisibility
+Refractive_index
+Cloak_of_invisibility
 Cryptography
-Diffie\u2013Hellman key exchange
-Public-key cryptography
-Data Encryption Standard
-IEEE Information Theory Society
-Pohlig\u2013Hellman algorithm
+Diffie%E2%80%93Hellman_key_exchange
+Public-key_cryptography
+Data_Encryption_Standard
+IEEE_Information_Theory_Society
+Pohlig%E2%80%93Hellman_algorithm
 Hematology
-Bone marrow
+Bone_marrow
 Catenane
-Molecular knot
-Coordination complex
-Supramolecular chemistry
+Molecular_knot
+Coordination_complex
+Supramolecular_chemistry
 Cryptand
 Topoisomer
-Mechanically interlocked molecular architectures
-Tits group
-Tits alternative
-Building (mathematics)
-Incidence geometry
-Belgian nationality law
-Renunciation of citizenship
-Coxeter element
-Coxeter group
-Coxeter graph
-Algebraic group
-P-adic number
-(B, N) pair
-Group of Lie type
-Polar space
-Generalized polygon
-Finitely generated group
-Matrix group
-Index of a subgroup
-Free group
-Kantor\u2013Koecher\u2013Tits construction
-Kneser\u2013Tits conjecture
+Mechanically_interlocked_molecular_architectures
+Tits_group
+Tits_alternative
+Building_(mathematics)
+Incidence_geometry
+Belgian_nationality_law
+Renunciation_of_citizenship
+Coxeter_element
+Coxeter_group
+Coxeter_graph
+Algebraic_group
+P-adic_number
+(B,_N)_pair
+Group_of_Lie_type
+Polar_space
+Generalized_polygon
+Finitely_generated_group
+Matrix_group
+Index_of_a_subgroup
+Free_group
+Kantor%E2%80%93Koecher%E2%80%93Tits_construction
+Kneser%E2%80%93Tits_conjecture
 Microorganism
 Helicase
 Antimicrobial
-Field experiment
-Yrj\u00f6 Jahnsson Foundation
-Prospect theory
-Environmental economics
+Field_experiment
+Yrj%C3%B6_Jahnsson_Foundation
+Prospect_theory
+Environmental_economics
 Auction
 Microeconomics
-Gift economy
-Social preferences
-Endowment effect
-Contingent valuation
-Public good
-Peer pressure
-Statistical discrimination (economics)
+Gift_economy
+Social_preferences
+Endowment_effect
+Contingent_valuation
+Public_good
+Peer_pressure
+Statistical_discrimination_(economics)
 Matrilineality
-Information cascade
-Equity premium puzzle
-Strategic management
+Information_cascade
+Equity_premium_puzzle
+Strategic_management
 Sociology
 Innovation
 Institution
 Neutrino
-Cosmic ray
-Neutrino oscillation
-Solar neutrino problem
+Cosmic_ray
+Neutrino_oscillation
+Solar_neutrino_problem
 Virology
-Human papillomavirus
-Cervical cancer
+Human_papillomavirus
+Cervical_cancer
 Papillomaviridae
-Southern blot
+Southern_blot
 Oncovirus
 Vaccine
-Genital wart
-Merkel cell polyomavirus
+Genital_wart
+Merkel_cell_polyomavirus
 Patent
-Condensed matter physics
+Condensed_matter_physics
 Nanomotor
-Accelerating expansion of the universe
-Dark energy
-Nemesis (hypothetical star)
+Accelerating_expansion_of_the_universe
+Dark_energy
+Nemesis_(hypothetical_star)
 Supernova
-Supernova Cosmology Project
-Type Ia supernova
-White dwarf
-Chandrasekhar limit
-Binary star
-Cosmic distance ladder
+Supernova_Cosmology_Project
+Type_Ia_supernova
+White_dwarf
+Chandrasekhar_limit
+Binary_star
+Cosmic_distance_ladder
 Luminosity
 Redshift
-Hubble's law
-Joint Dark Energy Mission
+Hubble%27s_law
+Joint_Dark_Energy_Mission
 Astronomy
-Dark matter
-Data mining
-Mathematical optimization
+Dark_matter
+Data_mining
+Mathematical_optimization
 LIBSVM
-New Keynesian economics
-Business cycle
-Monetary policy
-Time series
-Taylor rule
+New_Keynesian_economics
+Business_cycle
+Monetary_policy
+Time_series
+Taylor_rule
 Inflation
-Output gap
-Divine coincidence
+Output_gap
+Divine_coincidence
 Unemployment
-Workforce productivity
-Real business-cycle theory
-New classical macroeconomics
-Vector autoregression
-Dynamic stochastic general equilibrium
-Polymer chemistry
+Workforce_productivity
+Real_business-cycle_theory
+New_classical_macroeconomics
+Vector_autoregression
+Dynamic_stochastic_general_equilibrium
+Polymer_chemistry
 Mountaineering
 Dendrimer
 Ethylene
-CP violation
-Cabibbo\u2013Kobayashi\u2013Maskawa matrix
-Spontaneous symmetry breaking
-Generation (particle physics)
-Bottom quark
+CP_violation
+Cabibbo%E2%80%93Kobayashi%E2%80%93Maskawa_matrix
+Spontaneous_symmetry_breaking
+Generation_(particle_physics)
+Bottom_quark
 Quark
-Structural biology
-Mesoscopic physics
-Molecular dynamics
-Foreign minister
+Structural_biology
+Mesoscopic_physics
+Molecular_dynamics
+Foreign_minister
 Software
 CASP
-Multiscale modeling
-Generalized method of moments
+Multiscale_modeling
+Generalized_method_of_moments
 Econometrics
-International finance
-Stochastic discount factor
-Sharpe ratio
-Hansen\u2013Jagannathan bound
-Knightian uncertainty
-Financial econometrics
-Computational chemistry
-Crystal structure
-Mesoporous silica
+International_finance
+Stochastic_discount_factor
+Sharpe_ratio
+Hansen%E2%80%93Jagannathan_bound
+Knightian_uncertainty
+Financial_econometrics
+Computational_chemistry
+Crystal_structure
+Mesoporous_silica
 Petrochemistry
 Gasoline
 Sun
 Earth
-Quantum mechanics
-Governor General of Canada
+Quantum_mechanics
+Governor_General_of_Canada
 Molecule
-Battery (electricity)
-Olefin metathesis
-Quantum optics
-Car\u2013Parrinello molecular dynamics
+Battery_(electricity)
+Olefin_metathesis
+Quantum_optics
+Car%E2%80%93Parrinello_molecular_dynamics
 Metadynamics
-Oxford Health Alliance
-Mechanism design
-Operations research
-Nash equilibrium
+Oxford_Health_Alliance
+Mechanism_design
+Operations_research
+Nash_equilibrium
 Strategyproofness
-Incentive compatibility
-Organ transplantation
+Incentive_compatibility
+Organ_transplantation
 Scopus
-Repugnant market
-Repugnancy costs
-Scheme (mathematics)
-Zariski's main theorem
-Modular form
-Functional equation
+Repugnant_market
+Repugnancy_costs
+Scheme_(mathematics)
+Zariski%27s_main_theorem
+Modular_form
+Functional_equation
 L-function
-Hodge theory
-Complex geometry
-Moduli space
-Stack (mathematics)
-Ramanujan\u2013Petersson conjecture
-Eigenvalues and eigenvectors
-\u00c9tale cohomology
-Hodge cycle
-Motive (algebraic geometry)
-Tannakian category
-Beck's monadicity theorem
-Shimura variety
-Belgian nobility
-Deligne\u2013Lusztig theory
-Moduli of algebraic curves
-Deligne\u2013Mumford stack
-Deligne cohomology
-Fourier\u2013Deligne transform
-Langlands\u2013Deligne local constant
-Deformation theory
-Operad theory
-Hochschild homology
-Special values of L-functions
-Algebraic number
-Algebraic geometry
-Complex multiplication
+Hodge_theory
+Complex_geometry
+Moduli_space
+Stack_(mathematics)
+Ramanujan%E2%80%93Petersson_conjecture
+Eigenvalues_and_eigenvectors
+%C3%89tale_cohomology
+Hodge_cycle
+Motive_(algebraic_geometry)
+Tannakian_category
+Beck%27s_monadicity_theorem
+Shimura_variety
+Belgian_nobility
+Deligne%E2%80%93Lusztig_theory
+Moduli_of_algebraic_curves
+Deligne%E2%80%93Mumford_stack
+Deligne_cohomology
+Fourier%E2%80%93Deligne_transform
+Langlands%E2%80%93Deligne_local_constant
+Deformation_theory
+Operad_theory
+Hochschild_homology
+Special_values_of_L-functions
+Algebraic_number
+Algebraic_geometry
+Complex_multiplication
 Monodromy
-E7\u00bd
-Representation theory
-Simple Lie group
-Causal inference
-Computer graphics
-Computational physics
-Level set
-Harry Potter (film series)
-Pirates of the Caribbean
-Computing platform
+E7%C2%BD
+Representation_theory
+Simple_Lie_group
+Causal_inference
+Computer_graphics
+Computational_physics
+Level_set
+Harry_Potter_(film_series)
+Pirates_of_the_Caribbean
+Computing_platform
 T-X
-Visual effects
+Visual_effects
 Revenue
 Surveillance
-Applied mathematics
+Applied_mathematics
 Aeronautics
-Motion picture credits
+Motion_picture_credits
 Tentacle
-Computational fluid dynamics
-Soft body dynamics
-Computer vision
+Computational_fluid_dynamics
+Soft_body_dynamics
+Computer_vision
 Biomechanics
-Motion capture
-Rendering (computer graphics)
+Motion_capture
+Rendering_(computer_graphics)
 Simulation
-Level set method
+Level_set_method
 Invention
 MOSFET
-IBM Fellow
+IBM_Fellow
 Photoelectrochemistry
-Titanium dioxide
+Titanium_dioxide
 Photocatalysis
 Diamond
 Electrochemistry
 Superhydrophilicity
 Photodissociation
-Self-cleaning glass
-DNA replication
-Vesicle (biology and chemistry)
+Self-cleaning_glass
+DNA_replication
+Vesicle_(biology_and_chemistry)
 Sec61
 COPII
-Bridge (instrument)
-Electronic business
-Quantum information
-No-cloning theorem
-Quantum entanglement
-Quantum teleportation
-Entanglement distillation
-Developmental biology
-Somatic cell nuclear transfer
+Bridge_(instrument)
+Electronic_business
+Quantum_information
+No-cloning_theorem
+Quantum_entanglement
+Quantum_teleportation
+Entanglement_distillation
+Developmental_biology
+Somatic_cell_nuclear_transfer
 Cloning
 Classics
 Zoology
 Xenopus
-Polarity in embryogenesis
-African clawed frog
+Polarity_in_embryogenesis
+African_clawed_frog
 Ploidy
 Gastrulation
-Western clawed frog
-Cytoplasmic hybrid
-Cell nucleus
+Western_clawed_frog
+Cytoplasmic_hybrid
+Cell_nucleus
 Blastula
-Messenger RNA
-Cellular differentiation
+Messenger_RNA
+Cellular_differentiation
 Reprogramming
-DNA methylation
+DNA_methylation
 Agnosticism
-Harveian Oration
-Neoclassical economics
-Arbitrage pricing theory
-Binomial options pricing model
-Cox\u2013Ingersoll\u2013Ross model
-Corporate finance
-Rational pricing
-Neoclassical finance
-International Association of Financial Engineers
-Financial market efficiency
+Harveian_Oration
+Neoclassical_economics
+Arbitrage_pricing_theory
+Binomial_options_pricing_model
+Cox%E2%80%93Ingersoll%E2%80%93Ross_model
+Corporate_finance
+Rational_pricing
+Neoclassical_finance
+International_Association_of_Financial_Engineers
+Financial_market_efficiency
 Rationality
 Tris(8-hydroxyquinolinato)aluminium
-Web of Science
+Web_of_Science
 Biology
-Toll (gene family)
-Bacillus thuringiensis
-Drosophila melanogaster
-Resampling (statistics)
-Bootstrapping (statistics)
+Toll_(gene_family)
+Bacillus_thuringiensis
+Drosophila_melanogaster
+Resampling_(statistics)
+Bootstrapping_(statistics)
 Algebra
-Differential geometry
-Statistical inference
-Nontransitive dice
-Empirical Bayes method
-Least-angle regression
-Fisher information
-Likelihood function
-Observed information
-Sequential analysis
-Self-assembled monolayer
-Johnson\u2013Lindenstrauss lemma
-Talpiot program
-Ergodic theory
-Number theory
-Littlewood conjecture
-Mean dimension
-Instrumental variable
-Maimonides' rule
-Silicon photonics
+Differential_geometry
+Statistical_inference
+Nontransitive_dice
+Empirical_Bayes_method
+Least-angle_regression
+Fisher_information
+Likelihood_function
+Observed_information
+Sequential_analysis
+Self-assembled_monolayer
+Johnson%E2%80%93Lindenstrauss_lemma
+Talpiot_program
+Ergodic_theory
+Number_theory
+Littlewood_conjecture
+Mean_dimension
+Instrumental_variable
+Maimonides%27_rule
+Silicon_photonics
 Slot-waveguide
-Optical modulator
-Minimum wage
-Fast food
-Difference in differences
+Optical_modulator
+Minimum_wage
+Fast_food
+Difference_in_differences
 Immigration
 Epidemiology
-Genetic epidemiology
-C-reactive protein
-Coronary artery disease
-Elementary particle
+Genetic_epidemiology
+C-reactive_protein
+Coronary_artery_disease
+Elementary_particle
 Supersymmetry
-Yang\u2013Mills theory
+Yang%E2%80%93Mills_theory
 Supergravity
-Conformal field theory
-Conformal bootstrap
-Conformal symmetry
-Operator product expansion
-General relativity
+Conformal_field_theory
+Conformal_bootstrap
+Conformal_symmetry
+Operator_product_expansion
+General_relativity
 INSPIRE-HEP
-Chaos theory
-Correlation dimension
-Fractal dimension
+Chaos_theory
+Correlation_dimension
+Fractal_dimension
 Attractor
-Contact process (mathematics)
-Universality class
-Directed percolation
-Statistical physics
-Complex systems
-Reaction\u2013diffusion system
-Cellular automaton
+Contact_process_(mathematics)
+Universality_class
+Directed_percolation
+Statistical_physics
+Complex_systems
+Reaction%E2%80%93diffusion_system
+Cellular_automaton
 Fractal
-Ising model
-Self-organized criticality
+Ising_model
+Self-organized_criticality
 Percolation
-Complex network
-Epidemic models on lattices
-Mutual information
-Forecasting complexity
-Measure-preserving dynamical system
+Complex_network
+Epidemic_models_on_lattices
+Mutual_information
+Forecasting_complexity
+Measure-preserving_dynamical_system
 Judaism
 Talmud
 Methodology
 Ethics
-Market (economics)
-Open innovation
-Signal recognition particle
-Unfolded protein response
-Endoplasmic reticulum
+Market_(economics)
+Open_innovation
+Signal_recognition_particle
+Unfolded_protein_response
+Endoplasmic_reticulum
 Pathology
 MD
-Regulatory T cell
-Autoimmune disease
-Chemical physics
-Quantum dot
+Regulatory_T_cell
+Autoimmune_disease
+Chemical_physics
+Quantum_dot
 Nanotechnology
 Nanocrystal
 Colloid
-Public economics
-Feldstein\u2013Horioka puzzle
-Public finance
-Chair of the Federal Reserve
-Harvard Crimson
-50 Most Influential (Bloomberg Markets ranking)
+Public_economics
+Feldstein%E2%80%93Horioka_puzzle
+Public_finance
+Chair_of_the_Federal_Reserve
+Harvard_Crimson
+50_Most_Influential_(Bloomberg_Markets_ranking)
 Socioeconomics
-Distonic ion
+Distonic_ion
 Angiogenesis
-Macular degeneration
-Diabetic retinopathy
-Vascular endothelial growth factor
-Angiogenesis inhibitor
+Macular_degeneration
+Diabetic_retinopathy
+Vascular_endothelial_growth_factor
+Angiogenesis_inhibitor
 Bevacizumab
 Ranibizumab
-T cell
-Aryl hydrocarbon receptor
+T_cell
+Aryl_hydrocarbon_receptor
 Autoimmunity
-Bell test experiments
-Reductio ad absurdum
-EPR paradox
-Correlation and dependence
-Photon polarization
+Bell_test_experiments
+Reductio_ad_absurdum
+EPR_paradox
+Correlation_and_dependence
+Photon_polarization
 Photon
-Bell's theorem
-CHSH inequality
-Loopholes in Bell test experiments
-Principle of locality
-Local hidden variable theory
-Laser cooling
-Quantum chemistry
+Bell%27s_theorem
+CHSH_inequality
+Loopholes_in_Bell_test_experiments
+Principle_of_locality
+Local_hidden_variable_theory
+Laser_cooling
+Quantum_chemistry
 Biomolecule
-Nuclear magnetic resonance spectroscopy
+Nuclear_magnetic_resonance_spectroscopy
 J-coupling
-Electron paramagnetic resonance
-Karplus equation
-Coupling constant
-Dihedral angle
-Nuclear magnetic resonance spectroscopy of proteins
+Electron_paramagnetic_resonance
+Karplus_equation
+Coupling_constant
+Dihedral_angle
+Nuclear_magnetic_resonance_spectroscopy_of_proteins
 Aprotinin
-Super-Poissonian distribution
-Cauchy\u2013Schwarz inequality
+Super-Poissonian_distribution
+Cauchy%E2%80%93Schwarz_inequality
 Genomics
 Ensembl
 ENCODE
 Bookmaker
-Noncoding DNA
+Noncoding_DNA
 Internship
-Financial services
-Human genome
-Computational genomics
+Financial_services
+Human_genome
+Computational_genomics
 Animal
-Velvet assembler
+Velvet_assembler
 Pfam
 InterPro
 BioPerl
 HMMER
-Open-source software
-Open science
-Creative Commons license
-RNA splicing
-Sequence alignment
-Sequence assembly
-Data integration
-Gene prediction
-Enhancer (genetics)
-Promoter (genetics)
+Open-source_software
+Open_science
+Creative_Commons_license
+RNA_splicing
+Sequence_alignment
+Sequence_assembly
+Data_integration
+Gene_prediction
+Enhancer_(genetics)
+Promoter_(genetics)
 Polymath
-Human genetics
-Comparative genomics
-Health care
-Health economics
-Development economics
-List of IMF Economic Counsellors
+Human_genetics
+Comparative_genomics
+Health_care
+Health_economics
+Development_economics
+List_of_IMF_Economic_Counsellors
 EconTalk
-Topological insulator
-Molecular beam epitaxy
-Quantum spin Hall effect
-Blum\u2013Goldwasser cryptosystem
-Goldwasser\u2013Micali cryptosystem
-Theory of computation
-Computational complexity theory
-Computational number theory
-Zero-knowledge proof
-Cryptographic protocol
-NP (complexity)
-Theoretical computer science
+Topological_insulator
+Molecular_beam_epitaxy
+Quantum_spin_Hall_effect
+Blum%E2%80%93Goldwasser_cryptosystem
+Goldwasser%E2%80%93Micali_cryptosystem
+Theory_of_computation
+Computational_complexity_theory
+Computational_number_theory
+Zero-knowledge_proof
+Cryptographic_protocol
+NP_(complexity)
+Theoretical_computer_science
 Spectroscopy
-Surface science
+Surface_science
 Photonics
 Photoconductivity
-IBM Academy of Technology
-Applied physics
-Charge-coupled device
-Supermarine Spitfire
-Aircraft carrier
-Ruby laser
-Integrated circuit
-Geometric phase
+IBM_Academy_of_Technology
+Applied_physics
+Charge-coupled_device
+Supermarine_Spitfire
+Aircraft_carrier
+Ruby_laser
+Integrated_circuit
+Geometric_phase
 Optics
-Quantum chaos
-Airy beam
-Berry\u2013Robbins problem
-Chinese Chemical Society
-Molecular electronics
+Quantum_chaos
+Airy_beam
+Berry%E2%80%93Robbins_problem
+Chinese_Chemical_Society
+Molecular_electronics
 Nanowire
-Legal origins theory
-Big push model
-Civil law (legal system)
-Breakthrough Breast Cancer
+Legal_origins_theory
+Big_push_model
+Civil_law_(legal_system)
+Breakthrough_Breast_Cancer
 BRCA2
-Density functional theory
-Public choice
-Institutional analysis
+Density_functional_theory
+Public_choice
+Institutional_analysis
 Commons
-Political science
-Collective action
-Trust (emotion)
+Political_science
+Collective_action
+Trust_(emotion)
 Cooperation
-Common-pool resource
-Institutional analysis and development framework
+Common-pool_resource
+Institutional_analysis_and_development_framework
 Africa
-Natural resource management
-Reciprocity (cultural anthropology)
-Socio-ecological system
+Natural_resource_management
+Reciprocity_(cultural_anthropology)
+Socio-ecological_system
 Adage
 Property
 Resource
-List of eponymous laws
+List_of_eponymous_laws
 Fishery
-Oil field
-Conventional wisdom
+Oil_field
+Conventional_wisdom
 Privatization
-Pancreatic cancer
-Hayek Lecture
-Coproduction (public services)
-Two-dimensional electron gas
-Topological order
-Quantum Hall effect
+Pancreatic_cancer
+Hayek_Lecture
+Coproduction_(public_services)
+Two-dimensional_electron_gas
+Topological_order
+Quantum_Hall_effect
 Spintronics
-Many-body theory
-Majorana fermion
-Quantum computing
-Topological quantum computer
-High-electron-mobility transistor
+Many-body_theory
+Majorana_fermion
+Quantum_computing
+Topological_quantum_computer
+High-electron-mobility_transistor
 Polaron
 Quasiparticle
-Quantum wire
-Quantum well
+Quantum_wire
+Quantum_well
 Superlattice
-Hot-carrier injection
-Anderson localization
-Many-body problem
-Spin transistor
-Magnetic semiconductor
-Quantum decoherence
-Fractional quantum Hall effect
-Thin film
-Artinian ring
-Algebra over a field
-Commutative algebra
-Homological algebra
-Auslander\u2013Reiten theory
-Order of St. Olav
-Krull\u2013Schmidt category
-G protein\u2013coupled receptor
+Hot-carrier_injection
+Anderson_localization
+Many-body_problem
+Spin_transistor
+Magnetic_semiconductor
+Quantum_decoherence
+Fractional_quantum_Hall_effect
+Thin_film
+Artinian_ring
+Algebra_over_a_field
+Commutative_algebra
+Homological_algebra
+Auslander%E2%80%93Reiten_theory
+Order_of_St._Olav
+Krull%E2%80%93Schmidt_category
+G_protein%E2%80%93coupled_receptor
 Arrestin
-International trade
-New trade theory
-Economic geography
+International_trade
+New_trade_theory
+Economic_geography
 Columnist
-Economies of scale
-Constant elasticity of substitution
-Liquidity trap
-Currency crisis
-Income distribution
+Economies_of_scale
+Constant_elasticity_of_substitution
+Liquidity_trap
+Currency_crisis
+Income_distribution
 Tax
-Psychohistory (fictional)
-The Theory of Interstellar Trade
-Diversity (business)
-Heckscher\u2013Ohlin model
-Comparative advantage
+Psychohistory_(fictional)
+The_Theory_of_Interstellar_Trade
+Diversity_(business)
+Heckscher%E2%80%93Ohlin_model
+Comparative_advantage
 Productivity
-Home market effect
-Ceteris paribus
-Vendor lock-in
-Free trade
-Industrial policy
-Economies of agglomeration
-Factor price
-Speculative attack
-Fixed exchange-rate system
-Eco-economic decoupling
-Inflation targeting
-General equilibrium theory
-New economy
+Home_market_effect
+Ceteris_paribus
+Vendor_lock-in
+Free_trade
+Industrial_policy
+Economies_of_agglomeration
+Factor_price
+Speculative_attack
+Fixed_exchange-rate_system
+Eco-economic_decoupling
+Inflation_targeting
+General_equilibrium_theory
+New_economy
 Protectionism
-Economic inequality
+Economic_inequality
 Myth
 Investment
 Workforce
-Total factor productivity
-Foreign exchange controls
-Government of Malaysia
-Subprime mortgage crisis
-Derivative (finance)
-Investment banking
-Commercial bank
+Total_factor_productivity
+Foreign_exchange_controls
+Government_of_Malaysia
+Subprime_mortgage_crisis
+Derivative_(finance)
+Investment_banking
+Commercial_bank
 Insurance
-Saltwater and freshwater economics
-Efficient-market hypothesis
-Rational expectations
-IS\u2013LM model
-Post-Keynesian economics
-Paradox of toil
-Paradox of flexibility
-Anti-globalization movement
-Strategic trade theory
-Rent regulation
+Saltwater_and_freshwater_economics
+Efficient-market_hypothesis
+Rational_expectations
+IS%E2%80%93LM_model
+Post-Keynesian_economics
+Paradox_of_toil
+Paradox_of_flexibility
+Anti-globalization_movement
+Strategic_trade_theory
+Rent_regulation
 Zoning
-Natural selection
-Agricultural subsidy
-Living wage
-United Kingdom general election, 2010
-List of newspaper columnists
-Intensive care medicine
-Jean-Louis Vincent
-Economic development
-Financial institution
-Financial regulation
-Financial innovation
-Bank regulation
+Natural_selection
+Agricultural_subsidy
+Living_wage
+United_Kingdom_general_election,_2010
+List_of_newspaper_columnists
+Intensive_care_medicine
+Jean-Louis_Vincent
+Economic_development
+Financial_institution
+Financial_regulation
+Financial_innovation
+Bank_regulation
 Corruption
-Negligent homicide
-Global financial system
-Search theory
-Matching theory (economics)
-RNA interference
+Negligent_homicide
+Global_financial_system
+Search_theory
+Matching_theory_(economics)
+RNA_interference
 CRISPR
-Group I catalytic intron
+Group_I_catalytic_intron
 Tetrahymena
-Phase problem
+Phase_problem
 Osmium
 Hexamethylenetetramine
-Transfer RNA
+Transfer_RNA
 Synchrotron
-Hepatitis delta virus ribozyme
-Internal ribosome entry site
+Hepatitis_delta_virus_ribozyme
+Internal_ribosome_entry_site
 MicroRNA
 Cas9
-Solvated electron
+Solvated_electron
 Cardiology
 Atherosclerosis
 Thrombosis
-Heart transplantation
-Lung transplantation
-Long-term experiment
-Giant magnetoresistance
-Spin valve
-Racetrack memory
-Shapley value
-Shapley\u2013Shubik power index
-Stochastic game
-Bondareva\u2013Shapley theorem
-Shapley\u2013Folkman lemma
-Stable marriage problem
-Potential game
-Core (game theory)
-Market game
-Authority distribution
-So Long Sucker
-Hip fracture
-Kriegspiel (chess)
-Cooperative game
-Weighted voting
-Normal-form game
+Heart_transplantation
+Lung_transplantation
+Long-term_experiment
+Giant_magnetoresistance
+Spin_valve
+Racetrack_memory
+Shapley_value
+Shapley%E2%80%93Shubik_power_index
+Stochastic_game
+Bondareva%E2%80%93Shapley_theorem
+Shapley%E2%80%93Folkman_lemma
+Stable_marriage_problem
+Potential_game
+Core_(game_theory)
+Market_game
+Authority_distribution
+So_Long_Sucker
+Hip_fracture
+Kriegspiel_(chess)
+Cooperative_game
+Weighted_voting
+Normal-form_game
 Utility
-Institute for Operations Research and the Management Sciences
-Solid-state physics
-Earth science
-Hybrid functional
-Van der Waals force
-Google Scholar
-Electronic structure
-ORCA (Quantum Chemistry Program)
-Mergers and acquisitions
-Quantum metrology
-Quantum information science
+Institute_for_Operations_Research_and_the_Management_Sciences
+Solid-state_physics
+Earth_science
+Hybrid_functional
+Van_der_Waals_force
+Google_Scholar
+Electronic_structure
+ORCA_(Quantum_Chemistry_Program)
+Mergers_and_acquisitions
+Quantum_metrology
+Quantum_information_science
 Ion
 Quasicrystal
 Titanium
 Aluminium
-Chemical vapor deposition
-Electrical resistivity and conductivity
+Chemical_vapor_deposition
+Electrical_resistivity_and_conductivity
 Quasiperiodicity
 Structure
-Order and disorder (physics)
-Bravais lattice
-Translational symmetry
-Israeli presidential election, 2014
-Science and technology in Israel
-Nash embedding theorem
-Nash functions
-Nash\u2013Moser theorem
-Complex system
+Order_and_disorder_(physics)
+Bravais_lattice
+Translational_symmetry
+Israeli_presidential_election,_2014
+Science_and_technology_in_Israel
+Nash_embedding_theorem
+Nash_functions
+Nash%E2%80%93Moser_theorem
+Complex_system
 Computing
-Evolutionary biology
+Evolutionary_biology
 Accounting
-Game of skill
-Military theory
-Nonlinear system
-Paranoid schizophrenia
-Traffic collision
-Non-cooperative game
-Real algebraic geometry
-Riemannian manifold
+Game_of_skill
+Military_theory
+Nonlinear_system
+Paranoid_schizophrenia
+Traffic_collision
+Non-cooperative_game
+Real_algebraic_geometry
+Riemannian_manifold
 Isometry
 Submanifold
-Euclidean space
-Singularity theory
-Hilbert's nineteenth problem
+Euclidean_space
+Singularity_theory
+Hilbert%27s_nineteenth_problem
 Encryption
-Computational hardness assumption
+Computational_hardness_assumption
 Paranoia
-Psychiatric hospital
+Psychiatric_hospital
 Antipsychotic
-Pharmaceutical drug
-Atypical antipsychotic
+Pharmaceutical_drug
+Atypical_antipsychotic
 Communitarianism
-Bipolar disorder
-Strike action
-Evolutionary psychology
+Bipolar_disorder
+Strike_action
+Evolutionary_psychology
 Debt
-Ideal money
-Political philosophy
-Indecent exposure
-Classified information
+Ideal_money
+Political_philosophy
+Indecent_exposure
+Classified_information
 Schizophrenia
 Delusion
 Taxicab
-Hex (board game)
+Hex_(board_game)
 Fullerene
-White test
-Heteroscedasticity-consistent standard errors
-Quasi-maximum likelihood estimate
+White_test
+Heteroscedasticity-consistent_standard_errors
+Quasi-maximum_likelihood_estimate
 Interferon
-Interferon regulatory factors
-Immunity (medical)
-Signal transduction
-Complementary DNA
+Interferon_regulatory_factors
+Immunity_(medical)
+Signal_transduction
+Complementary_DNA
 Interleukin
-Poverty reduction
-Family economics
+Poverty_reduction
+Family_economics
 Causality
-Randomized controlled trial
+Randomized_controlled_trial
 Genius
-Symmetry breaking
-Electroweak interaction
-Higgs boson
-Higgs mechanism
-Subatomic particle
+Symmetry_breaking
+Electroweak_interaction
+Higgs_boson
+Higgs_mechanism
+Subatomic_particle
 Mass
-W and Z bosons
-Scalar boson
-1851 Research Fellowship
+W_and_Z_bosons
+Scalar_boson
+1851_Research_Fellowship
 Hitchhiking
-Goldstone boson
+Goldstone_boson
 Electronvolt
-Politics of Edinburgh
+Politics_of_Edinburgh
 Knight
-Orders, decorations, and medals of the United Kingdom
-Genetically modified organism
+Orders,_decorations,_and_medals_of_the_United_Kingdom
+Genetically_modified_organism
 Fundamentalism
-Pearl vortex
-Bayesian network
-Jewish atheism
-Belief propagation
+Pearl_vortex
+Bayesian_network
+Jewish_atheism
+Belief_propagation
 Probability
-Cognitive model
-Digital Journal
-Nanoscopic scale
-Nanoelectromechanical systems
-Room temperature
+Cognitive_model
+Digital_Journal
+Nanoscopic_scale
+Nanoelectromechanical_systems
+Room_temperature
 Lithography
-Graphene nanoribbons
-Endogenous growth theory
+Graphene_nanoribbons
+Endogenous_growth_theory
 Paradigm
-Greenberger\u2013Horne\u2013Zeilinger state
-The Hitchhiker's Guide to the Galaxy
-Quantum cryptography
-Interference (wave propagation)
+Greenberger%E2%80%93Horne%E2%80%93Zeilinger_state
+The_Hitchhiker%27s_Guide_to_the_Galaxy
+Quantum_cryptography
+Interference_(wave_propagation)
 Neutron
 Macromolecule
-Physics and Astronomy Classification Scheme
-Cloud computing
-Matter wave
-Radiation pressure
-Bell state
-Leggett inequality
-Neutron interferometer
-Double-slit experiment
-Phase space
-List of minor planets: 48001\u201349000
+Physics_and_Astronomy_Classification_Scheme
+Cloud_computing
+Matter_wave
+Radiation_pressure
+Bell_state
+Leggett_inequality
+Neutron_interferometer
+Double-slit_experiment
+Phase_space
+List_of_minor_planets_48001%E2%80%9349000
 Interview
-Recombinant DNA
+Recombinant_DNA
 Histone
 Yeast
-Histone code
+Histone_code
 Epigenetics
-Metamaterial cloaking
+Metamaterial_cloaking
 Invisibility
-Low-energy electron diffraction
-Extended X-ray absorption fine structure
-Angle-resolved photoemission spectroscopy
-Inverse photoemission spectroscopy
+Low-energy_electron_diffraction
+Extended_X-ray_absorption_fine_structure
+Angle-resolved_photoemission_spectroscopy
+Inverse_photoemission_spectroscopy
 Microwave
 Gene
 Chromatin
 Acetylation
 Methylation
 Phosphorylation
-Service-dominant logic
-Auger effect
-High-temperature superconductivity
-Iron(III) oxide
-Iron(II,III) oxide
-Nuclear magnetic resonance
-Hubbard model
-Nickel(II) oxide
-Heart failure
-Cardiac pacemaker
-International Studies of Infarct Survival
-Artificial cardiac pacemaker
+Service-dominant_logic
+Auger_effect
+High-temperature_superconductivity
+Iron(III)_oxide
+Iron(II,III)_oxide
+Nuclear_magnetic_resonance
+Hubbard_model
+Nickel(II)_oxide
+Heart_failure
+Cardiac_pacemaker
+International_Studies_of_Infarct_Survival
+Artificial_cardiac_pacemaker
 Avermectin
 Nematode
 Parasitism
-Streptomyces avermitilis
+Streptomyces_avermitilis
 Onchocerciasis
-Lymphatic filariasis
-Spot market
-Electric power
-Contract theory
-Economic opportunism
-Bounded rationality
-Xerox Alto
-SDS 940
+Lymphatic_filariasis
+Spot_market
+Electric_power
+Contract_theory
+Economic_opportunism
+Bounded_rationality
+Xerox_Alto
+SDS_940
 Ethernet
-Local area network
-Computer hardware
-Microsoft Tablet PC
-Tablet computer
-British nationality law
-Fiber-optic communication
-List of minor planets: 3001\u20134000
-Asian of the Century
-Gao (surname)
-Ancestral home (Chinese)
-Chinese classics
+Local_area_network
+Computer_hardware
+Microsoft_Tablet_PC
+Tablet_computer
+British_nationality_law
+Fiber-optic_communication
+List_of_minor_planets_3001%E2%80%934000
+Asian_of_the_Century
+Gao_(surname)
+Ancestral_home_(Chinese)
+Chinese_classics
 Keynote
-Global Communications Conference
-Alzheimer's disease
+Global_Communications_Conference
+Alzheimer%27s_disease
 Wuxia
 Intellectual
-Fluid dynamics
-Huang (surname)
-Fused quartz
+Fluid_dynamics
+Huang_(surname)
+Fused_quartz
 Attenuation
-Physical optics
+Physical_optics
 Decibel
 Scattering
-Copper wire and cable
-Information and communications technology
+Copper_wire_and_cable
+Information_and_communications_technology
 Polymer
-Fatigue limit
+Fatigue_limit
 Terabit
-Single-mode optical fiber
-Multi-mode optical fiber
+Single-mode_optical_fiber
+Multi-mode_optical_fiber
 Visionary
-Helium\u2013neon laser
-Environmental degradation
-Land reclamation in Hong Kong
-Hong Kong Affairs Advisor
-Honorary citizenship
-Optical Fiber Conference
+Helium%E2%80%93neon_laser
+Environmental_degradation
+Land_reclamation_in_Hong_Kong
+Hong_Kong_Affairs_Advisor
+Honorary_citizenship
+Optical_Fiber_Conference
 Souvenir
-Definitive stamp
-Sheet of stamps
-Blue plaque
-Hong Kong order of precedence
+Definitive_stamp
+Sheet_of_stamps
+Blue_plaque
+Hong_Kong_order_of_precedence
 Nucleon
 Cyclotron
-Risk analysis
-Probability theory
-Percolation theory
-Hexagonal lattice
-Riemann surface
-Schramm\u2013Loewner evolution
-Canadian nationality law
-Dendritic cell
+Risk_analysis
+Probability_theory
+Percolation_theory
+Hexagonal_lattice
+Riemann_surface
+Schramm%E2%80%93Loewner_evolution
+Canadian_nationality_law
+Dendritic_cell
 Electrostatics
-Enzyme catalysis
-Computer simulation
-Cartesian coordinate system
-Force field (chemistry)
-Molecular mechanics
-QM/MM
-Perturbation theory
-Stochastic calculus
-Stochastic partial differential equation
-Regius Professor of Mathematics
-H\u00f6rmander's condition
-Lyapunov function
+Enzyme_catalysis
+Computer_simulation
+Cartesian_coordinate_system
+Force_field_(chemistry)
+Molecular_mechanics
+MM
+Perturbation_theory
+Stochastic_calculus
+Stochastic_partial_differential_equation
+Regius_Professor_of_Mathematics
+H%C3%B6rmander%27s_condition
+Lyapunov_function
 Ergodicity
-Markov process
-Multiple-scale analysis
-Asymptotic homogenization
-Transition path sampling
+Markov_process
+Multiple-scale_analysis
+Asymptotic_homogenization
+Transition_path_sampling
 Macintosh
-Zuse Institute Berlin
-Doug Green
+Zuse_Institute_Berlin
+Doug_Green
 Marketing
-Services marketing
-Service quality
+Services_marketing
+Service_quality
 SERVQUAL
-Inorganic compound
-Chemical synthesis
-Reactivity (chemistry)
-Transition state
-Chemical element
-Iron-sulfur cluster
-Bioinorganic chemistry
+Inorganic_compound
+Chemical_synthesis
+Reactivity_(chemistry)
+Transition_state
+Chemical_element
+Iron-sulfur_cluster
+Bioinorganic_chemistry
 Nitrogenase
-Carbon monoxide dehydrogenase
-Biomimetic synthesis
+Carbon_monoxide_dehydrogenase
+Biomimetic_synthesis
 Molybdenum
 Tungsten
 Cadherin
-Consumption (economics)
-Welfare definition of economics
-Almost ideal demand system
-Chemical substance
+Consumption_(economics)
+Welfare_definition_of_economics
+Almost_ideal_demand_system
+Chemical_substance
 Magnetism
 Sunitinib
-VEGF receptor
-International development
+VEGF_receptor
+International_development
 Blog
-Transition economy
-Productivity world
-Panacea (medicine)
-Debt relief
+Transition_economy
+Productivity_world
+Panacea_(medicine)
+Debt_relief
 Colonialism
 Utopia
-Mosquito net
-Human rights
-Single-molecule experiment
+Mosquito_net
+Human_rights
+Single-molecule_experiment
 Nanobiotechnology
 Christian
-Theistic evolution
+Theistic_evolution
 Nanolithography
 Transistor
 Nanopore
 Bacteria
-Artificial cell
-Mathematical statistics
-Stochastic geometry
-Statistical Society of Australia
+Artificial_cell
+Mathematical_statistics
+Stochastic_geometry
+Statistical_Society_of_Australia
 Radiophysics
-Radio astronomy
-Teichm\u00fcller space
-Hyperbolic geometry
-Symplectic geometry
-Closed geodesic
-Theorem of the three geodesics
-Earthquake map
-Dynamics (mechanics)
-List of International Congresses of Mathematicians Plenary and Invited Speakers
+Radio_astronomy
+Teichm%C3%BCller_space
+Hyperbolic_geometry
+Symplectic_geometry
+Closed_geodesic
+Theorem_of_the_three_geodesics
+Earthquake_map
+Dynamics_(mechanics)
+List_of_International_Congresses_of_Mathematicians_Plenary_and_Invited_Speakers
 Benzene
-Influenza A virus subtype H1N1
+Influenza_A_virus_subtype_H1N1
 Deworming
-Slow light
-Metre per second
-Quantum key distribution
-Solar cell
-Nuclear power
+Slow_light
+Metre_per_second
+Quantum_key_distribution
+Solar_cell
+Nuclear_power
 Matter
-Electromagnetically induced transparency
-Absolute zero
-Rational choice theory
-Parameter identification problem
+Electromagnetically_induced_transparency
+Absolute_zero
+Rational_choice_theory
+Parameter_identification_problem
 Decision-making
-Social policy
+Social_policy
 Prediction
-Social relation
+Social_relation
 Risk
-Diet (nutrition)
+Diet_(nutrition)
 Tobacco
-Epidemiology of cancer
-Head and neck cancer
-Autoregressive conditional heteroskedasticity
-Financial market
-Volatility (finance)
-Physical cosmology
-Cosmic background radiation
-Electromagnetic radiation
-Big Bang
-Institute of Petroleum
+Epidemiology_of_cancer
+Head_and_neck_cancer
+Autoregressive_conditional_heteroskedasticity
+Financial_market
+Volatility_(finance)
+Physical_cosmology
+Cosmic_background_radiation
+Electromagnetic_radiation
+Big_Bang
+Institute_of_Petroleum
 Petroleum
 Biosensor
 Bioelectronics
 Lab-on-a-chip
-Mott transition
-Colossal magnetoresistance
+Mott_transition
+Colossal_magnetoresistance
 Multiferroics
-Magnetic skyrmion
-Computational statistics
-Marine biology
-Green fluorescent protein
-Vargula hilgendorfii
-Aequorea victoria
+Magnetic_skyrmion
+Computational_statistics
+Marine_biology
+Green_fluorescent_protein
+Vargula_hilgendorfii
+Aequorea_victoria
 Aequorin
 Bioluminescence
 SO(5)
-Mercury telluride
-Bismuth selenide
-Bismuth telluride
+Mercury_telluride
+Bismuth_selenide
+Bismuth_telluride
 Photovoltaics
-Nanocrystalline material
+Nanocrystalline_material
 Peptide
 Transferase
-Carboxypeptidase A
-Aspartate carbamoyltransferase
+Carboxypeptidase_A
+Aspartate_carbamoyltransferase
 50S
-X-ray crystallography
-Stille reaction
-Carbon\u2013carbon bond
+X-ray_crystallography
+Stille_reaction
+Carbon%E2%80%93carbon_bond
 Hydrogen
 Amide
 Alcohol
 Amine
-Renewable energy
-Negishi coupling
-Palladium-catalyzed coupling reactions
-Organic synthesis
-Quantum field theory
-Spin glass
-Quantum chromodynamics
+Renewable_energy
+Negishi_coupling
+Palladium-catalyzed_coupling_reactions
+Organic_synthesis
+Quantum_field_theory
+Spin_glass
+Quantum_chromodynamics
 DGLAP
-Kardar\u2013Parisi\u2013Zhang equation
+Kardar%E2%80%93Parisi%E2%80%93Zhang_equation
 Ariadne
 Complexity
-UZ Leuven
-Acute coronary syndrome
+UZ_Leuven
+Acute_coronary_syndrome
 Thrombolysis
 Antithrombotic
-Gallop rhythm
-Tissue plasminogen activator
-Marginal cost
-Urban economics
-Economics of religion
-Chronic myelogenous leukemia
-Gastrointestinal stromal tumor
+Gallop_rhythm
+Tissue_plasminogen_activator
+Marginal_cost
+Urban_economics
+Economics_of_religion
+Chronic_myelogenous_leukemia
+Gastrointestinal_stromal_tumor
 Oncogene
-Protein kinase
+Protein_kinase
 Druggability
-Corporate governance
-Neo-Keynesian economics
-Baumol\u2013Tobin model
-Baumol's cost disease
-Contestable market
-Transactions demand
-Pigovian tax
-Market failure
-Capital market
-Capital budgeting
-Calcium imaging
-Wild type
-Point mutation
-Intensity (physics)
+Corporate_governance
+Neo-Keynesian_economics
+Baumol%E2%80%93Tobin_model
+Baumol%27s_cost_disease
+Contestable_market
+Transactions_demand
+Pigovian_tax
+Market_failure
+Capital_market
+Capital_budgeting
+Calcium_imaging
+Wild_type
+Point_mutation
+Intensity_(physics)
 Photobleaching
 Chromophore
 Oxygen
 Phytochrome
-Multicellular organism
+Multicellular_organism
 Jellyfish
 Genetics
-Site-directed mutagenesis
+Site-directed_mutagenesis
 Tetrapyrrole
 Fura-2
 Indo-1
 Calmodulin
-Cameleon (protein)
+Cameleon_(protein)
 FlAsH-EDT2
-National Engineers Week (U.S.)
-Qian (surname)
-Genealogy book
-Ballistic missile
+National_Engineers_Week_(U.S.)
+Qian_(surname)
+Genealogy_book
+Ballistic_missile
 Exoplanet
-Main sequence
+Main_sequence
 Star
-51 Pegasi
-Doppler spectroscopy
-51 Pegasi b
-Hot Jupiter
-Photonic crystal
-Economic sociology
+51_Pegasi
+Doppler_spectroscopy
+51_Pegasi_b
+Hot_Jupiter
+Photonic_crystal
+Economic_sociology
 Information
 Fad
-Capability-based security
-Bennett's laws
-Information theory
-Reversible computing
-Maxwell's demon
+Capability-based_security
+Bennett%27s_laws
+Information_theory
+Reversible_computing
+Maxwell%27s_demon
 Thermodynamics
-Bennett acceptance ratio
+Bennett_acceptance_ratio
 BB84
-Algorithmic information theory
-Greek Cypriots
-Economic policy
-Structural change
+Algorithmic_information_theory
+Greek_Cypriots
+Economic_policy
+Structural_change
 Bryostatin
 Saxitoxin
 Gonyautoxin
 Brevetoxin
 Actinobacteria
-Caenorhabditis elegans
-Torreyanic acid
-Guanacastepene A
+Caenorhabditis_elegans
+Torreyanic_acid
+Guanacastepene_A
 FKBP
 Sirolimus
 Metagenomics
 Dodecahedrane
-Anomaly (physics)
-Chiral anomaly
+Anomaly_(physics)
+Chiral_anomaly
 Pion
 Fermion
-Jackiw\u2013Teitelboim gravity
-Consumer behaviour
+Jackiw%E2%80%93Teitelboim_gravity
+Consumer_behaviour
 Psychology
-National Talent Search Examination
+National_Talent_Search_Examination
 Ferroelectricity
-Monopotassium phosphate
-\u00c5ngstr\u00f6m
+Monopotassium_phosphate
+%C3%85ngstr%C3%B6m
 30S
-Ministry of Home Affairs (India)
-Neutron diffraction
+Ministry_of_Home_Affairs_(India)
+Neutron_diffraction
 P-site
 Stem-loop
 Phenylalanine
-Wobble base pair
-Base pair
-Protein folding
-Laser science
-Quantum eraser experiment
+Wobble_base_pair
+Base_pair
+Protein_folding
+Laser_science
+Quantum_eraser_experiment
 Kaon
-Raman spectroscopy
+Raman_spectroscopy
 Anthrax
 Endospore
-Polymer science
+Polymer_science
 Photolithography
-Molecular self-assembly
+Molecular_self-assembly
 Microfluidics
-Molecular Foundry
-Molecular pathological epidemiology
-Molecular pathology
-U.S. Naval Hospital
-Anatomical pathology
-Clinical pathology
-P110\u03b1
-Colorectal cancer
+Molecular_Foundry
+Molecular_pathological_epidemiology
+Molecular_pathology
+U.S._Naval_Hospital
+Anatomical_pathology
+Clinical_pathology
+P110%CE%B1
+Colorectal_cancer
 Endoscopy
 Colonoscopy
-Microsatellite instability
-CpG site
-Scanning probe microscopy
+Microsatellite_instability
+CpG_site
+Scanning_probe_microscopy
 Nanostructure
 Homeopathy
 Syndrome
 Retrovirus
-Lymph node
+Lymph_node
 Biopsy
-Journal officiel de la R\u00e9publique fran\u00e7aise
+Journal_officiel_de_la_R%C3%A9publique_fran%C3%A7aise
 Pseudoscience
-Pathological science
-Autism spectrum
-National Institute of Industrial Property (France)
+Pathological_science
+Autism_spectrum
+National_Institute_of_Industrial_Property_(France)
 Cytokine
-Pairing-based cryptography
-ID-based encryption
-Computer security
+Pairing-based_cryptography
+ID-based_encryption
+Computer_security
 Bitcoin
 Tcpcrypt
-Weil pairing
-RSA (cryptosystem)
-RSA Conference
-Boneh\u2013Franklin scheme
+Weil_pairing
+RSA_(cryptosystem)
+RSA_Conference
+Boneh%E2%80%93Franklin_scheme
 Neuroeconomics
-Intertemporal choice
-Affective forecasting
-Eagle Scout (Boy Scouts of America)
-Super-resolution microscopy
+Intertemporal_choice
+Affective_forecasting
+Eagle_Scout_(Boy_Scouts_of_America)
+Super-resolution_microscopy
 Nanophotonics
-T helper cell
-Protein isoform
+T_helper_cell
+Protein_isoform
 PTPRC
-Recombination-activating gene
-Severe combined immunodeficiency
-Interleukin 10
-Transforming growth factor beta
-Ng\u00f4
-Unitary group
-Orbital integral
-Hitchin system
-Perverse sheaf
+Recombination-activating_gene
+Severe_combined_immunodeficiency
+Interleukin_10
+Transforming_growth_factor_beta
+Ng%C3%B4
+Unitary_group
+Orbital_integral
+Hitchin_system
+Perverse_sheaf
 Combinatorics
-Lie algebra
+Lie_algebra
 Burn
-Philosophy of psychology
-Cognitive psychology
+Philosophy_of_psychology
+Cognitive_psychology
 Simpli
 AdSense
 Buyout
-Mobile app
+Mobile_app
 Placebo
 Infidelity
-Social justice
-Cognitive bias
+Social_justice
+Cognitive_bias
 Procrastination
 Nanogenerator
 Piezotronics
-Transmission electron microscopy
-Bayesian statistics
-Fiscal theory of the price level
-Dynamical billiards
-Mixing angle
+Transmission_electron_microscopy
+Bayesian_statistics
+Fiscal_theory_of_the_price_level
+Dynamical_billiards
+Mixing_angle
 Clopidogrel
-Atkinson index
-Optimal tax
-Basic income
-Atkinson\u2013Stiglitz theorem
+Atkinson_index
+Optimal_tax
+Basic_income
+Atkinson%E2%80%93Stiglitz_theorem
 Infection
 BECN1
-Tate conjecture
-Tate module
-Algebraic number theory
-Glossary of arithmetic and diophantine geometry
-Tate's thesis
-Fourier analysis
-Algebraic number field
-Automorphic form
-Adele ring
-Class field theory
-Group cohomology
-Adelic algebraic group
-Galois cohomology
-Brauer group
-Tate cohomology group
-Tate duality
-Tate\u2013Shafarevich group
-Algebraic K-theory
-Local class field theory
-Formal group
-Lubin\u2013Tate formal group law
-Rigid analytic space
-Tate curve
-Elliptic curve
-Barsotti\u2013Tate group
-Abelian variety
-Finite field
-Honda\u2013Tate theorem
-Tate twist
-Faltings's theorem
-Hodge\u2013Tate module
-Koszul\u2013Tate resolution
-N\u00e9ron\u2013Tate height
-Sato\u2013Tate conjecture
-Serre\u2013Tate theorem
-Tate's isogeny theorem
-Tate Lie algebra
-Tate's algorithm
-Medical research
-Valvular heart disease
+Tate_conjecture
+Tate_module
+Algebraic_number_theory
+Glossary_of_arithmetic_and_diophantine_geometry
+Tate%27s_thesis
+Fourier_analysis
+Algebraic_number_field
+Automorphic_form
+Adele_ring
+Class_field_theory
+Group_cohomology
+Adelic_algebraic_group
+Galois_cohomology
+Brauer_group
+Tate_cohomology_group
+Tate_duality
+Tate%E2%80%93Shafarevich_group
+Algebraic_K-theory
+Local_class_field_theory
+Formal_group
+Lubin%E2%80%93Tate_formal_group_law
+Rigid_analytic_space
+Tate_curve
+Elliptic_curve
+Barsotti%E2%80%93Tate_group
+Abelian_variety
+Finite_field
+Honda%E2%80%93Tate_theorem
+Tate_twist
+Faltings%27s_theorem
+Hodge%E2%80%93Tate_module
+Koszul%E2%80%93Tate_resolution
+N%C3%A9ron%E2%80%93Tate_height
+Sato%E2%80%93Tate_conjecture
+Serre%E2%80%93Tate_theorem
+Tate%27s_isogeny_theorem
+Tate_Lie_algebra
+Tate%27s_algorithm
+Medical_research
+Valvular_heart_disease
 TIMI
-Kiyotaki\u2013Moore model
+Kiyotaki%E2%80%93Moore_model
 Microfoundations
-Japanese Economic Association
-Monopolistic competition
-Multiplier (economics)
+Japanese_Economic_Association
+Monopolistic_competition
+Multiplier_(economics)
 Barter
-Coincidence of wants
-Credit cycle
-Cell adhesion
+Coincidence_of_wants
+Credit_cycle
+Cell_adhesion
 Fibronectin
-Extracellular matrix
+Extracellular_matrix
 Metastasis
-Geometric group theory
-Hyperbolic group
-Pseudoholomorphic curve
-Homotopy principle
-Mathematical and theoretical biology
-Gromov's theorem on groups of polynomial growth
-Almost flat manifold
-Gromov's compactness theorem (geometry)
-Gromov's compactness theorem (topology)
-Gromov's inequality for complex projective space
-Gromov's systolic inequality for essential manifolds
-Gromov\u2013Hausdorff convergence
-Bishop\u2013Gromov inequality
-Gromov\u2013Witten invariant
-Taubes's Gromov invariant
-Minimal volume
-Gromov norm
-Random group
-Dvoretzky's theorem
-Systolic geometry
-Filling radius
-Gromov product
-\u0394-hyperbolic space
-Filling area conjecture
+Geometric_group_theory
+Hyperbolic_group
+Pseudoholomorphic_curve
+Homotopy_principle
+Mathematical_and_theoretical_biology
+Gromov%27s_theorem_on_groups_of_polynomial_growth
+Almost_flat_manifold
+Gromov%27s_compactness_theorem_(geometry)
+Gromov%27s_compactness_theorem_(topology)
+Gromov%27s_inequality_for_complex_projective_space
+Gromov%27s_systolic_inequality_for_essential_manifolds
+Gromov%E2%80%93Hausdorff_convergence
+Bishop%E2%80%93Gromov_inequality
+Gromov%E2%80%93Witten_invariant
+Taubes%27s_Gromov_invariant
+Minimal_volume
+Gromov_norm
+Random_group
+Dvoretzky%27s_theorem
+Systolic_geometry
+Filling_radius
+Gromov_product
+%CE%94-hyperbolic_space
+Filling_area_conjecture
 Rheumatology
-Lyme disease
-Juvenile idiopathic arthritis
-Erythema chronicum migrans
+Lyme_disease
+Juvenile_idiopathic_arthritis
+Erythema_chronicum_migrans
 Tick
 Arthropod
 Ixodes
-Acrodermatitis chronica atrophicans
+Acrodermatitis_chronica_atrophicans
 Virus
-Tick-borne disease
+Tick-borne_disease
 Neurology
-Wastebasket diagnosis
-Chronic fatigue syndrome
+Wastebasket_diagnosis
+Chronic_fatigue_syndrome
 Fibromyalgia
 Hypochondriasis
-Lyme disease controversy
+Lyme_disease_controversy
 Serology
-Borrelia burgdorferi
+Borrelia_burgdorferi
 Antibody
-Immune system
-Public health
-Synovial membrane
+Immune_system
+Public_health
+Synovial_membrane
 Epitope
 Spirochaete
-Heat capacity
+Heat_capacity
 Heterojunction
 Waveform
-Control of chaos
-Ames test
+Control_of_chaos
+Ames_test
 Mutagen
 Carcinogen
-Salmonella enterica subsp. enterica
+Salmonella_enterica_subsp._enterica
 Daminozide
-Organic solar cell
-Organic electronics
-Prostate cancer
+Organic_solar_cell
+Organic_electronics
+Prostate_cancer
 Pathogenesis
 Hormone
 Leptin
 Human
 Obesity
-Diabetes mellitus
+Diabetes_mellitus
 Endocrinology
 Metabolism
 Pathophysiology
-Endocrine system
+Endocrine_system
 Homeostasis
 Appetite
-Diabetes mellitus type 2
+Diabetes_mellitus_type_2
 Attosecond
-Pulse (physics)
+Pulse_(physics)
 Electron
 Attophysics
-Index of Sustainable Economic Welfare
+Index_of_Sustainable_Economic_Welfare
 Sustainability
-Economics of global warming
-DICE model
-Integrated assessment modelling
-Ozone depletion
+Economics_of_global_warming
+DICE_model
+Integrated_assessment_modelling
+Ozone_depletion
 Transgene
-Stern Review
-Social discount rate
+Stern_Review
+Social_discount_rate
 Well-being
-National Income and Product Accounts
-Life expectancy
-Economic efficiency
+National_Income_and_Product_Accounts
+Life_expectancy
+Economic_efficiency
 Electronics
-Amorphous carbon
-Energy level
-Amorphous solid
+Amorphous_carbon
+Energy_level
+Amorphous_solid
 Supercapacitor
-High-\u03ba dielectric
-Indium gallium arsenide
+High-%CE%BA_dielectric
+Indium_gallium_arsenide
 Germanium
-Indium gallium zinc oxide
-Evolutionary game theory
-Data analysis
-Monte Carlo method
-Dynamical mean-field theory
+Indium_gallium_zinc_oxide
+Evolutionary_game_theory
+Data_analysis
+Monte_Carlo_method
+Dynamical_mean-field_theory
 Bargaining
-Non-equilibrium thermodynamics
-Most common words in English
+Non-equilibrium_thermodynamics
+Most_common_words_in_English
 Meme
 Rock-paper-scissors
-Matthew effect
-Rubinstein bargaining model
-Perfect information
-Subgame perfect equilibrium
-Synthetic biology
+Matthew_effect
+Rubinstein_bargaining_model
+Perfect_information
+Subgame_perfect_equilibrium
+Synthetic_biology
 Telomere
-Yeast artificial chromosome
+Yeast_artificial_chromosome
 Meiosis
 Aptamer
 Abiogenesis
-Circle packing
-Self-avoiding walk
-Conformal geometry
-Loop-erased random walk
-Minimum spanning tree
-Harmonic function
-Cayley graph
-Amenable group
-Graph (discrete mathematics)
-Boolean function
-Infinity Laplacian
-Random permutation
-Dickey\u2013Fuller test
-Survey sampling
-B cell
+Circle_packing
+Self-avoiding_walk
+Conformal_geometry
+Loop-erased_random_walk
+Minimum_spanning_tree
+Harmonic_function
+Cayley_graph
+Amenable_group
+Graph_(discrete_mathematics)
+Boolean_function
+Infinity_Laplacian
+Random_permutation
+Dickey%E2%80%93Fuller_test
+Survey_sampling
+B_cell
 Lymphocyte
-Lymphoid leukemia
-Murine leukemia virus
-Transplant rejection
+Lymphoid_leukemia
+Murine_leukemia_virus
+Transplant_rejection
 Allergy
-Fermi gas
+Fermi_gas
 Caesium
-Fermionic condensate
-Efimov state
-Faculty of 1000
+Fermionic_condensate
+Efimov_state
+Faculty_of_1000
 Macrophage
 EMR1
-Pattern recognition receptor
+Pattern_recognition_receptor
 Wavelet
-Exponential growth
+Exponential_growth
 Cone
 Tetrahedron
-Quadrature mirror filter
-Digital signal processing
-Daubechies wavelet
-Cohen-Daubechies-Feauveau wavelet
-JPEG 2000
-Szemer\u00e9di's theorem
-Szemer\u00e9di regularity lemma
-Erd\u0151s\u2013Szemer\u00e9di theorem
-Equitable coloring
-Szemer\u00e9di\u2013Trotter theorem
-Natural density
-Arithmetic progression
-Property testing
+Quadrature_mirror_filter
+Digital_signal_processing
+Daubechies_wavelet
+Cohen-Daubechies-Feauveau_wavelet
+JPEG_2000
+Szemer%C3%A9di%27s_theorem
+Szemer%C3%A9di_regularity_lemma
+Erd%C5%91s%E2%80%93Szemer%C3%A9di_theorem
+Equitable_coloring
+Szemer%C3%A9di%E2%80%93Trotter_theorem
+Natural_density
+Arithmetic_progression
+Property_testing
 Graphon
-Graph theory
-Corners theorem
-Ramsey's theorem
-Sorting network
-Crossing number inequality
-Non-deterministic Turing machine
-Time complexity
-Deterministic automaton
-Additive number theory
-J\u00e1nos Bolyai Mathematical Society
-Alexander S. Onassis Foundation
-Flipped SU(5)
-Penguin diagram
-Matrix analysis
-Stability theory
-Delay differential equation
-Hopf bifurcation
+Graph_theory
+Corners_theorem
+Ramsey%27s_theorem
+Sorting_network
+Crossing_number_inequality
+Non-deterministic_Turing_machine
+Time_complexity
+Deterministic_automaton
+Additive_number_theory
+J%C3%A1nos_Bolyai_Mathematical_Society
+Alexander_S._Onassis_Foundation
+Flipped_SU(5)
+Penguin_diagram
+Matrix_analysis
+Stability_theory
+Delay_differential_equation
+Hopf_bifurcation
 Epidemic
-Linear algebra
-Matrix decomposition
-Public sector
-Private sector
-Risk compensation
-Dip-pen nanolithography
-Spherical nucleic acid
+Linear_algebra
+Matrix_decomposition
+Public_sector
+Private_sector
+Risk_compensation
+Dip-pen_nanolithography
+Spherical_nucleic_acid
 Botulism
-Natural experiment
+Natural_experiment
 Externality
-Kuznets curve
-Magnetic resonance imaging
-Lithium-ion battery
+Kuznets_curve
+Magnetic_resonance_imaging
+Lithium-ion_battery
 Superexchange
-Quartz (publication)
-Random-access memory
-Jahn\u2013Teller effect
+Quartz_(publication)
+Random-access_memory
+Jahn%E2%80%93Teller_effect
 Cathode
-Hybrid electric vehicle
+Hybrid_electric_vehicle
 Oxide
-Virial theorem
-Asymptotic expansion
-Unit root
+Virial_theorem
+Asymptotic_expansion
+Unit_root
 Cointegration
-Panel data
-Empirical process
-Frequentist inference
-Nuclear engineering
-Knizhnik\u2013Zamolodchikov equations
-Gene regulatory network
-Sea urchin
+Panel_data
+Empirical_process
+Frequentist_inference
+Nuclear_engineering
+Knizhnik%E2%80%93Zamolodchikov_equations
+Gene_regulatory_network
+Sea_urchin
 Evolution
-Strongylocentrotus purpuratus
-Evolutionary developmental biology
-Atom laser
-Bose gas
-Cavity quantum electrodynamics
-Cavity optomechanics
+Strongylocentrotus_purpuratus
+Evolutionary_developmental_biology
+Atom_laser
+Bose_gas
+Cavity_quantum_electrodynamics
+Cavity_optomechanics
 Superradiance
-DNA nanotechnology
-Organizational behavior
+DNA_nanotechnology
+Organizational_behavior
 Coevolution
 TURBOMOLE
-Welfare economics
-Government debt
-Social insurance
-Overlapping generations model
-Ramsey\u2013Cass\u2013Koopmans model
-Agent (economics)
+Welfare_economics
+Government_debt
+Social_insurance
+Overlapping_generations_model
+Ramsey%E2%80%93Cass%E2%80%93Koopmans_model
+Agent_(economics)
 Welfare
-Pareto efficiency
+Pareto_efficiency
 Ex-ante
-Consumption tax
-Diamond coconut model
-Cost\u2013benefit analysis
-Gallium nitride
-Electronic component
-Metalorganic vapour phase epitaxy
+Consumption_tax
+Diamond_coconut_model
+Cost%E2%80%93benefit_analysis
+Gallium_nitride
+Electronic_component
+Metalorganic_vapour_phase_epitaxy
 Magnesium
-Very-large-scale integration
-Upsilon Andromedae
-Breakthrough Initiatives
-Transit (astronomy)
-HD 209458 b
-Astronomical unit
-55 Cancri d
-Gliese 436
-55 Cancri e
-Breakthrough Listen
-List of exoplanetary host stars
-Galaxy rotation curve
-Rubin\u2013Ford effect
+Very-large-scale_integration
+Upsilon_Andromedae
+Breakthrough_Initiatives
+Transit_(astronomy)
+HD_209458_b
+Astronomical_unit
+55_Cancri_d
+Gliese_436
+55_Cancri_e
+Breakthrough_Listen
+List_of_exoplanetary_host_stars
+Galaxy_rotation_curve
+Rubin%E2%80%93Ford_effect
 Galaxy
-Andromeda Galaxy
-Earth's magnetic field
-Milky Way
+Andromeda_Galaxy
+Earth%27s_magnetic_field
+Milky_Way
 Light-year
-Cosmic microwave background
-Circular motion
-Bullet Cluster
-Modified Newtonian dynamics
+Cosmic_microwave_background
+Circular_motion
+Bullet_Cluster
+Modified_Newtonian_dynamics
 Asteroid
-List of minor planets: 5001\u20136000
-Documentary film
+List_of_minor_planets:_5001%E2%80%936000
+Documentary_film
 5G
-Extremely high frequency
-Fluorescence microscope
-Photoactivated localization microscopy
-Diffraction-limited system
-Tullock paradox
-Funnel plot
-Assisted suicide
-Pneumococcal polysaccharide vaccine
-Synthetic setae
-Chicken wire (chemistry)
+Extremely_high_frequency
+Fluorescence_microscope
+Photoactivated_localization_microscopy
+Diffraction-limited_system
+Tullock_paradox
+Funnel_plot
+Assisted_suicide
+Pneumococcal_polysaccharide_vaccine
+Synthetic_setae
+Chicken_wire_(chemistry)
 Carbon
 Silicon
 Touchscreen
 Bionics
 Gecko
-Magnetic levitation
+Magnetic_levitation
 Self-deprecation
-Academic boycott of Israel
-Desert Island Discs
-German diaspora
+Academic_boycott_of_Israel
+Desert_Island_Discs
+German_diaspora
 Indian
-15 and 290 theorems
+15_and_290_theorems
 Factorial
 Tabla
-Binary quadratic form
-Quadratic form
-Interpolation theory
-P-adic analysis
-Ideal class group
+Binary_quadratic_form
+Quadratic_form
+Interpolation_theory
+P-adic_analysis
+Ideal_class_group
 Discriminant
-Prime number
+Prime_number
 Generalization
-P\u00f3lya conjecture
-Bhargava cube
-Bhargava factorial
-Reproductive medicine
-In vitro fertilisation
+P%C3%B3lya_conjecture
+Bhargava_cube
+Bhargava_factorial
+Reproductive_medicine
+In_vitro_fertilisation
 Fertilisation
 Gynaecology
 Embryo
 Laparoscopy
 Oocyte
 Infertility
-Intracytoplasmic sperm injection
-Preimplantation genetic diagnosis
-Diamond Jubilee of Elizabeth II
-Barry Everitt
-Biomedical engineering
-Tissue engineering
+Intracytoplasmic_sperm_injection
+Preimplantation_genetic_diagnosis
+Diamond_Jubilee_of_Elizabeth_II
+Barry_Everitt
+Biomedical_engineering
+Tissue_engineering
 Biotechnology
-Biological engineering
-Drug delivery
-Regenerative medicine
-Blood vessel
+Biological_engineering
+Drug_delivery
+Regenerative_medicine
+Blood_vessel
 Muscle
-Tissue (biology)
+Tissue_(biology)
 Biomaterial
-Homogeneity and heterogeneity
-Alvin J. Siteman Cancer Center
-Order of the White Rose of Finland
-Traditional Chinese characters
-Eukaryotic transcription
+Homogeneity_and_heterogeneity
+Alvin_J._Siteman_Cancer_Center
+Order_of_the_White_Rose_of_Finland
+Traditional_Chinese_characters
+Eukaryotic_transcription
 Capitalism
-SV40 large T antigen
-Activator (genetics)
-Regulation of gene expression
-Mass spectrometry
-Isotope-coded affinity tag
+SV40_large_T_antigen
+Activator_(genetics)
+Regulation_of_gene_expression
+Mass_spectrometry
+Isotope-coded_affinity_tag
 Microbiology
-Genome editing
-Immortalised cell line
-Burrows\u2013Wheeler transform
+Genome_editing
+Immortalised_cell_line
+Burrows%E2%80%93Wheeler_transform
 SAMtools
 TreeFam
-DNA sequencing
-Bombyx mori
-Lasso (statistics)
-Significance analysis of microarrays
+DNA_sequencing
+Bombyx_mori
+Lasso_(statistics)
+Significance_analysis_of_microarrays
 UniProt
-Peptide sequence
+Peptide_sequence
 Nucleotide
-Proteomics Standards Initiative
+Proteomics_Standards_Initiative
 FlyBase
-Helmholtz Association of German Research Centres
-Viterbi algorithm
+Helmholtz_Association_of_German_Research_Centres
+Viterbi_algorithm
 Anglicisation
-Phase-locked loop
-Forward error correction
-Hidden Markov model
+Phase-locked_loop
+Forward_error_correction
+Hidden_Markov_model
 Trustee
 Statin
 Hypercholesterolemia
-Generic drug
+Generic_drug
 Zalcitabine
-Computer architecture
-Reduced instruction set computing
-Central processing unit
+Computer_architecture
+Reduced_instruction_set_computing
+Central_processing_unit
 DLX
 MIX
 MMIX
@@ -1989,338 +1989,338 @@ Antigen
 Telomerase
 Enzyme
 Chromosome
-Knockout mouse
-Pseudorandom function family
-Information security
-Oblivious transfer
-Secure multi-party computation
-Enantioselective synthesis
+Knockout_mouse
+Pseudorandom_function_family
+Information_security
+Oblivious_transfer
+Secure_multi-party_computation
+Enantioselective_synthesis
 Proline
 RAMP
-Enders SAMP/RAMP hydrazone-alkylation reaction
+RAMP_hydrazone-alkylation_reaction
 Neuroscience
-Grid cell
+Grid_cell
 Neuron
-LSE approach to econometrics
-Demand for money
-Trapped ion quantum computer
+LSE_approach_to_econometrics
+Demand_for_money
+Trapped_ion_quantum_computer
 Boulder
-Open quantum system
-Quantum jump method
+Open_quantum_system
+Quantum_jump_method
 Liver
-Breast cancer
+Breast_cancer
 Anatomy
 Neurophysiology
 Tacrolimus
-Organ procurement
-Metabolic disorder
-Gene therapy
+Organ_procurement
+Metabolic_disorder
+Gene_therapy
 Immunosuppression
-Lymphoproliferative disorders
-Chimera (genetics)
+Lymphoproliferative_disorders
+Chimera_(genetics)
 Xenotransplantation
-Immunosuppressive drug
-Atomic clock
-Frequency comb
-Atomic, molecular, and optical physics
-Laser diode
+Immunosuppressive_drug
+Atomic_clock
+Frequency_comb
+Atomic,_molecular,_and_optical_physics
+Laser_diode
 Strontium
-Age of the universe
-Gravity of Earth
+Age_of_the_universe
+Gravity_of_Earth
 Light
-Electron electric dipole moment
-Ion trap
-Risk premium
-Yield curve
-Scientific misconduct
-Quirks & Quarks
-Genome Canada
-Communication theory
-Control theory
-Least mean squares filter
-Space\u2013time code
-Frame (linear algebra)
-Information-theoretic security
-Compressed sensing
-Mathematics Genealogy Project
-Atom-transfer radical-polymerization
-Green chemistry
-Foundation for Polish Science
-Health equity
-Life course approach
-Mendelian randomization
-Spin model
-BC Innovation Council
-Cell therapy
+Electron_electric_dipole_moment
+Ion_trap
+Risk_premium
+Yield_curve
+Scientific_misconduct
+Quirks_%26_Quarks
+Genome_Canada
+Communication_theory
+Control_theory
+Least_mean_squares_filter
+Space%E2%80%93time_code
+Frame_(linear_algebra)
+Information-theoretic_security
+Compressed_sensing
+Mathematics_Genealogy_Project
+Atom-transfer_radical-polymerization
+Green_chemistry
+Foundation_for_Polish_Science
+Health_equity
+Life_course_approach
+Mendelian_randomization
+Spin_model
+BC_Innovation_Council
+Cell_therapy
 Neurodegeneration
-Parkinson's disease
-Huntington's disease
-Experimental psychology
-Fan (surname)
-Risk management
-High-dimensional statistics
-Longitudinal study
-Functional data analysis
-Stock Exchange of Visions
-Fiscal policy
-Economic system
-Voting system
-Growth in a Time of Debt
+Parkinson%27s_disease
+Huntington%27s_disease
+Experimental_psychology
+Fan_(surname)
+Risk_management
+High-dimensional_statistics
+Longitudinal_study
+Functional_data_analysis
+Stock_Exchange_of_Visions
+Fiscal_policy
+Economic_system
+Voting_system
+Growth_in_a_Time_of_Debt
 Metal
 Semimetal
 Graphite
-Intercalation (chemistry)
-Raman scattering
-Aharonov\u2013Bohm effect
-Weak value
-Two-state vector formalism
-Hard and soft science
+Intercalation_(chemistry)
+Raman_scattering
+Aharonov%E2%80%93Bohm_effect
+Weak_value
+Two-state_vector_formalism
+Hard_and_soft_science
 Nitride
-Mathematical logic
-HER2/neu
-Coal mining
-Rublev (surname)
-Atomic physics
-Quantum beats
-Rydberg atom
-Quantum logic
+Mathematical_logic
+neu
+Coal_mining
+Rublev_(surname)
+Atomic_physics
+Quantum_beats
+Rydberg_atom
+Quantum_logic
 Ununoctium
-Nitrogen fixation
-Organizational economics
-Fama\u2013French three-factor model
+Nitrogen_fixation
+Organizational_economics
+Fama%E2%80%93French_three-factor_model
 Stock
-Random walk
-Fat-tailed distribution
-Normal distribution
-Joint hypothesis problem
-Capital asset pricing model
-Beta (finance)
-ISCB Senior Scientist Awards
-Vapnik\u2013Chervonenkis theory
-UCSC Genome Browser
-The Cancer Genome Atlas
-Laser capture microdissection
-Functional genomics
+Random_walk
+Fat-tailed_distribution
+Normal_distribution
+Joint_hypothesis_problem
+Capital_asset_pricing_model
+Beta_(finance)
+ISCB_Senior_Scientist_Awards
+Vapnik%E2%80%93Chervonenkis_theory
+UCSC_Genome_Browser
+The_Cancer_Genome_Atlas
+Laser_capture_microdissection
+Functional_genomics
 Myristoylation
-Myristic acid
+Myristic_acid
 Fucose
 Bacteroides
-Escherichia coli
-Listeria monocytogenes
-Germ-free animal
+Escherichia_coli
+Listeria_monocytogenes
+Germ-free_animal
 Gnotobiosis
-Gut flora
+Gut_flora
 Pyrosequencing
-In vivo
-Human Microbiome Project
+In_vivo
+Human_Microbiome_Project
 Anthropologist
-IEEE Ultrasonics, Ferroelectrics, and Frequency Control Society
+IEEE_Ultrasonics,_Ferroelectrics,_and_Frequency_Control_Society
 Yablonovite
-Strained quantum-well laser
-Nonlinear optics
-Carbon dioxide laser
-Photonic-crystal fiber
+Strained_quantum-well_laser
+Nonlinear_optics
+Carbon_dioxide_laser
+Photonic-crystal_fiber
 Plasmon
 CMOS
-Gallium arsenide
-Adult neurogenesis
+Gallium_arsenide
+Adult_neurogenesis
 Brain
 Cerebellum
-Deceleration parameter
-Millennium Run
-Electronic engineering
+Deceleration_parameter
+Millennium_Run
+Electronic_engineering
 Blue
-Extrinsic semiconductor
-Blue laser
+Extrinsic_semiconductor
+Blue_laser
 Metabolomics
-Machine translation
-GLR parser
-Real estate
-Stock market
-Economic bubble
-Stock market bubble
-Asset price inflation
-Herd behavior
-Porous silicon
+Machine_translation
+GLR_parser
+Real_estate
+Stock_market
+Economic_bubble
+Stock_market_bubble
+Asset_price_inflation
+Herd_behavior
+Porous_silicon
 Electroluminescence
-SH2 domain
-Immunoglobulin M
-Immunoglobulin E
-Castleman's disease
+SH2_domain
+Immunoglobulin_M
+Immunoglobulin_E
+Castleman%27s_disease
 STAT3
-Multiple myeloma
+Multiple_myeloma
 Immunodeficiency
-Twistor theory
+Twistor_theory
 Spacetime
-Cosmic censorship hypothesis
-Weyl curvature hypothesis
-List of contributors to general relativity
-Penrose interpretation
-Orchestrated objective reduction
-Moore\u2013Penrose pseudoinverse
-Newman\u2013Penrose formalism
-Penrose tiling
-Penrose stairs
-Penrose graphical notation
-Schr\u00f6dinger\u2013Newton equation
-Waterfall (M. C. Escher)
-Penrose triangle
-Ascending and Descending
-Grandmaster (chess)
-Event horizon
-Black hole
-Penrose process
+Cosmic_censorship_hypothesis
+Weyl_curvature_hypothesis
+List_of_contributors_to_general_relativity
+Penrose_interpretation
+Orchestrated_objective_reduction
+Moore%E2%80%93Penrose_pseudoinverse
+Newman%E2%80%93Penrose_formalism
+Penrose_tiling
+Penrose_stairs
+Penrose_graphical_notation
+Schr%C3%B6dinger%E2%80%93Newton_equation
+Waterfall_(M._C._Escher)
+Penrose_triangle
+Ascending_and_Descending
+Grandmaster_(chess)
+Event_horizon
+Black_hole
+Penrose_process
 Quasar
-BKL singularity
-Second law of thermodynamics
-Terrell rotation
+BKL_singularity
+Second_law_of_thermodynamics
+Terrell_rotation
 Rhombus
-Minkowski space
+Minkowski_space
 Tessellation
 Demography
-Spin network
-Loop quantum gravity
-Penrose diagram
-Physical law
-Einstein field equations
-Weyl tensor
-Coordinate system
-Wheeler\u2013DeWitt equation
-Einstein\u2013Maxwell\u2013Dirac equations
-Halting problem
+Spin_network
+Loop_quantum_gravity
+Penrose_diagram
+Physical_law
+Einstein_field_equations
+Weyl_tensor
+Coordinate_system
+Wheeler%E2%80%93DeWitt_equation
+Einstein%E2%80%93Maxwell%E2%80%93Dirac_equations
+Halting_problem
 Determinism
-Wave function collapse
-Computational theory of mind
+Wave_function_collapse
+Computational_theory_of_mind
 Logic
-G\u00f6del's incompleteness theorems
-Logic for Programming, Artificial Intelligence and Reasoning
+G%C3%B6del%27s_incompleteness_theorems
+Logic_for_Programming,_Artificial_Intelligence_and_Reasoning
 Consciousness
 Microtubule
 Gel
-Quantum biology
-A Brief History of Time (film)
-Hawking (2004 film)
-Conformal cyclic cosmology
-Illumination problem
-The Forum (BBC World Service)
-Bank run
-Diamond\u2013Dybvig model
-Nambu\u2013Goto action
-Strong interaction
-Chirality (physics)
-Dual resonance model
+Quantum_biology
+A_Brief_History_of_Time_(film)
+Hawking_(2004_film)
+Conformal_cyclic_cosmology
+Illumination_problem
+The_Forum_(BBC_World_Service)
+Bank_run
+Diamond%E2%80%93Dybvig_model
+Nambu%E2%80%93Goto_action
+Strong_interaction
+Chirality_(physics)
+Dual_resonance_model
 Boson
 Pharmacology
 Prostacyclin
-Nitric oxide
+Nitric_oxide
 Prostaglandin
 Analgesic
 Antipyretic
-Thromboxane-A synthase
+Thromboxane-A_synthase
 Vasodilation
 Atovaquone
 Zolmitriptan
 Lapatinib
-Peripheral nervous system
-Central nervous system
-Business economics
+Peripheral_nervous_system
+Central_nervous_system
+Business_economics
 Forecasting
-Realized kernel
-Quadratic variation
-Classical mechanics
+Realized_kernel
+Quadratic_variation
+Classical_mechanics
 Wave
-Non-Newtonian fluid
-Darmstadt University
-Mathematical sciences
+Non-Newtonian_fluid
+Darmstadt_University
+Mathematical_sciences
 Acoustics
-Linear elasticity
-Theory of relativity
-Government of Pakistan
-Electron transport chain
+Linear_elasticity
+Theory_of_relativity
+Government_of_Pakistan
+Electron_transport_chain
 Calculus
 Enantiomer
 Ruthenium
 Proteome
-Simple Modular Architecture Research Tool
+Simple_Modular_Architecture_Research_Tool
 Enterotype
-Tree of life
-Cluster algebra
-Quiver (mathematics)
-AdS/CFT correspondence
-Ingres (database)
+Tree_of_life
+Cluster_algebra
+Quiver_(mathematics)
+CFT_correspondence
+Ingres_(database)
 PostgreSQL
 Illustra
 VoltDB
 SciDB
-Relational database
+Relational_database
 SIGMOD
 C-Store
 H-Store
-Relational model
-IBM System R
+Relational_model
+IBM_System_R
 B-tree
-Data integrity
+Data_integrity
 Unix
-Big iron
-IBM mainframe
-BSD licenses
-Object-relational database
-Free software
+Big_iron
+IBM_mainframe
+BSD_licenses
+Object-relational_database
+Free_software
 DataBlade
-Federated database system
-Query optimization
-Shared nothing architecture
-Column-oriented DBMS
-Data transformation
-Local search (Internet)
-Online transaction processing
+Federated_database_system
+Query_optimization
+Shared_nothing_architecture
+Column-oriented_DBMS
+Data_transformation
+Local_search_(Internet)
+Online_transaction_processing
 NoSQL
 VLDB
-Zeolitic imidazolate framework
-Covalent organic framework
-Hydrogen storage
-Heck reaction
+Zeolitic_imidazolate_framework
+Covalent_organic_framework
+Hydrogen_storage
+Heck_reaction
 Palladium
-Organic compound
-Chemical reaction
-Aryl halide
+Organic_compound
+Chemical_reaction
+Aryl_halide
 Alkene
 Organomercury
-Intramolecular reaction
-Boronic acid
-Suzuki reaction
-Organotin chemistry
-Group 2 organometallic chemistry
-Kumada coupling
+Intramolecular_reaction
+Boronic_acid
+Suzuki_reaction
+Organotin_chemistry
+Group_2_organometallic_chemistry
+Kumada_coupling
 Silane
-Hiyama coupling
-Organozinc compound
-Buchwald\u2013Hartwig amination
+Hiyama_coupling
+Organozinc_compound
+Buchwald%E2%80%93Hartwig_amination
 Halide
-Sonogashira coupling
+Sonogashira_coupling
 Hydroformylation
-DNA mismatch repair
-Chemical synapse
+DNA_mismatch_repair
+Chemical_synapse
 Neurotransmission
-Cell physiology
+Cell_physiology
 Bassoon
-Chromaffin cell
+Chromaffin_cell
 Psychiatry
 Neurotransmitter
 Norepinephrine
 Endorphins
-Adrenal medulla
-Adrenal gland
-Sympathetic nervous system
-Low-density lipoprotein
-Familial hypercholesterolemia
-Receptor-mediated endocytosis
+Adrenal_medulla
+Adrenal_gland
+Sympathetic_nervous_system
+Low-density_lipoprotein
+Familial_hypercholesterolemia
+Receptor-mediated_endocytosis
 Sterol
 Cholesterol
-Steroid hormone
+Steroid_hormone
 Atorvastatin
 Synaptotagmins
-SNARE (protein)
+SNARE_(protein)
 Synaptobrevin
 Syntaxin
 SNAP25
@@ -2328,355 +2328,355 @@ Neurexin
 Neuroligin
 Autism
 Psychiatrist
-Psychiatric genetics
-Gene\u2013environment interaction
-Serotonin transporter
-Polymorphism (biology)
-Mood disorder
-Phillips curve
+Psychiatric_genetics
+Gene%E2%80%93environment_interaction
+Serotonin_transporter
+Polymorphism_(biology)
+Mood_disorder
+Phillips_curve
 Hyperinflation
-Policy-ineffectiveness proposition
-Adaptive learning
-Self-confirming equilibrium
-Robust control
-Recursive economics
-Heterotic string theory
-Intelligent Systems for Molecular Biology
+Policy-ineffectiveness_proposition
+Adaptive_learning
+Self-confirming_equilibrium
+Robust_control
+Recursive_economics
+Heterotic_string_theory
+Intelligent_Systems_for_Molecular_Biology
 Rfam
 MiRBase
-Protein superfamily
-Weakly interacting massive particles
-Self-interacting dark matter
+Protein_superfamily
+Weakly_interacting_massive_particles
+Self-interacting_dark_matter
 Ski
-Beta-2 adrenergic receptor
+Beta-2_adrenergic_receptor
 Rhodopsin
 Tamoxifen
-Aromatase inhibitor
+Aromatase_inhibitor
 Chemoprophylaxis
-Scanning electrochemical microscopy
+Scanning_electrochemical_microscopy
 Electrochemiluminescence
 Electrode
-Aplastic anemia
-Cancer immunology
-Immune disorder
-Hematopoietic stem cell transplantation
-Graft-versus-host disease
-Hematopoietic stem cell
+Aplastic_anemia
+Cancer_immunology
+Immune_disorder
+Hematopoietic_stem_cell_transplantation
+Graft-versus-host_disease
+Hematopoietic_stem_cell
 Radiation
-City of Joy
-Myasthenia gravis
-Key distribution
-Brute-force attack
+City_of_Joy
+Myasthenia_gravis
+Key_distribution
+Brute-force_attack
 X.25
 Monopoly
 Iconoclasm
 Individualism
 Secrecy
-Durbin\u2013Wu\u2013Hausman test
-Statistical model
-Consumer price index
+Durbin%E2%80%93Wu%E2%80%93Hausman_test
+Statistical_model
+Consumer_price_index
 3G
 Broadband
-Errors-in-variables models
-Bioorthogonal chemistry
+Errors-in-variables_models
+Bioorthogonal_chemistry
 Oligosaccharide
 Endothelium
 Glycobiology
 Arthritis
 Tuberculosis
-Bioorthogonal chemical reporter
+Bioorthogonal_chemical_reporter
 Azide
 Glycan
-Polymer physics
-Valiant\u2013Vazirani theorem
-Counting problem (complexity)
+Polymer_physics
+Valiant%E2%80%93Vazirani_theorem
+Counting_problem_(complexity)
 Sharp-P-complete
-Probably approximately correct learning
-Holographic algorithm
-Automata theory
-CYK algorithm
-Computational neuroscience
-Seiberg\u2013Witten invariant
-Seiberg duality
-Gauge theory
+Probably_approximately_correct_learning
+Holographic_algorithm
+Automata_theory
+CYK_algorithm
+Computational_neuroscience
+Seiberg%E2%80%93Witten_invariant
+Seiberg_duality
+Gauge_theory
 S-duality
-Matrix string theory
-Noncommutative geometry
-String (physics)
-Noncommutative quantum field theory
-Seiberg\u2013Witten theory
-Organic reaction
+Matrix_string_theory
+Noncommutative_geometry
+String_(physics)
+Noncommutative_quantum_field_theory
+Seiberg%E2%80%93Witten_theory
+Organic_reaction
 Aryl
 Vinyl
-Genetically modified mouse
-Neurological disorder
+Genetically_modified_mouse
+Neurological_disorder
 Genome
-Sickle-cell disease
-Human cloning
+Sickle-cell_disease
+Human_cloning
 Cobalt
-Radiation therapy
-Internet research
-Internet research ethics
-List mining
-Benjamin Franklin Medal
-DNA computing
-DNA machine
+Radiation_therapy
+Internet_research
+Internet_research_ethics
+List_mining
+Benjamin_Franklin_Medal
+DNA_computing
+DNA_machine
 Nanoelectronics
-Market power
-Corps of Bridges, Waters and Forests
-Decision mathematics
-Quantitative easing
-International Association for Energy Economics
+Market_power
+Corps_of_Bridges,_Waters_and_Forests
+Decision_mathematics
+Quantitative_easing
+International_Association_for_Energy_Economics
 Kinase
-Tyrosine kinase
+Tyrosine_kinase
 Photochemistry
-Electron transfer
-Solar energy
+Electron_transfer
+Solar_energy
 Science
-Coeliac disease
+Coeliac_disease
 Immunotoxin
-Cyclic adenosine monophosphate
+Cyclic_adenosine_monophosphate
 Thyroid
-Adenylyl cyclase
+Adenylyl_cyclase
 Hyperthyroidism
-Hairy cell leukemia
-Acute lymphoblastic leukemia
+Hairy_cell_leukemia
+Acute_lymphoblastic_leukemia
 Mesothelin
 Jurist
-English studies
-Law clerk
-International legal theories
+English_studies
+Law_clerk
+International_legal_theories
 Morality
-Intellectual property
-Rule of law
-Free market
+Intellectual_property
+Rule_of_law
+Free_market
 Adoption
-Cannabis (drug)
-Right-wing politics
-Moral relativism
-Moral skepticism
-Abortion-rights movements
+Cannabis_(drug)
+Right-wing_politics
+Moral_relativism
+Moral_skepticism
+Abortion-rights_movements
 Cognition
 Hyperlink
-Paraphrasing of copyrighted material
-Free riding
+Paraphrasing_of_copyrighted_material
+Free_riding
 Vermin
 Dignity
 Tort
 Negligence
-Strict liability
+Strict_liability
 Certiorari
 Mediation
-Law and literature
-Euro sign
-Dictator game
-Inequity aversion
-List of important publications in economics
-Engineering and Public Policy
+Law_and_literature
+Euro_sign
+Dictator_game
+Inequity_aversion
+List_of_important_publications_in_economics
+Engineering_and_Public_Policy
 Nanobiomechanics
-Dye-sensitized solar cell
-Photoelectrochemical cell
-Perovskite solar cell
-Transcription factor II A
-Transcription factor II B
-Transcription factor II E
-Transcription factor II F
-Transcription factor II H
-Lithium polymer battery
-ENI award
-Energy storage
-Fluoride glass
-Rechargeable battery
-Energy transformation
-DNA ligase
-DNA glycosylase
+Dye-sensitized_solar_cell
+Photoelectrochemical_cell
+Perovskite_solar_cell
+Transcription_factor_II_A
+Transcription_factor_II_B
+Transcription_factor_II_E
+Transcription_factor_II_F
+Transcription_factor_II_H
+Lithium_polymer_battery
+ENI_award
+Energy_storage
+Fluoride_glass
+Rechargeable_battery
+Energy_transformation
+DNA_ligase
+DNA_glycosylase
 Methyltransferase
 Alkylation
-Bloom syndrome
-Epstein\u2013Barr virus
+Bloom_syndrome
+Epstein%E2%80%93Barr_virus
 Lymphopoiesis
-List of English words of Yiddish origin
-Parasitic disease
+List_of_English_words_of_Yiddish_origin
+Parasitic_disease
 Parasitology
-Liver fluke
+Liver_fluke
 Sheep
 Tiabendazole
-Phytophthora infestans
-Great Famine (Ireland)
+Phytophthora_infestans
+Great_Famine_(Ireland)
 Trichinosis
 Streptomyces
 Ecology
-Conservation biology
-Microbial ecology
-Ecosystem services
+Conservation_biology
+Microbial_ecology
+Ecosystem_services
 Biofuel
-Competition (biology)
+Competition_(biology)
 Biodiversity
-Species richness
+Species_richness
 Biomass
-Disturbance (ecology)
-Ecological effects of biodiversity
-Limiting factor
+Disturbance_(ecology)
+Ecological_effects_of_biodiversity
+Limiting_factor
 Competition
-Extinction debt
-Elevational diversity gradient
-R* rule (ecology)
-Peptide sequence tag
+Extinction_debt
+Elevational_diversity_gradient
+R*_rule_(ecology)
+Peptide_sequence_tag
 Electrospray
-Polyacrylamide gel electrophoresis
-Stable isotope labeling by amino acids in cell culture
-Quantitative proteomics
-Place cell
-Boundary cell
-Pipe organ
-Global burden of disease
-Potato chip
-Saturated fat
-Deputy governor
-Interest rate
-Computer memory
-Ion semiconductor sequencing
-Personal genomics
+Polyacrylamide_gel_electrophoresis
+Stable_isotope_labeling_by_amino_acids_in_cell_culture
+Quantitative_proteomics
+Place_cell
+Boundary_cell
+Pipe_organ
+Global_burden_of_disease
+Potato_chip
+Saturated_fat
+Deputy_governor
+Interest_rate
+Computer_memory
+Ion_semiconductor_sequencing
+Personal_genomics
 Tyrosine
-Labor camp
-Cell growth
-Cell migration
-Epidermal growth factor receptor
+Labor_camp
+Cell_growth
+Cell_migration
+Epidermal_growth_factor_receptor
 GRB2
-Signal transducing adaptor protein
+Signal_transducing_adaptor_protein
 FRS2
-Fibroblast growth factor receptor
-Initial public offering
-Makridakis Competitions
+Fibroblast_growth_factor_receptor
+Initial_public_offering
+Makridakis_Competitions
 Catholicism
-Let-7 microRNA precursor
-Phi X 174
+Let-7_microRNA_precursor
+Phi_X_174
 Autoradiograph
 Mindfulness
-Biochemical engineering
+Biochemical_engineering
 Resveratrol
 Mycology
 Geology
 Pharmacy
-Liquid crystal
+Liquid_crystal
 Mesogen
 Dye
 Amphiphile
 Detergent
 Lipid
-Langmuir\u2013Blodgett film
-Hydrogen bond
-Receptor (biochemistry)
-Molecular recognition
+Langmuir%E2%80%93Blodgett_film
+Hydrogen_bond
+Receptor_(biochemistry)
+Molecular_recognition
 Crystallization
 Lectin
 Streptavidin
-Monoclonal antibody
+Monoclonal_antibody
 Phospholipase
 Acetylcholinesterase
 Therapy
-Preventive healthcare
+Preventive_healthcare
 Chemotherapy
 Systematics
 Phylogenetics
-Population genetics
-Phylogenetic comparative methods
+Population_genetics
+Phylogenetic_comparative_methods
 PHYLIP
-Felsenstein's tree-pruning algorithm
-Coalescent theory
-Ufeus felsensteini
-Red diaper baby
-Functional magnetic resonance imaging
+Felsenstein%27s_tree-pruning_algorithm
+Coalescent_theory
+Ufeus_felsensteini
+Red_diaper_baby
+Functional_magnetic_resonance_imaging
 Neuroimaging
-Blood-oxygen-level dependent
-Methane monooxygenase
+Blood-oxygen-level_dependent
+Methane_monooxygenase
 Hemerythrin
-Floer homology
-Homology (mathematics)
+Floer_homology
+Homology_(mathematics)
 3-manifold
 MECP2
-Rett syndrome
-Ribosomal RNA
-Nuclear receptor co-repressor 1
-Homo economicus
-Social psychology
-Survey methodology
-Preference (economics)
-Time preference
+Rett_syndrome
+Ribosomal_RNA
+Nuclear_receptor_co-repressor_1
+Homo_economicus
+Social_psychology
+Survey_methodology
+Preference_(economics)
+Time_preference
 Personality
 Motivation
 Intracellular
 Pathogen
-Spectral theory
-Almost Mathieu operator
-Quantum pseudo-telepathy
+Spectral_theory
+Almost_Mathieu_operator
+Quantum_pseudo-telepathy
 Silylene
 Carbene
 Electrolyte
 Muon
 Abortion
-Neural coding
-Theta rhythm
-Cognitive map
-Spatial memory
-Action potential
+Neural_coding
+Theta_rhythm
+Cognitive_map
+Spatial_memory
+Action_potential
 Electroencephalography
 Subiculum
-Entorhinal cortex
-Click chemistry
+Entorhinal_cortex
+Click_chemistry
 Redox
-Sharpless epoxidation
-Sharpless asymmetric dihydroxylation
-Sharpless oxyamination
+Sharpless_epoxidation
+Sharpless_asymmetric_dihydroxylation
+Sharpless_oxyamination
 Hydrogenation
-Tartaric acid
+Tartaric_acid
 P-Cresol
-Azide-alkyne Huisgen cycloaddition
+Azide-alkyne_Huisgen_cycloaddition
 1,2,3-Triazole
-Double star
+Double_star
 Kinematics
 Spectrograph
-Brown dwarf
-High Accuracy Radial Velocity Planet Searcher
-Gliese 581 c
-Gliese 581 e
-Ras subfamily
-Representational difference analysis
-Kaposi's sarcoma
-Kaposi's sarcoma-associated herpesvirus
-Representation oligonucleotide microarray analysis
-Schubert calculus
-Enumerative geometry
-Mobil Composition of Matter
+Brown_dwarf
+High_Accuracy_Radial_Velocity_Planet_Searcher
+Gliese_581_c
+Gliese_581_e
+Ras_subfamily
+Representational_difference_analysis
+Kaposi%27s_sarcoma
+Kaposi%27s_sarcoma-associated_herpesvirus
+Representation_oligonucleotide_microarray_analysis
+Schubert_calculus
+Enumerative_geometry
+Mobil_Composition_of_Matter
 Nanochemistry
-Fluid catalytic cracking
+Fluid_catalytic_cracking
 ResearcherID
-Hall effect
-Domain wall (magnetism)
-Property rights (economics)
-Alchian\u2013Allen effect
-Uncertainty, Evolution, and Economic Theory
-Blue-collar worker
-Rational addiction
-Peto's paradox
-Log-rank test
-UA1 experiment
-Unified field theory
-Fundamental interaction
+Hall_effect
+Domain_wall_(magnetism)
+Property_rights_(economics)
+Alchian%E2%80%93Allen_effect
+Uncertainty,_Evolution,_and_Economic_Theory
+Blue-collar_worker
+Rational_addiction
+Peto%27s_paradox
+Log-rank_test
+UA1_experiment
+Unified_field_theory
+Fundamental_interaction
 Electromagnetism
-Weak interaction
+Weak_interaction
 Gravity
-World Year of Physics 2005
-Sexually transmitted infection
-Cell-mediated immunity
+World_Year_of_Physics_2005
+Sexually_transmitted_infection
+Cell-mediated_immunity
 Commensalism
-DNA vaccination
-Antigen-presenting cell
-STED microscopy
-Optical resolution
-Confocal microscopy
-4Pi microscope
-Medical physics
+DNA_vaccination
+Antigen-presenting_cell
+STED_microscopy
+Optical_resolution
+Confocal_microscopy
+4Pi_microscope
+Medical_physics
 RESOLFT
-Romanian royal family
-Order of the Crown (Romania)
+Romanian_royal_family
+Order_of_the_Crown_(Romania)
