@@ -12,6 +12,8 @@ import urllib2
 import os
 from datetime import datetime
 import collections
+import ast
+import urllib
 
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
@@ -26,28 +28,49 @@ def parse_url(link):
     title= link.rstrip().split('/')
     return language, title[-1]   
 
-def revisions_extraction(lang, title):
+def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
+    print timestamp_list
     timestamp = ""
-    timestamp_list = []
-    username_list = []
-    site = wiki.Wiki("http://" +lang+".wikipedia.org/w/api.php")
-    params = {'action':'query', 'titles':title, 'prop':'revisions', 'rvdir':'newer'}
-    req = api.APIRequest(site, params)
-    for result in req.queryGen():
-        for pidkey in result['query']['pages']:
-            for key in result['query']['pages'][pidkey]['revisions']:
-                timestamp = key['timestamp']
-                username = key['user']
-                bot_detected = bot_detection(username)
-                timestamp = timestamp.rstrip().split('T')[0]
-                if bot_detected != True:
-                    if timestamp_list == [] and username_list ==[]: 
-                        timestamp_list.append(timestamp)
-                        username_list.append(username)
-                    elif timestamp != timestamp_list[-1] and username != username_list[-1]:
-                        timestamp_list.append(timestamp)
-                        username_list.append(username)
-    return timestamp_list
+    
+    # use rvcontinue
+ #   name = "Paul_Krugman"
+    name = name.replace('_', ' ')
+    name = urllib.quote_plus(name.encode("utf-8"))
+    if rvcontinue != 0:
+        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %name + "&rvcontinue=%s" %rvcontinue
+    else:
+        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %name
+    hdr = {'User-Agent': 'Mozilla/5.0'} 
+    req = urllib2.Request(site,headers=hdr)
+    try:
+        page = urllib2.urlopen(req)
+    except urllib2.HTTPError, e:
+        print e.fp.read()
+    result = page.read()    
+    prefix = result.rstrip().split(',')[0]
+    print prefix
+    result = ast.literal_eval(result)
+    for pidkey in result['query']['pages']:
+        for key in result['query']['pages'][pidkey]['revisions']:
+            timestamp = key['timestamp']
+            username = key['user']
+            bot_detected = bot_detection(username)
+            timestamp = timestamp.rstrip().split('T')[0]
+            if bot_detected != True:
+                if timestamp_list == [] and username_list ==[]: 
+                    timestamp_list.append(timestamp)
+                    username_list.append(username)
+                elif timestamp != timestamp_list[-1] and username != username_list[-1]:
+                    timestamp_list.append(timestamp)
+                    username_list.append(username)
+    if "rvcontinue" in prefix:
+        rvcontinue = prefix.rstrip().split('\"')[5]
+        print rvcontinue
+        return revisions_extraction(username_list, timestamp_list, lang, name, rvcontinue)
+    else:
+        print "go back"
+        print timestamp_list
+        return timestamp_list
 
 def bot_detection(username):
     status = False
@@ -56,9 +79,9 @@ def bot_detection(username):
         status = True
     return status
 
-filename =  os.path.join(neighbors_dir, 'scientists_list-1.txt')    
+
+filename =  os.path.join(neighbors_dir, 'test_list.txt')    
 result_list = []
-timestamp_list = []
 count = 0
 time_array = [0]
 time_dict = {}
@@ -68,13 +91,16 @@ with open(filename) as f:
     
 for link in link_list:
     count +=1
+    timestamp_list = []
+    username_list = []
     original_link = link
     link = link.encode("utf-8")
     link = urllib2.unquote(link).decode("utf-8")
     #language, title=parse_url(link)
     link = link.replace('_', ' ')
-    timestamp_list = revisions_extraction('en', link)
+    timestamp_list = revisions_extraction(username_list, timestamp_list,'en', link,0)
     # Go through the list of timestamps tha was returned by API
+    
     for timestamp in timestamp_list:
         # Convert to the data format
         #timestamp = timestamp.rstrip().split('T')[0]
