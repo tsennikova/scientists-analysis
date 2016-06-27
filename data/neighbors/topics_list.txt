@@ -1880,7 +1880,7 @@ Circular_motion
 Bullet_Cluster
 Modified_Newtonian_dynamics
 Asteroid
-List_of_minor_planets:_5001%E2%80%936000
+List_of_minor_planets_5001%E2%80%936000
 Documentary_film
 5G
 Extremely_high_frequency
