@@ -15,6 +15,7 @@ import collections
 import ast
 import urllib
 
+# TODO improve BOT detection
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
