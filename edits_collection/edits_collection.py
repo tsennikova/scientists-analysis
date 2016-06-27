@@ -29,17 +29,17 @@ def parse_url(link):
     return language, title[-1]   
 
 def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
-    print timestamp_list
-    timestamp = ""
-    
+    timestamp = "" 
     # use rvcontinue
  #   name = "Paul_Krugman"
-    name = name.replace('_', ' ')
-    name = urllib.quote_plus(name.encode("utf-8"))
+    title = name.replace('_', ' ')
+    title = urllib.quote_plus(title.encode("utf-8"))
+
     if rvcontinue != 0:
-        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %name + "&rvcontinue=%s" %rvcontinue
+        # if there are more than 500 edits - recoursive call
+        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %title + "&rvcontinue=%s" %rvcontinue
     else:
-        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %name
+        site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %title
     hdr = {'User-Agent': 'Mozilla/5.0'} 
     req = urllib2.Request(site,headers=hdr)
     try:
@@ -48,7 +48,7 @@ def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
         print e.fp.read()
     result = page.read()    
     prefix = result.rstrip().split(',')[0]
-    print prefix
+    # convert string to dict 
     result = ast.literal_eval(result)
     for pidkey in result['query']['pages']:
         for key in result['query']['pages'][pidkey]['revisions']:
@@ -58,18 +58,17 @@ def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
             timestamp = timestamp.rstrip().split('T')[0]
             if bot_detected != True:
                 if timestamp_list == [] and username_list ==[]: 
+                    # we save timestamp and username in the lists in order to check if one user changed the article several times per day
                     timestamp_list.append(timestamp)
                     username_list.append(username)
-                elif timestamp != timestamp_list[-1] and username != username_list[-1]:
+                elif timestamp != timestamp_list[-1] or username != username_list[-1]:
                     timestamp_list.append(timestamp)
                     username_list.append(username)
+    # check if there are more than 500 edits
     if "rvcontinue" in prefix:
         rvcontinue = prefix.rstrip().split('\"')[5]
-        print rvcontinue
         return revisions_extraction(username_list, timestamp_list, lang, name, rvcontinue)
     else:
-        print "go back"
-        print timestamp_list
         return timestamp_list
 
 def bot_detection(username):
@@ -80,7 +79,7 @@ def bot_detection(username):
     return status
 
 
-filename =  os.path.join(neighbors_dir, 'test_list.txt')    
+filename =  os.path.join(neighbors_dir, 'scientists_list.txt')    
 result_list = []
 count = 0
 time_array = [0]
@@ -90,6 +89,7 @@ with open(filename) as f:
     link_list = f.read().splitlines()
     
 for link in link_list:
+    print link
     count +=1
     timestamp_list = []
     username_list = []
@@ -99,23 +99,21 @@ for link in link_list:
     #language, title=parse_url(link)
     link = link.replace('_', ' ')
     timestamp_list = revisions_extraction(username_list, timestamp_list,'en', link,0)
-    # Go through the list of timestamps tha was returned by API
-    
+    # Go through the list of timestamps that was returned by API
     for timestamp in timestamp_list:
-        # Convert to the data format
-        #timestamp = timestamp.rstrip().split('T')[0]
+        # Convert str to the data format
         timestamp = datetime.strptime(timestamp, '%Y-%m-%d')
         # Get the number of the day in the year
         index = int(timestamp.strftime('%j'))
         year = int(timestamp.year)
         # Create a dictionary with the key - year, value - list of edit dates and counts
-        if year==time_array[0]: # if its repeating year
-            time_array[index] +=1
+        if year==time_array[0]: # if its repeating year (year is the first element of the list), than increase the ' of edits in a particular day
+            time_array[index] +=1 
         else:       
-            time_array = [year]
+            time_array = [year] # year is the first element of the list
             if year != 2008 and year != 2012:
                 listofzeros = [0] * 365
-                listofzeros [index-1] = 1
+                listofzeros [index-1] = 1 # add a new array with the first edit
                 time_array = time_array + listofzeros
             else:
                 listofzeros = [0] * 366
@@ -130,5 +128,6 @@ for link in link_list:
     for key in time_dict:
         text_file.write(",".join(map(lambda x: str(x), time_dict[key])))
         text_file.write("\n")
-    text_file.close()   
+    text_file.close()  
+    time_dict = {} 
     
