@@ -15,14 +15,12 @@ import collections
 import ast
 import urllib
 
-# TODO improve BOT detection
-
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
 neighbors_dir = os.path.join(data_dir, 'neighbors')
 edits_dir = os.path.join(data_dir, 'edits')
-scientisis_dir = os.path.join(edits_dir, 'scientists')
-
+scientits_dir = os.path.join(edits_dir, 'scientists')
+topics_dir = os.path.join(edits_dir, 'topics')
     
 def parse_url(link):
     language = link.rstrip().split('.')[0]
@@ -31,8 +29,6 @@ def parse_url(link):
 
 def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
     timestamp = "" 
-    # use rvcontinue
- #   name = "Paul_Krugman"
     title = name.replace('_', ' ')
     title = urllib.quote_plus(title.encode("utf-8"))
 
@@ -41,6 +37,7 @@ def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
         site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %title + "&rvcontinue=%s" %rvcontinue
     else:
         site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %title
+    
     hdr = {'User-Agent': 'Mozilla/5.0'} 
     req = urllib2.Request(site,headers=hdr)
     try:
@@ -54,8 +51,11 @@ def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
     for pidkey in result['query']['pages']:
         for key in result['query']['pages'][pidkey]['revisions']:
             timestamp = key['timestamp']
-            username = key['user']
-            bot_detected = bot_detection(username)
+            if 'user'  in key:
+                username = key['user']
+                bot_detected = bot_detection(username, bots_list)
+            else:
+                username = 'hidden'
             timestamp = timestamp.rstrip().split('T')[0]
             if bot_detected != True:
                 if timestamp_list == [] and username_list ==[]: 
@@ -72,12 +72,17 @@ def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
     else:
         return timestamp_list
 
-def bot_detection(username):
+def bot_detection(username, bots_list):
     status = False
-    username=username.lower()
-    if "bot" in username:
+    if username in bots_list:
         status = True
     return status
+
+
+txt_filename =  os.path.join(edits_dir, "TOTAL_unique_bots.txt")
+text_file = open(txt_filename, "r")
+bots_list = text_file.read().splitlines()
+
 
 
 filename =  os.path.join(neighbors_dir, 'scientists_list.txt')    
@@ -90,6 +95,7 @@ with open(filename) as f:
     link_list = f.read().splitlines()
     
 for link in link_list:
+    print count
     print link
     count +=1
     timestamp_list = []
@@ -108,22 +114,25 @@ for link in link_list:
         index = int(timestamp.strftime('%j'))
         year = int(timestamp.year)
         # Create a dictionary with the key - year, value - list of edit dates and counts
-        if year==time_array[0]: # if its repeating year (year is the first element of the list), than increase the ' of edits in a particular day
+        if year==time_array[0]: 
+            # if its repeating year (year is the first element of the list), than increase the ' of edits in a particular day
             time_array[index] +=1 
         else:       
             time_array = [year] # year is the first element of the list
-            if year != 2008 and year != 2012:
+            if year != 2008 and year != 2012 and year != 2004 and year != 2016:
                 listofzeros = [0] * 365
                 listofzeros [index-1] = 1 # add a new array with the first edit
-                time_array = time_array + listofzeros
+                time_array = time_array + listofzeros      
             else:
                 listofzeros = [0] * 366
                 listofzeros [index-1] = 1
                 time_array = time_array + listofzeros
+
         time_dict.update({time_array[0]:time_array})   
     time_dict = collections.OrderedDict(sorted(time_dict.items()))
-     
-    output_path =  os.path.join(scientisis_dir, original_link+'.txt')    
+    original_link = original_link.translate(None, ':*') 
+ #   original_link = original_link.rstrip().split('/')[-1]
+    output_path =  os.path.join(scientits_dir, original_link+'.txt')    
     text_file = open(output_path, "w")
     
     for key in time_dict:

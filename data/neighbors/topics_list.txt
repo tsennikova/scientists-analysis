@@ -1124,7 +1124,7 @@ Leggett_inequality
 Neutron_interferometer
 Double-slit_experiment
 Phase_space
-List_of_minor_planets_48001%E2%80%9349000
+List_of_minor_planets:_48001%E2%80%9349000
 Interview
 Recombinant_DNA
 Histone
@@ -1175,7 +1175,7 @@ Microsoft_Tablet_PC
 Tablet_computer
 British_nationality_law
 Fiber-optic_communication
-List_of_minor_planets_3001%E2%80%934000
+List_of_minor_planets:_3001%E2%80%934000
 Asian_of_the_Century
 Gao_(surname)
 Ancestral_home_(Chinese)
@@ -1880,7 +1880,7 @@ Circular_motion
 Bullet_Cluster
 Modified_Newtonian_dynamics
 Asteroid
-List_of_minor_planets_5001%E2%80%936000
+List_of_minor_planets:_5001%E2%80%936000
 Documentary_film
 5G
 Extremely_high_frequency
@@ -2520,7 +2520,7 @@ Limiting_factor
 Competition
 Extinction_debt
 Elevational_diversity_gradient
-R*_rule_(ecology)
+R_rule_(ecology)
 Peptide_sequence_tag
 Electrospray
 Polyacrylamide_gel_electrophoresis
