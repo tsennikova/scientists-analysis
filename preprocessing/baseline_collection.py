@@ -15,16 +15,10 @@ import wikipedia
 import pprint
 import csv
 
-def parse_url(link):
-    language = link.rstrip().split('.')[0]
-    title= link.rstrip().split('/')
-    return language, title[-1]   
-
 def wiki_search(keyword):
     title=""
     site = wiki.Wiki("https://en.wikipedia.org/w/api.php")
-    #urllib2.quote(title.encode("utf8"))
-    #title = title.encode("utf-8")
+    # get the title of the article
     params = {'action':'query',  'list':'search', 'srsearch':keyword, 'srnamespace':0, 'srwhat':'nearmatch', 'srlimit':1, 'srprop':'titlesnippet', 'srenablerewrites':1}
     req = api.APIRequest(site, params)
     result = req.query()
@@ -32,6 +26,7 @@ def wiki_search(keyword):
         for key, value in result['query']['search'][0].iteritems():
             if key=='title':
                 title=value
+        # get the URL of the article
         params = {'action':'query',  'prop':'info', 'titles':title, 'inprop':'url'}
         req = api.APIRequest(site, params)
         result = req.query()
@@ -46,7 +41,6 @@ data_dir = os.path.join(base_dir, 'data')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
 csv_path =os.path.join(baseline_dir, 'prominent_scientists_(mearged_2001,2014,2015_TR).csv')
-count=0
 csvfile = open(csv_path , 'r')
 reader = csv.reader(csvfile)
 data=[]
@@ -56,8 +50,6 @@ for row in reader:
     if url is not None:
         csv_row = [keyword, url, row[3]]
         data.append(csv_row)
-    count+=1
-    print float(count)/11251
 csvfile.close()
 
 output_path =  os.path.join(baseline_dir, 'baseline.csv')
