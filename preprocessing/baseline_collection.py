@@ -1,18 +1,13 @@
 '''
-Created on Jun 5, 2016
-
-@author: Tania
-'''
-import os
-import sys
-'''
 Created on May 28, 2016
 
 @author: Tania
 '''
+
+import os
+import sys
 from wikitools import wiki, api
 import wikipedia
-import pprint
 import csv
 
 def wiki_search(keyword):
