@@ -13,7 +13,9 @@ import os
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
-seed_dir = os.path.join(data_dir, 'seed')
+seed_dir = os.path.join(data_dir, 'baseline')
+neighbors_dir = os.path.join(data_dir, 'neighbors')
+
 
 def load_simple_json(filename):
     with open(filename, 'r') as f:
@@ -34,6 +36,8 @@ def parse_url(link):
     title= link.rstrip().split('/')
     return language, title[-1]   
 
+topic_dict={}
+
 def revisions_extraction(lang, title):
     timestamp = ""
     site = wiki.Wiki(language+".wikipedia.org/w/api.php")
@@ -41,9 +45,10 @@ def revisions_extraction(lang, title):
     req = api.APIRequest(site, params)
     result = req.query()
     for pidkey in result['query']['pages']:
-        print  result['query']['pages'][pidkey]
-        for key in result['query']['pages'][pidkey]['revisions']:
-            timestamp=key['timestamp']
+        #print  result['query']['pages'][pidkey]
+        if 'revisions' in result['query']['pages'][pidkey]:
+            for key in result['query']['pages'][pidkey]['revisions']:
+                timestamp=key['timestamp']
     return timestamp
 
 
@@ -51,19 +56,21 @@ url="https://en.wikipedia.org/wiki/Help:Page_history"
 language, title=parse_url(url)
 timestamp=revisions_extraction(language, title)
 #url_list=clean_list(links)
-print timestamp
-
-filename =  os.path.join(seed_dir, 'seed_data.json')    
+count = 0
+filename =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json')    
 pages = load_simple_json(filename)
-for link, param_list in pages.iteritems():
-#   link = link.decode("utf-8").encode('latin-1')
-    link = link.encode("utf-8")
-    link = urllib2.unquote(link).decode("utf-8")
-    language, title=parse_url(link)
-    timestamp=revisions_extraction(language, title)
-    param_list.update({'Page_created':timestamp})
-    print param_list
+for link, topic_list in pages.iteritems():
+    count+=1
+    print count
+    print link
+#     link = link.encode("utf-8")
+#     link = urllib2.unquote(link).decode("utf-8")
+#     language, title=parse_url(link)
+    for topic in topic_list:
+        timestamp=revisions_extraction("en", topic)
+        topic_dict.update({topic:timestamp})
+print topic_dict
 
-output_path =  os.path.join(seed_dir, 'creation_date.json')    
+output_path =  os.path.join(neighbors_dir, 'baseline_topic_creation_date.json')    
 with open(output_path, 'w') as out:
-        json.dump(pages, out, indent=4, sort_keys=True)  
+        json.dump(topic_dict, out, indent=4, sort_keys=True)  
