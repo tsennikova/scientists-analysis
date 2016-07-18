@@ -3,8 +3,6 @@ Created on Jul 16, 2016
 
 @author: Tania
 '''
-# TODO make weekly and monthly aggregation
-
 import json
 import os
 from datetime import datetime
@@ -13,7 +11,7 @@ import matplotlib.pyplot as plt
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
-seed_dir = os.path.join(data_dir, 'seed')
+baseline_dir = os.path.join(data_dir, 'baseline')
 neighbors_dir = os.path.join(data_dir, 'neighbors')
 plots_dir = os.path.join(data_dir, 'plots')
 
@@ -26,13 +24,40 @@ def days_between(d1, d2):
     d2 = datetime.strptime(d2, "%Y-%m-%d")
     return (d2 - d1).days
 
-filename =  os.path.join(neighbors_dir, 'seed_topic_creation_date.json')    
+def weekly_aggregation(time_list):
+    weekly_list = []
+    for day in time_list:
+        day = day/7
+        weekly_list.append(day)
+    return weekly_list
+
+def monthly_aggregation(time_list):
+    monthly_list = []
+    for day in time_list:
+        day = day/30
+        monthly_list.append(day)
+    return monthly_list
+
+
+def plotting(array, name):
+    plt.title("Time lag between the articles creation")
+    plt.xlabel("Time lag (months)")
+    plt.ylabel("Probability")
+    #plt.hist(time_list, bins=[-360, -330, -300, -270, -240, -210, -180, -150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360])
+    #plt.hist(time_list, bins=[-1000, -900, -800, -700, -600, -500, -400, -300, -200, -100, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000])
+    plt.hist(array, bins=50, normed = True)
+    #plt.show()
+    plt.savefig(plots_dir+name)
+    return
+
+
+filename =  os.path.join(neighbors_dir, 'baseline_topic_creation_date.json')    
 topic_dict = load_simple_json(filename)
 
-filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
+filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')    
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json')    
+filename =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json')    
 main_dict = load_simple_json(filename)
 
 timelag_dict = {}
@@ -45,26 +70,7 @@ for scientist, topic_list in main_dict.iteritems():
         topic_date = topic_dict.get(topic).rstrip().split('T')[0]
         time_lag = days_between(scientist_date, topic_date)
         time_list.append(time_lag)
-#         if time_lag in timelag_dict:
-#             timelag_dict[time_lag]+=1
-#         else:
-#             timelag_dict[time_lag]=1
-#print timelag_dict
-plt.title("Time lag between the articles creation")
-plt.xlabel("Time lag (days)")
-plt.ylabel("Probability")
-#plt.hist(time_list, bins=[-360, -330, -300, -270, -240, -210, -180, -150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360])
-#plt.hist(time_list, bins=[-1000, -900, -800, -700, -600, -500, -400, -300, -200, -100, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000])
-plt.hist(time_list, bins=50, normed = True)
-#plt.show()
-plt.savefig(plots_dir+'/timelag_(seed_creation_date).pdf')
-            
 
-#timestamp = timestamp.rstrip().split('T')[0]
-# Convert str to the data format
-#timestamp = datetime.strptime(timestamp, '%Y-%m-%d')
-# Get the number of the day in the year
-#index = int(timestamp.strftime('%j'))
-#year = int(timestamp.year)
-
+monthly_list = monthly_aggregation(time_list)
+plotting(monthly_list, '/timelag_monthly_(baseline_creation_date).pdf')
 
