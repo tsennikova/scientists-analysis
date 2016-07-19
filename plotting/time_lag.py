@@ -9,6 +9,8 @@ from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 
+#TODO: show to hists in one plot (seed+baseline)
+
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
 baseline_dir = os.path.join(data_dir, 'baseline')
