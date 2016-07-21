@@ -45,8 +45,6 @@ def plotting(array, name):
     plt.title("Time lag between the articles creation")
     plt.xlabel("Time lag (months)")
     plt.ylabel("Probability")
-    #plt.hist(time_list, bins=[-360, -330, -300, -270, -240, -210, -180, -150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360])
-    #plt.hist(time_list, bins=[-1000, -900, -800, -700, -600, -500, -400, -300, -200, -100, 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000])
     plt.hist(array, bins=50, normed = True)
     #plt.show()
     plt.savefig(plots_dir+name)

@@ -31,7 +31,7 @@ for scientist, param_dict in scientist_dict.iteritems():
         year = int(param_dict["Year"])
         day = award_dates["Day"].loc[award_dates['Award'] == award][award_dates['Field'] == field][award_dates['Year'] == year]
         month = award_dates["Month"].loc[award_dates['Award'] == award][award_dates['Field'] == field][award_dates['Year'] == year]
-        awarded = str("%02d" % day.values[0]) + "-" + str("%02d" % month.values[0]) + "-" + str(year)
+        awarded = str(year) + "-" + str("%02d" % month.values[0]) + "-" + str("%02d" % day.values[0])
     param_dict.update({'Award_date':awarded})
 
 output_path =  os.path.join(seed_dir, 'seed_creation_date.json')    
