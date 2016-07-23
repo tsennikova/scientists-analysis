@@ -5,13 +5,11 @@ Created on 19 Jul 2016
 '''
 import json
 import os
-from datetime import datetime
-from sklearn import preprocessing
+import datetime
 import numpy as np
 import matplotlib.pyplot as plt
-import itertools
 
-#TODO learn how to get date from year and day number
+# The result of the plotting is not readable
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -30,23 +28,46 @@ def load_simple_json(filename):
         return json.load(f)
     
 def days_between(d1, d2):
-    d1 = datetime.strptime(d1, "%Y-%m-%d")
-    d2 = datetime.strptime(d2, "%Y-%m-%d")
     return (d2 - d1).days
 
+def running_mean(x, N):
+    cumsum = np.cumsum(np.insert(x, 0, 0)) 
+    return (cumsum[N:] - cumsum[:-N]) / N 
+
 def time_aligning(scientist_dict, norm_dir):
+    
     for scientist, param_dict in scientist_dict.iteritems():
-        event_date = param_dict["Award_date"]
+        print scientist
+        plt.figure()
+        time_dict = {}
+        x = []
+        y = []
+        days_check = []
+        event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
         scientist = scientist.rstrip().split('/')[-1]
         txtname = os.path.join(norm_scientist_dir + '\\' + scientist + '.txt')      
         f = open(txtname)
+        # converting string to dates
         for line in f:
-            print line
+            day_list = line.rstrip().split(',')
+            year = day_list.pop(0)
+            for idx,day in enumerate(day_list):
+                date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
+                days_difference = days_between(event_date, date)
+                days_check.append(date)
+                x.append(days_difference)
+                y.append(day)     
         f.close()
-        break
+        x = np.array(x, dtype=np.int)
+        y = np.array(y, dtype=np.float)
+        y = running_mean(y, 90)
+        x = running_mean(x, 90)
+        plt.plot(x, y)
+#        break
+    plt.show()
     return
 
-filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
+filename =  os.path.join(seed_dir, 'test.json')  
 scientist_dict = load_simple_json(filename)
 
 time_aligning(scientist_dict, norm_dir)
