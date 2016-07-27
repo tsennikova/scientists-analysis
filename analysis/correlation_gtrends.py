@@ -12,6 +12,9 @@ from itertools import islice
 import pandas as pd
 import datetime
 import time
+import matplotlib.pyplot as plt
+
+# TODO recollect GT, regenerate all the plots and statistics, write code for topics
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -66,7 +69,6 @@ def get_scientist_series_from_txt(scientist_dict, dir):
     series_dict = {}
     correlation_list = []
     for scientist in scientist_dict:
-        print scientist
         year_dict = {}
         scientist_series = []
         scientist = scientist.rstrip().split('/')[-1]
@@ -94,17 +96,30 @@ def get_scientist_series_from_txt(scientist_dict, dir):
             rng = pd.date_range(start_point, end_point, freq='D')
             #print scientist, start_point, len(rng)
             ts = pd.Series(scientist_series, index=rng)
-            weekly_ts = numpy.array(ts.asfreq('W', method='pad').values, dtype = float)
+            param_ts = numpy.array(ts.asfreq('W', method='pad').values, dtype = float)
             gt_series = get_google_trends_series(scientist)
-
-            weekly_ts = (weekly_ts - numpy.mean(weekly_ts)) / (numpy.std(weekly_ts)* len(weekly_ts))
-            gt_series = (gt_series - numpy.mean(gt_series)) /  (numpy.std(gt_series) )
-            correlation_list.append(numpy.correlate(weekly_ts, gt_series)[0])
+            rng = pd.date_range('2004-01-04', '2016-06-26', freq='W')
+            ts = pd.Series(gt_series, index=rng)
+            rng = pd.date_range(start_point, end_point, freq='W')
+            gtrends_ts = numpy.array(pd.Series(ts, index=rng).values, dtype = float)
+            #print scientist, gtrends_ts
+# Plotting            
+#             plt.figure()
+#             plt.title(scientist)
+#             plt.plot(param_ts, label = 'views')
+#             plt.plot(gtrends_ts, label = 'google_trends')
+#             plt.legend(loc='upper left')
+            
+            param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
+            gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
+            
+            correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
 
     print correlation_list
     print 'average correlation', numpy.mean(correlation_list)
     print 'min correlation', format(numpy.min(correlation_list),'f')
     print 'max correlation',format(numpy.max(correlation_list),'f')
+#    plt.show()
     return
 
 scientist_dict = load_simple_json(scientists_file)

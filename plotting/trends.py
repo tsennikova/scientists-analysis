@@ -53,6 +53,7 @@ def time_aligning(scientist_dict, norm_dir):
             year = day_list.pop(0)
             for idx,day in enumerate(day_list):
                 date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
+                print date
                 days_difference = days_between(event_date, date)
                 days_check.append(date)
                 x.append(days_difference)
