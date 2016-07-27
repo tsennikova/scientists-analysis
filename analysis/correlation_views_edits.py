@@ -11,6 +11,8 @@ import random
 
 from itertools import islice
 
+# TODO: normalize edits by total number of edits 
+# TODO regenerate data
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
