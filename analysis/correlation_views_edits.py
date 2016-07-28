@@ -22,11 +22,11 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 # seed or baseline
 scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
-topic_file =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json') 
+topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
 
 # views, edits
-views_dir = os.path.join(data_dir, 'views')
-edits_dir = os.path.join(data_dir, 'edits')
+views_dir = os.path.join(data_dir, 'views_normalized')
+edits_dir = os.path.join(data_dir, 'edits_normalized')
 
 # scientists or topics
 views_sci = os.path.join(views_dir, 'scientists')
@@ -41,6 +41,10 @@ def load_simple_json(filename):
     print filename
     with open(filename, 'r') as f:
         return json.load(f)
+    
+def running_mean(x, N):
+    cumsum = numpy.cumsum(numpy.insert(x, 0, 0)) 
+    return (cumsum[N:] - cumsum[:-N]) / N 
     
 def get_series(filename):
     scientist_series = []
@@ -74,14 +78,16 @@ def correlation_btw_topics():
                     views_series = numpy.array(zero_list + views_series, dtype=float)
                 if len(views_series)>len(edits_series):   
                     zero_list = [0] * (len(views_series) - len(edits_series))
-                    edits_series = numpy.array(zero_list + edits_series, dtype=float )         
+                    edits_series = numpy.array(zero_list + edits_series, dtype=float ) 
+                views_series = running_mean(views_series, 90)
+                edits_series = running_mean(edits_series, 90)        
                 views_series = (views_series - numpy.mean(views_series)) / (numpy.std(views_series)* len(views_series))
                 edits_series = (edits_series - numpy.mean(edits_series)) /  (numpy.std(edits_series) )
                 correlation_list.append(numpy.correlate(views_series, edits_series)[0])
     print correlation_list
-    print 'average correlation', numpy.mean(correlation_list)
-    print 'min correlation', format(numpy.min(correlation_list),'f')
-    print 'max correlation',format(numpy.max(correlation_list),'f')
+    print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
+    print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
+    print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
     return
 
 def correlation_btw_scientists():     
@@ -100,14 +106,16 @@ def correlation_btw_scientists():
             if len(views_series)>len(edits_series):   
                 zero_list = [0] * (len(views_series) - len(edits_series))
                 edits_series = numpy.array(zero_list + edits_series, dtype=float )         
+            views_series = running_mean(views_series, 90)
+            edits_series = running_mean(edits_series, 90)
             views_series = (views_series - numpy.mean(views_series)) / (numpy.std(views_series)* len(views_series))
             edits_series = (edits_series - numpy.mean(edits_series)) /  (numpy.std(edits_series) )
             correlation_list.append(numpy.correlate(views_series, edits_series)[0])
 
     print correlation_list
-    print 'average correlation', numpy.mean(correlation_list)
-    print 'min correlation', format(numpy.min(correlation_list),'f')
-    print 'max correlation',format(numpy.max(correlation_list),'f')
+    print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
+    print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
+    print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
     return
     
-correlation_btw_scientists()
+correlation_btw_topics()

@@ -85,7 +85,7 @@ bots_list = text_file.read().splitlines()
 
 
 
-filename =  os.path.join(neighbors_dir, 'scientists_list.txt')    
+filename =  os.path.join(neighbors_dir, 'topics_list.txt')    
 result_list = []
 count = 0
 time_array = [0]
@@ -128,11 +128,20 @@ for link in link_list:
                 listofzeros [index-1] = 1
                 time_array = time_array + listofzeros
 
-        time_dict.update({time_array[0]:time_array})   
+        time_dict.update({time_array[0]:time_array})
+    year_list = range(min(list(time_dict.keys())), 2016)   
+    for year in year_list:
+        if year not in time_dict:
+            if year != 2008 and year != 2012 and year != 2004 and year != 2016:
+                listofzeros = [0] * 365
+            else:
+                listofzeros = [0] * 366
+            listofzeros = [year] + listofzeros
+            time_dict.update({year:listofzeros})
     time_dict = collections.OrderedDict(sorted(time_dict.items()))
     original_link = original_link.translate(None, ':*') 
  #   original_link = original_link.rstrip().split('/')[-1]
-    output_path =  os.path.join(scientits_dir, original_link+'.txt')    
+    output_path =  os.path.join(topics_dir, original_link+'.txt')    
     text_file = open(output_path, "w")
     
     for key in time_dict:

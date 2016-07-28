@@ -14,7 +14,7 @@ import datetime
 import time
 import matplotlib.pyplot as plt
 
-# TODO recollect GT, regenerate all the plots and statistics, write code for topics
+# TODO recollect edits for scientists, regenerate all the plots and statistics, write code for topics
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -24,12 +24,13 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 # seed or baseline
 scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
+#scientists_file =  os.path.join(seed_dir, 'test.json') 
 topic_file =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json') 
 
 # views, edits or google trends
-views_dir = os.path.join(data_dir, 'views')
-edits_dir = os.path.join(data_dir, 'edits')
-google_trends_dir = os.path.join(data_dir, 'google_trends')
+views_dir = os.path.join(data_dir, 'views_normalized')
+edits_dir = os.path.join(data_dir, 'edits_normalized')
+google_trends_dir = os.path.join(data_dir, 'google_trends_normalized')
 
 # scientists or topics
 views_sci = os.path.join(views_dir, 'scientists')
@@ -44,6 +45,10 @@ def load_simple_json(filename):
     print filename
     with open(filename, 'r') as f:
         return json.load(f)
+
+def running_mean(x, N):
+    cumsum = numpy.cumsum(numpy.insert(x, 0, 0)) 
+    return (cumsum[N:] - cumsum[:-N]) / N 
     
 def next_weekday(d, weekday):
     days_ahead = weekday - d.weekday()
@@ -58,8 +63,9 @@ def get_google_trends_series(scientist):
         f = open(csvname, 'rb')
         reader = csv.reader(f)
         # skip template
-        for row in islice(reader, 5, 657):
-            scientist_series.append(int(row[1]))
+        for row in islice(reader, 1, 653):
+        #for row in islice(reader, 5, 657):
+            scientist_series.append(float(row[1]))
         f.close()
     except IOError:
         return scientist_series
@@ -98,32 +104,35 @@ def get_scientist_series_from_txt(scientist_dict, dir):
             ts = pd.Series(scientist_series, index=rng)
             param_ts = numpy.array(ts.asfreq('W', method='pad').values, dtype = float)
             gt_series = get_google_trends_series(scientist)
-            rng = pd.date_range('2004-01-04', '2016-06-26', freq='W')
-            ts = pd.Series(gt_series, index=rng)
-            rng = pd.date_range(start_point, end_point, freq='W')
-            gtrends_ts = numpy.array(pd.Series(ts, index=rng).values, dtype = float)
-            #print scientist, gtrends_ts
+            if gt_series!=[]:
+                rng = pd.date_range('2004-01-04', '2016-06-26', freq='W')
+                ts = pd.Series(gt_series, index=rng)
+                rng = pd.date_range(start_point, end_point, freq='W')
+                gtrends_ts = numpy.array(pd.Series(ts, index=rng).values, dtype = float)
+                param_ts = running_mean(param_ts, 13)
+                gtrends_ts = running_mean(gtrends_ts, 13)
+                #print scientist, gtrends_ts
 # Plotting            
-#             plt.figure()
-#             plt.title(scientist)
-#             plt.plot(param_ts, label = 'views')
-#             plt.plot(gtrends_ts, label = 'google_trends')
-#             plt.legend(loc='upper left')
-            
-            param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
-            gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
-            
-            correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
+    #             plt.figure()
+    #             plt.title(scientist)
+    #             plt.plot(param_ts, label = 'views')
+    #             plt.plot(gtrends_ts, label = 'google_trends')
+    #             plt.legend(loc='upper left')
+                
+                param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
+                gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
+    #            print scientist, numpy.correlate(param_ts, gtrends_ts)[0]
+                correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
 
-    print correlation_list
-    print 'average correlation', numpy.mean(correlation_list)
-    print 'min correlation', format(numpy.min(correlation_list),'f')
-    print 'max correlation',format(numpy.max(correlation_list),'f')
+    
+    print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
+    print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
+    print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
 #    plt.show()
     return
 
 scientist_dict = load_simple_json(scientists_file)
-scientist_series = get_scientist_series_from_txt(scientist_dict, views_sci)
+scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
 
 
 # start_point = next_weekday(d, 6) 

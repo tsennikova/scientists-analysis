@@ -42,7 +42,7 @@ def google_trend_crawler(name):
         name = name.translate(None, ':*\'')
         name = name.decode("cp1252")
         name = urllib.quote_plus(name.encode("utf-8"))
-        connector.save_csv(topics_dir, name)
+        connector.save_csv(scientisis_dir, name)
     else:
         with open(errorfile, "a") as myfile:
             myfile.write("%s\n" % name)
@@ -50,7 +50,7 @@ def google_trend_crawler(name):
 
 
 counter = 0
-filename =  os.path.join(neighbors_dir, 'topics_list-1.txt')
+filename =  os.path.join(neighbors_dir, 'scientists_list-1.txt')
 
 
 with open(filename) as f:
