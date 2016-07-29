@@ -14,7 +14,8 @@ import datetime
 import time
 import matplotlib.pyplot as plt
 
-# TODO recollect edits for scientists, regenerate all the plots and statistics, write code for topics
+# TODO topic correlation func does not work
+# TODO  regenerate all the plots and statistics, write code for topics
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -23,7 +24,7 @@ seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
 # seed or baseline
-scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
+scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
 #scientists_file =  os.path.join(seed_dir, 'test.json') 
 topic_file =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json') 
 
@@ -70,6 +71,53 @@ def get_google_trends_series(scientist):
     except IOError:
         return scientist_series
     return scientist_series
+
+def get_topic_series_from_txt(topic_dict, dir):
+    series_dict = {}
+    correlation_list = []
+    for scientist, topic_list in topic_dict.iteritems():
+        for topic in topic_list:
+            year_dict = {}
+            topic_series = []
+            filename = os.path.join(dir + '\\' + topic + '.txt')
+            try:
+                f = open(filename)
+                for line in f:
+                    time_list = map(float, line.split(','))
+                    year = int(time_list.pop(0))
+                    if  year>2004 and year<2016:
+                        year_dict.update({year:len(time_list)}) 
+                        topic_series += time_list 
+                f.close()
+            except IOError:
+                continue
+            if year_dict!={}:
+                start_year = min(list(year_dict.keys()))
+                end_year = max(list(year_dict.keys()))
+                d = datetime.date(start_year, 1, 1)
+                # 0 = Monday, 1=Tuesday, 2=Wednesday... We use Sunday as in Google Trends csv file every week starts from Sunday
+                start_point = str(start_year) + '-01-01' 
+                end_point = datetime.datetime(int(end_year), 1, 1) + datetime.timedelta(year_dict[end_year]-1)
+                #Generate periods
+                rng = pd.date_range(start_point, end_point, freq='D')
+                ts = pd.Series(topic_series, index=rng)
+                param_ts = numpy.array(ts.asfreq('W', method='pad').values, dtype = float)
+                gt_series = get_google_trends_series(topic)
+                if gt_series!=[]:
+                    rng = pd.date_range('2004-01-04', '2016-06-26', freq='W')
+                    ts = pd.Series(gt_series, index=rng)
+                    rng = pd.date_range(start_point, end_point, freq='W')
+                    gtrends_ts = numpy.array(pd.Series(ts, index=rng).values, dtype = float)
+                    param_ts = running_mean(param_ts, 13)
+                    gtrends_ts = running_mean(gtrends_ts, 13)                    
+                    param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
+                    gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
+                    print numpy.correlate(param_ts, gtrends_ts)[0]
+                    correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
+    print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
+    print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
+    print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
+    return
 
 def get_scientist_series_from_txt(scientist_dict, dir):
     series_dict = {}
@@ -131,8 +179,11 @@ def get_scientist_series_from_txt(scientist_dict, dir):
 #    plt.show()
     return
 
-scientist_dict = load_simple_json(scientists_file)
-scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
+#scientist_dict = load_simple_json(scientists_file)
+#scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
+
+topic_dict = load_simple_json(topic_file)
+get_topic_series_from_txt(topic_dict, edits_topic)
 
 
 # start_point = next_weekday(d, 6) 
