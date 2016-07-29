@@ -14,9 +14,7 @@ import datetime
 import time
 import matplotlib.pyplot as plt
 
-# TODO topic correlation func does not work
-# TODO  regenerate all the plots and statistics, write code for topics
-
+# TODO renormalize views, recalc views/edits
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
 neighbors_dir = os.path.join(data_dir, 'neighbors')
@@ -40,7 +38,7 @@ gooogle_trends_sci = os.path.join(google_trends_dir, 'scientists')
 
 views_topic = os.path.join(views_dir, 'topics')
 edits_topic = os.path.join(edits_dir, 'topics')
-gooogle_trends_topic = os.path.join(google_trends_dir, 'google_trends')
+gooogle_trends_topic = os.path.join(google_trends_dir, 'topics')
 
 def load_simple_json(filename):
     print filename
@@ -59,7 +57,7 @@ def next_weekday(d, weekday):
     
 def get_google_trends_series(scientist):
     scientist_series = []   
-    csvname = os.path.join(gooogle_trends_sci + '\\' + scientist + '.csv')
+    csvname = os.path.join(gooogle_trends_topic + '\\' + scientist + '.csv')
     try: 
         f = open(csvname, 'rb')
         reader = csv.reader(f)
@@ -77,6 +75,7 @@ def get_topic_series_from_txt(topic_dict, dir):
     correlation_list = []
     for scientist, topic_list in topic_dict.iteritems():
         for topic in topic_list:
+            print topic
             year_dict = {}
             topic_series = []
             filename = os.path.join(dir + '\\' + topic + '.txt')
@@ -98,7 +97,7 @@ def get_topic_series_from_txt(topic_dict, dir):
                 # 0 = Monday, 1=Tuesday, 2=Wednesday... We use Sunday as in Google Trends csv file every week starts from Sunday
                 start_point = str(start_year) + '-01-01' 
                 end_point = datetime.datetime(int(end_year), 1, 1) + datetime.timedelta(year_dict[end_year]-1)
-                #Generate periods
+                
                 rng = pd.date_range(start_point, end_point, freq='D')
                 ts = pd.Series(topic_series, index=rng)
                 param_ts = numpy.array(ts.asfreq('W', method='pad').values, dtype = float)
@@ -112,7 +111,6 @@ def get_topic_series_from_txt(topic_dict, dir):
                     gtrends_ts = running_mean(gtrends_ts, 13)                    
                     param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
                     gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
-                    print numpy.correlate(param_ts, gtrends_ts)[0]
                     correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
     print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
     print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
@@ -161,15 +159,15 @@ def get_scientist_series_from_txt(scientist_dict, dir):
                 gtrends_ts = running_mean(gtrends_ts, 13)
                 #print scientist, gtrends_ts
 # Plotting            
-    #             plt.figure()
-    #             plt.title(scientist)
-    #             plt.plot(param_ts, label = 'views')
-    #             plt.plot(gtrends_ts, label = 'google_trends')
-    #             plt.legend(loc='upper left')
+#                 plt.figure()
+#                 plt.title(scientist)
+#                 plt.plot(param_ts, label = 'views')
+#                 plt.plot(gtrends_ts, label = 'google_trends')
+#                 plt.legend(loc='upper left')
                 
                 param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
                 gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
-    #            print scientist, numpy.correlate(param_ts, gtrends_ts)[0]
+                #print scientist, numpy.correlate(param_ts, gtrends_ts)[0]
                 correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
 
     
@@ -183,7 +181,7 @@ def get_scientist_series_from_txt(scientist_dict, dir):
 #scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
 
 topic_dict = load_simple_json(topic_file)
-get_topic_series_from_txt(topic_dict, edits_topic)
+get_topic_series_from_txt(topic_dict, views_topic)
 
 
 # start_point = next_weekday(d, 6) 
