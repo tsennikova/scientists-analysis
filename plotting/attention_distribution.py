@@ -4,6 +4,7 @@ Created on 18 Jul 2016
 @author: sennikta
 '''
 
+# TODO check box plot for google_trends
 
 import json
 import os
@@ -22,7 +23,7 @@ plots_dir = os.path.join(data_dir, 'plots')
 powerlaw_dir = os.path.join(plots_dir, 'attention_distribution')
 
 # Change address for each dataset
-edits_dir = os.path.join(data_dir, 'edits')
+edits_dir = os.path.join(data_dir, 'views')
 scientists_dir = os.path.join(edits_dir, 'scientists')
 
 def load_simple_json(filename):
@@ -34,9 +35,9 @@ def load_simple_json(filename):
 # Plot the frequency distribution
 def plot_distribution(seed, baseline, name):
     plt.title("Attention distribution (views)")
-    plt.xlabel("# of searches (views)")
+    plt.xlabel("# of views")
     plt.ylabel("probability")
-    bins = range(10, 25)
+    bins = range(10, 28)
     plt.xticks(bins, ["2^%s" % i for i in bins])
     plt.hist(numpy.log2(seed), log=True, normed = True, bins=bins, label = 'seed data', alpha=0.5,)
     plt.hist(numpy.log2(baseline), log=True, normed = True, bins=bins, label = 'baseline data', alpha=0.5,)
@@ -51,9 +52,9 @@ def box_plot(seed, baseline, name):
     ax = fig.add_subplot(111)
     bp = ax.boxplot(data_to_plot)
     
-    plt.title("Attention distribution (edits)")
+    plt.title("Attention distribution (views)")
     ax.set_xticklabels(['seed data', 'baseline'])
-    plt.ylabel("# of edits")
+    plt.ylabel("# of views")
     bins = range(10, 25)
     #plt.show()
     plt.savefig(powerlaw_dir+name)
@@ -114,10 +115,10 @@ filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')
 baseline = read_txt(filename)
 
 # for google trends
-#filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
-#seed = read_csv(filename)
-#filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
-#baseline = read_csv(filename)
+# filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
+# seed = read_csv(filename)
+# filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+# baseline = read_csv(filename)
 
 
-box_plot(seed, baseline, '/boxplot_edits.pdf')
+plot_distribution(seed, baseline, '/loglog_views.pdf')
