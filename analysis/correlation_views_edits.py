@@ -118,4 +118,5 @@ def correlation_btw_scientists():
     print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
     return
     
+#correlation_btw_scientists()
 correlation_btw_topics()

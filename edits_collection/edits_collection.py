@@ -85,7 +85,7 @@ bots_list = text_file.read().splitlines()
 
 
 
-filename =  os.path.join(neighbors_dir, 'topics_list.txt')    
+filename =  os.path.join(neighbors_dir, 'topics_list-1.txt')    
 result_list = []
 count = 0
 time_array = [0]

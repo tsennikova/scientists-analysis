@@ -22,9 +22,10 @@ seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
 # seed or baseline
-scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
+scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
 #scientists_file =  os.path.join(seed_dir, 'test.json') 
-topic_file =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json') 
+# for topics change seed/baseline
+topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
 
 # views, edits or google trends
 views_dir = os.path.join(data_dir, 'views_normalized')
@@ -178,13 +179,10 @@ def get_scientist_series_from_txt(scientist_dict, dir):
     return
 
 #scientist_dict = load_simple_json(scientists_file)
-#scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
+#scientist_series = get_scientist_series_from_txt(scientist_dict, views_sci)
 
 topic_dict = load_simple_json(topic_file)
 get_topic_series_from_txt(topic_dict, views_topic)
 
 
-# start_point = next_weekday(d, 6) 
-# end_point = '2016-01-01'
-# #Generate periods
-# rng = pd.date_range(start_point, end_point, freq='W')
+#

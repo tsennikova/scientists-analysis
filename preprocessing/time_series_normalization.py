@@ -20,17 +20,24 @@ base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
 seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
-views_norm_dir = os.path.join(data_dir, 'views_normalized')
-edits_norm_dir = os.path.join(data_dir, 'edits_normalized')
+
+google_trends_dir = os.path.join(data_dir, 'google_trends')
 google_trends_norm_dir = os.path.join(data_dir, 'google_trends_normalized')
-views_norm_scientist_dir = os.path.join(views_norm_dir, 'scientists')
 google_trends_norm_scientist_dir  = os.path.join(google_trends_norm_dir, 'scientists')
+
+views_dir = os.path.join(data_dir, 'views')
+views_norm_dir = os.path.join(data_dir, 'views_normalized')
+views_norm_scientist_dir = os.path.join(views_norm_dir, 'scientists')
+views_norm_topics_dir = os.path.join(views_norm_dir, 'topics')
+
+edits_dir = os.path.join(data_dir, 'edits')
+edits_norm_dir = os.path.join(data_dir, 'edits_normalized')
 edits_norm_scientist_dir  = os.path.join(edits_norm_dir, 'scientists')
+edits_norm_topics_dir = os.path.join(edits_norm_dir, 'topics')
 
 # Change address for each dataset: views, edits, google_trends
-edits_dir = os.path.join(data_dir, 'edits')
-google_trends_dir = os.path.join(data_dir, 'google_trends')
 scientists_dir = os.path.join(edits_dir, 'scientists')
+topic_dir = os.path.join(views_dir, 'topics')
 
 # Split normalized time series back to years
 def split_time_series(time_series_norm, years_list):
@@ -53,7 +60,7 @@ def split_time_series(time_series_norm, years_list):
     return time_dict
 
 def output_txt(time_dict, file_name):
-    output_path =  os.path.join(edits_norm_scientist_dir, file_name)
+    output_path =  os.path.join(views_norm_topics_dir, file_name)
     text_file = open(output_path, "w")
     for key in time_dict:
         text_file.write(",".join(map(lambda x: str(x), time_dict[key])))
@@ -109,5 +116,5 @@ def read_csv(dir):
         data.to_csv(output_path, sep=',') 
     return
 
-read_txt(scientists_dir)
+read_txt(topic_dir)
 
