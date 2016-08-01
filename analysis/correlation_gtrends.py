@@ -58,7 +58,7 @@ def next_weekday(d, weekday):
     
 def get_google_trends_series(scientist):
     scientist_series = []   
-    csvname = os.path.join(gooogle_trends_topic + '\\' + scientist + '.csv')
+    csvname = os.path.join(gooogle_trends_sci + '\\' + scientist + '.csv')
     try: 
         f = open(csvname, 'rb')
         reader = csv.reader(f)
@@ -156,33 +156,33 @@ def get_scientist_series_from_txt(scientist_dict, dir):
                 ts = pd.Series(gt_series, index=rng)
                 rng = pd.date_range(start_point, end_point, freq='W')
                 gtrends_ts = numpy.array(pd.Series(ts, index=rng).values, dtype = float)
-                param_ts = running_mean(param_ts, 13)
-                gtrends_ts = running_mean(gtrends_ts, 13)
-                #print scientist, gtrends_ts
+                param_ts = running_mean(param_ts, 4)
+                gtrends_ts = running_mean(gtrends_ts, 4)
+               
 # Plotting            
-#                 plt.figure()
-#                 plt.title(scientist)
-#                 plt.plot(param_ts, label = 'views')
-#                 plt.plot(gtrends_ts, label = 'google_trends')
-#                 plt.legend(loc='upper left')
+                plt.figure()
+                plt.title(scientist)
+                plt.plot(param_ts, label = 'edits')
+                plt.plot(gtrends_ts, label = 'google_trends')
+                plt.legend(loc='upper left')
                 
                 param_ts = (param_ts - numpy.mean(param_ts)) / (numpy.std(param_ts)* len(param_ts))
                 gtrends_ts = (gtrends_ts - numpy.mean(gtrends_ts)) /  (numpy.std(gtrends_ts) )
-                #print scientist, numpy.correlate(param_ts, gtrends_ts)[0]
+                print scientist, numpy.correlate(param_ts, gtrends_ts)[0]
                 correlation_list.append(numpy.correlate(param_ts, gtrends_ts)[0])
 
     
     print 'average correlation', numpy.mean(numpy.absolute(correlation_list))
     print 'min correlation', format(numpy.min(numpy.absolute(correlation_list)),'f')
     print 'max correlation',format(numpy.max(numpy.absolute(correlation_list)),'f')
-#    plt.show()
+    plt.show()
     return
 
-#scientist_dict = load_simple_json(scientists_file)
-#scientist_series = get_scientist_series_from_txt(scientist_dict, views_sci)
+scientist_dict = load_simple_json(scientists_file)
+scientist_series = get_scientist_series_from_txt(scientist_dict, edits_sci)
 
-topic_dict = load_simple_json(topic_file)
-get_topic_series_from_txt(topic_dict, views_topic)
+#topic_dict = load_simple_json(topic_file)
+#get_topic_series_from_txt(topic_dict, views_topic)
 
 
 #

@@ -23,7 +23,7 @@ plots_dir = os.path.join(data_dir, 'plots')
 powerlaw_dir = os.path.join(plots_dir, 'attention_distribution')
 
 # Change address for each dataset
-edits_dir = os.path.join(data_dir, 'views')
+edits_dir = os.path.join(data_dir, 'edits')
 scientists_dir = os.path.join(edits_dir, 'scientists')
 
 def load_simple_json(filename):
@@ -34,10 +34,10 @@ def load_simple_json(filename):
 
 # Plot the frequency distribution
 def plot_distribution(seed, baseline, name):
-    plt.title("Attention distribution (views)")
-    plt.xlabel("# of views")
+    plt.title("Attention distribution (google searches)")
+    plt.xlabel("# of edits")
     plt.ylabel("probability")
-    bins = range(10, 28)
+    bins = range(4, 18)
     plt.xticks(bins, ["2^%s" % i for i in bins])
     plt.hist(numpy.log2(seed), log=True, normed = True, bins=bins, label = 'seed data', alpha=0.5,)
     plt.hist(numpy.log2(baseline), log=True, normed = True, bins=bins, label = 'baseline data', alpha=0.5,)
@@ -50,11 +50,11 @@ def box_plot(seed, baseline, name):
     data_to_plot = [seed, baseline]
     fig = plt.figure(1, figsize=(9, 4))
     ax = fig.add_subplot(111)
-    bp = ax.boxplot(data_to_plot)
+    bp = ax.boxplot(data_to_plot, showfliers=False)
     
-    plt.title("Attention distribution (views)")
+    plt.title("Attention distribution (edits)")
     ax.set_xticklabels(['seed data', 'baseline'])
-    plt.ylabel("# of views")
+    plt.ylabel("# of edits")
     bins = range(10, 25)
     #plt.show()
     plt.savefig(powerlaw_dir+name)
@@ -66,10 +66,10 @@ def box_plot(seed, baseline, name):
 def read_txt(filename):
     scientist_dict = load_simple_json(filename)
     data_list = []
-    attention_value = 0
+    
     attention_list = []
     for scientist in scientist_dict:
-
+        attention_value = 0
         scientist = scientist.rstrip().split('/')[-1]
         txtname = os.path.join(scientists_dir + '\\' + scientist + '.txt')   
         try:
@@ -88,11 +88,13 @@ def read_txt(filename):
 
 # For google trends
 def read_csv(filename):
+
     scientist_dict = load_simple_json(filename)
     data_list = []
-    attention_value = 0
+
     attention_list = []
     for scientist in scientist_dict:
+        attention_value = 0
         scientist = scientist.rstrip().split('/')[-1]
         csvname = os.path.join(scientists_dir + '\\' + scientist + '.csv')
         try: 
@@ -102,6 +104,7 @@ def read_csv(filename):
             for row in islice(reader, 5, 657):
                 attention_value += int(row[1])
             f.close()
+            print scientist, attention_value
             attention_list.append(attention_value)
         except IOError:
             print scientist
@@ -115,10 +118,20 @@ filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')
 baseline = read_txt(filename)
 
 # for google trends
-# filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
-# seed = read_csv(filename)
-# filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
-# baseline = read_csv(filename)
+#filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+#baseline = read_csv(filename)
+#filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
+#seed = read_csv(filename)
+
+#print 'average seed', numpy.mean(numpy.absolute(seed))
+#print 'min seed', format(numpy.min(numpy.absolute(seed)),'f')
+#print 'max seed',format(numpy.max(numpy.absolute(seed)),'f')
 
 
-plot_distribution(seed, baseline, '/loglog_views.pdf')
+#print 'average baseline', numpy.mean(numpy.absolute(baseline))
+#print 'min baseline', format(numpy.min(numpy.absolute(baseline)),'f')
+#print 'max baseline',format(numpy.max(numpy.absolute(baseline)),'f')
+
+box_plot(seed, baseline, '/boxplot_edits.pdf')
+
+#plot_distribution(seed, baseline, '/loglog_google_trends.pdf')
