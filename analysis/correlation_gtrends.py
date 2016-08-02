@@ -7,7 +7,7 @@ import json
 import os
 import numpy
 import csv
-import random
+
 from itertools import islice
 import pandas as pd
 import datetime
