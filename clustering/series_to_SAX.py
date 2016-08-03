@@ -4,7 +4,7 @@ Created on 2 Aug 2016
 @author: sennikta
 '''
 
-# TODO: Compressed files are longer than raw
+# TODO: Check why for neighboring TS SAX is so different
 #TODO play around with the normalization - each ts separately, or all together
 
 # Input:
@@ -29,6 +29,7 @@ Created on 2 Aug 2016
 
 import json
 import os
+from os import listdir
 import numpy
 import csv
 from itertools import islice
@@ -87,7 +88,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(edits_sax_sci, file_name)
+    output_path =  os.path.join(edits_sax_topic, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -180,14 +181,32 @@ def get_series_from_txt(scientist, dir):
         f.close()
     except IOError:
         return []
-        #    print scientist
+#    print scientist_series
     return scientist_series
 
-scientist_dict = load_simple_json(scientists_file)
-for scientist in scientist_dict:
-    print scientist
-    scientist_series = get_series_from_txt(scientist, edits_sci)
-    symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
-    file_name = scientist.rstrip().split('/')[-1]+'.txt'
-    output_txt(symbolic_data, file_name)
-#    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
+def scientists_collection(dir):
+    scientist_dict = load_simple_json(scientists_file)
+    for scientist in scientist_dict:
+        print scientist
+        scientist_series = get_series_from_txt(scientist, dir)
+        symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
+        file_name = scientist.rstrip().split('/')[-1]+'.txt'
+        output_txt(symbolic_data, file_name)
+    #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
+    return
+
+def topics_collection(dir):
+    files_list = listdir(dir)
+    for topic in files_list: 
+#         topic=topic.replace(' ', '_')
+#         topic = topic[0].upper() + topic[1:]
+        topic = topic.rstrip().split('.')[0]
+        print topic
+        topic_series = get_series_from_txt(topic, dir)
+        symbolic_data = series_to_sax(topic_series, 90, 9, 4)
+        file_name = topic+'.txt'            
+        output_txt(symbolic_data, file_name)
+    #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
+    return
+
+topics_collection(edits_topic)
