@@ -4,7 +4,7 @@ Created on 2 Aug 2016
 @author: sennikta
 '''
 
-#TODO solve problem woth map_to_string the same results
+# TODO: Compressed files are longer than raw
 #TODO play around with the normalization - each ts separately, or all together
 
 # Input:
@@ -47,7 +47,7 @@ seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
 
 # seed or baseline
-scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
+scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
 
 # for topics change seed/baseline
 topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
@@ -85,25 +85,40 @@ def load_simple_json(filename):
     print filename
     with open(filename, 'r') as f:
         return json.load(f)
+
+def output_txt(symbolic_data, file_name):
+    output_path =  os.path.join(edits_sax_sci, file_name)
+    text_file = open(output_path, "w")
+    for string in symbolic_data:
+        text_file.write(",".join(map(lambda x: str(x), string)))
+        text_file.write("\n")
+    text_file.close()  
+    symbolic_data = [] 
+    return
+
     
 def map_to_string(PAA, alphabet_size):
     string = numpy.zeros(shape=(1,len(PAA)))
     switcher = {
-                2:[0],
-                3:[-0.43, 0.43],
-                4:[-0.67, 0, 0.67],
-                5:[-0.84, -0.25, 0.25, 0.84],
-                6:[-0.97, -0.43, 0, 0.43, 0.97],
-                7:[-1.07, -0.57, -0.18, 0.18, 0.57, 1.07],
-                8:[-1.15, -0.67, -0.32, 0, 0.32, 0.67, 1.15],
-                9:[-1.22, -0.76, -0.43, -0.14, 0.14, 0.43, 0.76, 1.22],
-                10:[-1.28, -0.84, -0.52, -0.25, 0, 0.25, 0.52, 0.84, 1.28]
+                2:[-numpy.inf, 0],
+                3:[-numpy.inf, -0.43, 0.43],
+                4:[-numpy.inf, -0.67, 0, 0.67],
+                5:[-numpy.inf, -0.84, -0.25, 0.25, 0.84],
+                6:[-numpy.inf, -0.97, -0.43, 0, 0.43, 0.97],
+                7:[-numpy.inf, -1.07, -0.57, -0.18, 0.18, 0.57, 1.07],
+                8:[-numpy.inf, -1.15, -0.67, -0.32, 0, 0.32, 0.67, 1.15],
+                9:[-numpy.inf, -1.22, -0.76, -0.43, -0.14, 0.14, 0.43, 0.76, 1.22],
+                10:[-numpy.inf, -1.28, -0.84, -0.52, -0.25, 0, 0.25, 0.52, 0.84, 1.28]
                 }
     for i in range(0, len(PAA)):
-        cut_points = [s for s in switcher.get(alphabet_size) if s<=PAA[i]]
-        print cut_points
+        cut_points = []
+        for s in switcher.get(alphabet_size):
+            if s<=PAA[i]:
+                cut_points.append(1)
+            else:
+                cut_points.append(0)
         string[0][i] = sum(cut_points)
-    
+    #print 'SAX: ', string
     return string
 
 def series_to_sax(data, N, n, alphabet_size):
@@ -112,7 +127,8 @@ def series_to_sax(data, N, n, alphabet_size):
         return
     # win_size is the number of data points on the raw time series that will be mapped to a single symbol
     win_size = int(N/n)      
-    symbolic_data = numpy.zeros(shape=(1,n))
+    #symbolic_data = numpy.zeros(shape=(1,n))
+    symbolic_data = [0]
     PAA = []
     PAA = numpy.array(PAA)
     # Scan across the time series extract sub sequences, and converting them to strings.
@@ -120,10 +136,12 @@ def series_to_sax(data, N, n, alphabet_size):
     
         #Remove the current subsection
         sub_section = data[i:i+N]
-        
+        zero_array = [0]*len(sub_section)
         #Z normalize it
-        sub_section = (sub_section - numpy.mean(sub_section))/numpy.std(sub_section)
-    
+        if sub_section!= zero_array:
+            sub_section = (sub_section - numpy.mean(sub_section))/numpy.std(sub_section)
+        else:
+            sub_section =[-numpy.inf]*len(sub_section)
         # take care of the special case where there is no dimensionality reduction
         if N == n:
             PAA = sub_section
@@ -135,14 +153,18 @@ def series_to_sax(data, N, n, alphabet_size):
                 temp = numpy.zeros(shape=(n,N))
                 for j in range(0,n):
                     temp[j,:] = sub_section
-                expanded_sub_section = numpy.reshape(temp,(1, N*n))
-                PAA = numpy.mean(numpy.reshape(expanded_sub_section, (N, n)), 0)
+                expanded_sub_section = numpy.reshape(temp,(1, N*n), order='F')
+                PAA = numpy.mean(numpy.reshape(expanded_sub_section, (N, n),order='F'), 0)
             # N is dividable by n
             else:                                  
-                PAA =numpy.mean(numpy.reshape(sub_section, (win_size,n)), 0)
-        current_string = map_to_string(PAA,alphabet_size)
-    #print PAA.shape
-    return
+                PAA =numpy.mean(numpy.reshape(sub_section, (win_size,n), order='F'), 0)
+        #print 'PAA: ', PAA
+        current_string = list(map_to_string(PAA,alphabet_size)[0])
+        current_string = map(int, current_string)
+        if current_string!=symbolic_data[-1]:
+            symbolic_data.append(current_string)
+    symbolic_data.pop(0)
+    return symbolic_data
 
 def get_series_from_txt(scientist, dir):
     scientist_series = []
@@ -163,6 +185,9 @@ def get_series_from_txt(scientist, dir):
 
 scientist_dict = load_simple_json(scientists_file)
 for scientist in scientist_dict:
-    scientist_series = get_series_from_txt(scientist, views_sci)
-    series_to_sax(scientist_series, 90, 8, 10)
-    break
+    print scientist
+    scientist_series = get_series_from_txt(scientist, edits_sci)
+    symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
+    file_name = scientist.rstrip().split('/')[-1]+'.txt'
+    output_txt(symbolic_data, file_name)
+#    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
