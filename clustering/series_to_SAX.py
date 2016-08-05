@@ -88,7 +88,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(gooogle_trends_sax_topic, file_name)
+    output_path =  os.path.join(edits_sax_topic, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -119,13 +119,12 @@ def map_to_string(PAA, alphabet_size):
             else:
                 cut_points.append(0)
         string[0][i] = sum(cut_points)
-    print 'SAX: ', string
+    #print 'SAX: ', string
     return string
 
 def series_to_sax(data, N, n, alphabet_size):
-    print data
-    if alphabet_size > 20:
-        print 'Currently alphabet_size cannot be larger than 20.  Please update the breakpoint table if you wish to do so'
+    if alphabet_size > 10:
+        print 'Currently alphabet_size cannot be larger than 10.  Please update the breakpoint table if you wish to do so'
         return
     # win_size is the number of data points on the raw time series that will be mapped to a single symbol
     win_size = int(N/n)      
@@ -134,11 +133,10 @@ def series_to_sax(data, N, n, alphabet_size):
     PAA = []
     PAA = numpy.array(PAA)
     # Scan across the time series extract sub sequences, and converting them to strings.
-    for i in range (0, (len(data) - N)):
+    for i in range (0, (len(data) - N+1)):
     
         #Remove the current subsection
         sub_section = data[i:i+N]
-        print sub_section
         zero_array = [0]*len(sub_section)
         #Z normalize it
         if sub_section!= zero_array:
@@ -146,7 +144,6 @@ def series_to_sax(data, N, n, alphabet_size):
         else:
             sub_section =[-numpy.inf]*len(sub_section)
         # take care of the special case where there is no dimensionality reduction
-        print sub_section
         if N == n:
             PAA = sub_section
        
@@ -162,7 +159,7 @@ def series_to_sax(data, N, n, alphabet_size):
             # N is dividable by n
             else:                                  
                 PAA =numpy.mean(numpy.reshape(sub_section, (win_size,n), order='F'), 0)
-        print 'PAA: ', PAA
+        #print 'PAA: ', PAA
         current_string = list(map_to_string(PAA,alphabet_size)[0])
         current_string = map(int, current_string)
         if current_string!=symbolic_data[-1]:
@@ -194,8 +191,8 @@ def get_series_from_csv(scientist, dir):
         f = open(csvname)
         reader = csv.reader(f)
         # skip template
-        #for row in islice(reader, 5, 657):
-        for row in islice(reader, 6, 30):
+        for row in islice(reader, 5, 657):
+        #for row in islice(reader, 6, 30):
 
             year = int(row[0].rstrip().split('-')[0])
             if year>2004 and year<2016:
@@ -209,12 +206,13 @@ def get_series_from_csv(scientist, dir):
 def scientists_collection(dir):
     files_list = listdir(dir)
     for scientist in files_list:
-        scientist = scientist.replace('.csv','')
+        print scientist
+        scientist = scientist.replace('.txt','')
         # for Google Trends
-        scientist_series = get_series_from_csv(scientist, dir)
+        #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
-        #scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 13, 9, 4)
+        scientist_series = get_series_from_txt(scientist, dir)
+        symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
@@ -225,18 +223,16 @@ def topics_collection(dir):
     for topic in files_list: 
 #         topic=topic.replace(' ', '_')
 #         topic = topic[0].upper() + topic[1:]
-        topic = topic.replace('.csv','')
-        topic = 'test'
+        topic = topic.replace('.txt','')
         print topic
         # For Google Trends
-        topic_series = get_series_from_csv(topic, dir)
+        #topic_series = get_series_from_csv(topic, dir)
         # For views and edits
-        #topic_series = get_series_from_txt(topic, dir)
-        symbolic_data = series_to_sax(topic_series, 13, 9, 4)
-        file_name = topic+'.txt'      
-        break      
-    #    output_txt(symbolic_data, file_name)
+        topic_series = get_series_from_txt(topic, dir)
+        symbolic_data = series_to_sax(topic_series, 90, 9, 4)
+        file_name = topic+'.txt'            
+        output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
     return
 
-topics_collection(gooogle_trends_topic)
+topics_collection(edits_topic)
