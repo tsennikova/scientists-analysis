@@ -52,11 +52,11 @@ def get_title(name):
          
 
 filename1 =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json')
-filename2 =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json')
+#filename2 =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json')
 scientists_seed = load_simple_json(filename1) 
-scientists_baseline = load_simple_json(filename2)
+#scientists_baseline = load_simple_json(filename2)
 scientists = scientists_seed.copy()
-scientists.update(scientists_baseline) 
+#scientists.update(scientists_baseline) 
 scientist_list = []
 neighbors_list = []
 for scientist, neighbors in scientists.iteritems():
@@ -81,7 +81,7 @@ for item in scientist_list:
 text_file.close()   
 
 
-neighbors_output_path =  os.path.join(neighbors_dir, 'topics_list.txt')  
+neighbors_output_path =  os.path.join(neighbors_dir, 'seed-topics_list.txt')  
 text_file = open(neighbors_output_path, "w")
 for item in neighbors_list:
     text_file.write("%s\n" % item)
