@@ -10,6 +10,7 @@ import json
 import operator
 from itertools import islice
 import math
+import dis
 
 # TODO: go through the articles again, figure out algorithm, write comments
 
@@ -73,7 +74,8 @@ def read_sax (dir):
                 except IOError:
                     print filename
                     continue
-                list_of_lists.append(ts_list)
+                if ts_list!=[]:
+                    list_of_lists.append(ts_list)
             else:
                 print filename
     return list_of_lists
@@ -111,30 +113,52 @@ def compute_distance(sax_list, shapelet):
     dis = [float("inf")]*len(sax_list)
     for i in range(0, len(sax_list)):
         ts = sax_list[i]
-       # dis[i] = float("inf")
-        for j in range(0, len(ts)-len(shapelet)+1): # every start position of ts
+        for j in range(0, len(ts)-len(shapelet)): # every start position of ts
             #break
-            d = numpy.linalg.norm(numpy.array(ts[j])-numpy.array(shapelet))
-            dis[i] = min(dis[i], d)
-    norm_dis = [x / math.sqrt(len(shapelet)) for x in dis]
+            #print 'SAX word', ts[j]
+            #print 'Shapelet', shapelet
+            d = numpy.linalg.norm(numpy.array(ts[j])-numpy.array(shapelet)) # calculate euclidian distance between u-shapelet and each SAX word of the time series
+            dis[i] = min(dis[i], d) # we take min dist as a dist between u-shapelet and SAX word
+        print dis[i], d
+       
+    norm_dis = [x / math.sqrt(len(shapelet)) for x in dis] # length normalized Euclidian distance (normalized by square root of shapelet length, optional)
+    print norm_dis
     return norm_dis
 
 def compute_gap(sax_list, shapelets):
-    for shapelet in shapelets:
-        shapelet = str(shapelet.replace('\'',''))
-        shapelet = shapelet.strip('[]').split(',')
-        shapelet = map(int,shapelet) 
-        dis = compute_distance(sax_list, shapelet)
+    # bounds for scientists
+    lb = int(262*0.03)
+    ub = int(262*0.97)
+    
+  
+    for i in range(0,len(shapelets)):
+        curr_gap = 0 
+        shapelets[i] = str(shapelets[i].replace('\'',''))
+        shapelets[i] = shapelets[i].strip('[]').split(',')
+        shapelets[i] = map(int,shapelets[i]) 
+        dis = compute_distance(sax_list, shapelets[i])
+        
         dis = sorted(dis)
-        max_gap = 0
-        dt = 0
-        for l in range(0, len(dis)-1): # check all possible locations of dt
-            d = float(dis[l] + dis[l+1])/2
-            d_a = [i for i in dis if i < d] # points to the left of dt
-            d_b = [i for i in dis if i > d] # points to the right of dt
-            r = float(len(d_a))/len(d_b)
-            print r
-    return
+        gap = 0
+
+        print 'Computing gap'
+        for i in range(lb, ub): #for each location of separation point
+            d_a = [x for x in dis if x <= dis[i]] # points to the left 
+            d_b = [x for x in dis if x > dis[i]] # points to the right
+            
+            if lb<=len(d_a)<=ub:
+                mean_a = numpy.mean(numpy.array(d_a))
+                mean_b = numpy.mean(numpy.array(d_b))
+                std_a = numpy.std(numpy.array(d_a))
+                std_b = numpy.std(numpy.array(d_b))
+                print mean_a, mean_b, std_a, std_b
+                curr_gap = mean_b-std_b-(mean_a+std_a)
+                print curr_gap
+            if curr_gap>gap:
+                print 'in the if'
+                gap=curr_gap
+        print gap
+    return gap
 
 
 
@@ -148,7 +172,7 @@ shapelets = []
 shapelets_pairs = sort_shapelets('views_scientists_candidates.json', upper_bound_seed_sci, lower_bound_seed_sci)
 for i in range(0,int(len(shapelets_pairs)*0.01)):
     shapelets.append(shapelets_pairs[i][0])
-    break
+    #break
 compute_gap(sax_list, shapelets)
 
     
