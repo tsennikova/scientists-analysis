@@ -8,11 +8,13 @@ from os import listdir
 import numpy
 import json
 import operator
+from operator import itemgetter 
 from itertools import islice
 import math
 import dis
+from itertools import islice
 
-# TODO: go through the articles again, figure out algorithm, write comments
+# TODO: recursion does not work, something wrong with clustering_result
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -53,12 +55,13 @@ def load_simple_json(filename):
     
 # returns list of list, where each raw is a time-series of scientist (topic) and each column is a sax - word    
 def read_sax (dir):
-    list_of_lists = []
+    ts_dict = {}
     files_list = listdir(dir)
     with open(scientists_file) as f:
         name_list = f.read().splitlines()
         # read only SAX representation of seed or baseline data
         for filename in name_list:
+            name = filename
             filename = filename + '.txt'
             if filename in files_list:
                 ts_list = []
@@ -75,14 +78,14 @@ def read_sax (dir):
                     print filename
                     continue
                 if ts_list!=[]:
-                    list_of_lists.append(ts_list)
+                    ts_dict.update({name:ts_list})
             else:
                 print filename
-    return list_of_lists
+    return ts_dict
 
-# Bounds
-lower_bound_seed_sci = 262*0.1
-upper_bound_seed_sci = 262*0.9
+# Bounds change back!!
+lower_bound_seed_sci = 262*0.4
+upper_bound_seed_sci = 262*0.5
 
 lower_bound_baseline_sci = 276*0.1
 upper_bound_baseline_sci = 276*0.9
@@ -105,76 +108,111 @@ def sort_shapelets(filename, upper_bound, lower_bound):
             #print shapelet, masks, numpy.var(numpy.array(masks))
             shapelet_dict.update({shapelet:numpy.var(numpy.array(masks))})
            
-    sorted_shapelets = sorted(shapelet_dict.items(), key=operator.itemgetter(1)) 
+    sorted_shapelets = sorted(shapelet_dict.items(), key=operator.itemgetter(1)) # sort by values
     return sorted_shapelets
 
 # compute the vector of distances between u-shapelet and each time series
-def compute_distance(sax_list, shapelet):
-    dis = [float("inf")]*len(sax_list)
-    for i in range(0, len(sax_list)):
-        ts = sax_list[i]
+def compute_distance(sax_dict, shapelet):
+    dis = [float("inf")]*len(sax_dict)
+    dis_dict = {}
+    i=-1
+    for name in sax_dict:
+        i+=1
+        
+        ts = sax_dict[name]
         for j in range(0, len(ts)-len(shapelet)): # every start position of ts
-            #break
-            #print 'SAX word', ts[j]
-            #print 'Shapelet', shapelet
             d = numpy.linalg.norm(numpy.array(ts[j])-numpy.array(shapelet)) # calculate euclidian distance between u-shapelet and each SAX word of the time series
-            dis[i] = min(dis[i], d) # we take min dist as a dist between u-shapelet and SAX word
-        print dis[i], d
-       
-    norm_dis = [x / math.sqrt(len(shapelet)) for x in dis] # length normalized Euclidian distance (normalized by square root of shapelet length, optional)
-    print norm_dis
-    return norm_dis
+            dis[i] = min(dis[i], d) # we take min dist as a dist between u-shapelet and SAX word    
+        dis_dict.update({name:dis[i]/ math.sqrt(len(shapelet))}) 
+    #norm_dis = [x / math.sqrt(len(shapelet)) for x in dis] # length normalized Euclidian distance (normalized by square root of shapelet length, optional)
+    return dis_dict
 
-def compute_gap(sax_list, shapelets):
+def compute_gap(sax_dict, shapelet, lb, ub):
+    ts_dict = {}
+    names = []
+    dis = []
+    dis_dict = compute_distance(sax_dict, shapelet) 
+    dis_list = sorted(dis_dict.items(), key=operator.itemgetter(1)) 
+    for item in dis_list:
+        names.append(item[0])
+        dis.append(item[1])
+    gap = 0 
+    for j in range(lb, ub): #for each location of separation point
+        d_a = [x for x in dis if x <= dis[j]] # points to the left 
+        a_ind = [ind for ind,v in enumerate(dis) if v <= dis[j]]
+        cluster_a = itemgetter(*a_ind)(names)
+        d_b = [x for x in dis if x > dis[j]] # points to the right
+
+        if lb<=len(d_a)<=ub:
+            mean_a = numpy.mean(numpy.array(d_a))
+            mean_b = numpy.mean(numpy.array(d_b))
+            std_a = numpy.std(numpy.array(d_a))
+            std_b = numpy.std(numpy.array(d_b))
+            curr_gap = mean_b-std_b-(mean_a+std_a)
+        if curr_gap>gap:
+            gap=curr_gap
+            cluster = cluster_a
+    return gap, cluster
+
+def cluster(sax_dict, shapelets, gap_dict, iter, clustering_result):
     # bounds for scientists
+    cluster_list = []
+    gap_list = []
     lb = int(262*0.03)
     ub = int(262*0.97)
-    
-  
+    candidate_dict = {}
+    sorted_candidate_dict = {}
     for i in range(0,len(shapelets)):
         curr_gap = 0 
         shapelets[i] = str(shapelets[i].replace('\'',''))
         shapelets[i] = shapelets[i].strip('[]').split(',')
         shapelets[i] = map(int,shapelets[i]) 
-        dis = compute_distance(sax_list, shapelets[i])
-        
-        dis = sorted(dis)
-        gap = 0
+        gap, cluster = compute_gap(sax_dict, shapelets[i], lb, ub)
+        gap_list.append(gap)
+        cluster_list.append(cluster)
+    index, max_gap = max(enumerate(gap_list), key=operator.itemgetter(1)) # find max gap and its index
+    print max_gap
+    if gap_dict!={}:
+        if max_gap < gap_dict.get(0)/2:
+            return clustering_result
+        else:
+            d_a = list(cluster_list[index])
+            candidate = shapelets[index]
+            # remove cluster from the rest of the data
+            for ts in d_a:
+                sax_dict.pop(ts, None)
+            # remove shapelets candidate from the list of shapelets
+            shapelets = shapelets - candidate
+            clustering_result.append(d_a)
+            gap_dict.update({iter:max_gap})
+            iter+=1
+            return cluster(sax_dict, shapelets, gap_dict, iter, clustering_result)
+    else:
+        d_a = list(cluster_list[index])
+        candidate = shapelets[index]
+        # remove cluster from the rest of the data
+        for ts in d_a:
+            sax_dict.pop(ts, None)
+        # remove shapelets candidate from the list of shapelets
+        shapelets.remove(candidate)
+        clustering_result.append(d_a)
+        gap_dict.update({iter:max_gap})
+        iter+=1
+        print type(sax_dict), type(shapelets), type(gap_dict), type(iter), type(clustering_result)
+        # HERE SOMETHING WRONG WITH THE DATATYPES
+        return cluster(sax_dict, shapelets, gap_dict, iter, clustering_result)
 
-        print 'Computing gap'
-        for i in range(lb, ub): #for each location of separation point
-            d_a = [x for x in dis if x <= dis[i]] # points to the left 
-            d_b = [x for x in dis if x > dis[i]] # points to the right
-            
-            if lb<=len(d_a)<=ub:
-                mean_a = numpy.mean(numpy.array(d_a))
-                mean_b = numpy.mean(numpy.array(d_b))
-                std_a = numpy.std(numpy.array(d_a))
-                std_b = numpy.std(numpy.array(d_b))
-                print mean_a, mean_b, std_a, std_b
-                curr_gap = mean_b-std_b-(mean_a+std_a)
-                print curr_gap
-            if curr_gap>gap:
-                print 'in the if'
-                gap=curr_gap
-        print gap
-    return gap
 
 
 
-def get_candidate():
-    
-    return
-
-sax_list = read_sax(views_sax_sci)
-
+sax_dict = read_sax(views_sax_sci)
 shapelets = []
 shapelets_pairs = sort_shapelets('views_scientists_candidates.json', upper_bound_seed_sci, lower_bound_seed_sci)
 for i in range(0,int(len(shapelets_pairs)*0.01)):
     shapelets.append(shapelets_pairs[i][0])
     #break
-compute_gap(sax_list, shapelets)
-
+cluster_list = cluster(sax_dict, shapelets, {}, 0, [])
+print cluster_list
     
 # for name in name_list:
 #     filename = os.path.join(views_sax_sci + '\\' + topic + '.txt')
