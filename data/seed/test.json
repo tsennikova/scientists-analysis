@@ -1,0 +1,192 @@
+{
+    "https://en.wikipedia.org/wiki/Ada_Yonath": {
+        "Award": "Nobel", 
+        "Award_date": "2009-10-07", 
+        "Field": "Chemistry", 
+        "Gender": "female", 
+        "Name": "Ada Yonath", 
+        "Page_created": "2005-06-15T13:11:36Z", 
+        "Status": "alive", 
+        "Year": "2009"
+    }, 
+    "https://en.wikipedia.org/wiki/Adam_Riess": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2010-10-05", 
+        "Field": "Physics", 
+        "Gender": "male", 
+        "Name": "Adam G. Riess", 
+        "Page_created": "2006-07-13T17:01:10Z", 
+        "Status": "alive", 
+        "Year": "2010"
+    }, 
+    "https://en.wikipedia.org/wiki/Adrian_Bird": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2013-10-07", 
+        "Field": "Physiology or Medicine", 
+        "Gender": "male", 
+        "Name": "Adrian Bird", 
+        "Page_created": "2009-02-05T14:17:00Z", 
+        "Status": "alive", 
+        "Year": "2013"
+    }, 
+    "https://en.wikipedia.org/wiki/Aharon_Razin": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2013-10-07", 
+        "Field": "Physiology or Medicine", 
+        "Gender": "male", 
+        "Name": "Aharon Razin", 
+        "Page_created": "2009-10-07T09:41:45Z", 
+        "Status": "alive", 
+        "Year": "2013"
+    }, 
+    "https://en.wikipedia.org/wiki/Akira_Fujishima": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2012-10-10", 
+        "Field": "Chemistry", 
+        "Gender": "male", 
+        "Name": "Akira Fujishima", 
+        "Page_created": "2008-02-06T03:57:43Z", 
+        "Status": "alive", 
+        "Year": "2012"
+    }, 
+    "https://en.wikipedia.org/wiki/Akira_Suzuki_(chemist)": {
+        "Award": "Nobel", 
+        "Award_date": "2010-10-06", 
+        "Field": "Chemistry", 
+        "Gender": "male", 
+        "Name": "Akira Suzuki", 
+        "Page_created": "2010-03-21T05:20:32Z", 
+        "Status": "alive", 
+        "Year": "2010"
+    }, 
+    "https://en.wikipedia.org/wiki/Alain_Aspect": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2011-10-04", 
+        "Field": "Physics", 
+        "Gender": "male", 
+        "Name": "Alain Aspect", 
+        "Page_created": "2004-12-21T18:31:59Z", 
+        "Status": "alive", 
+        "Year": "2011"
+    }, 
+    "https://en.wikipedia.org/wiki/Alan_Krueger": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2013-10-14", 
+        "Field": "Economics", 
+        "Gender": "male", 
+        "Name": "Alan Krueger", 
+        "Page_created": "2006-08-23T22:44:36Z", 
+        "Status": "alive", 
+        "Year": "2013"
+    }, 
+    "https://en.wikipedia.org/wiki/Alberto_Alesina": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2010-10-11", 
+        "Field": "Economics", 
+        "Gender": "male", 
+        "Name": "Alberto Alesina", 
+        "Page_created": "2007-06-24T13:32:46Z", 
+        "Status": "alive", 
+        "Year": "2010"
+    }, 
+    "https://en.wikipedia.org/wiki/Allen_J._Bard": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2011-10-05", 
+        "Field": "Chemistry", 
+        "Gender": "male", 
+        "Name": "Allen J. Bard", 
+        "Page_created": "2008-07-07T21:24:01Z", 
+        "Status": "alive", 
+        "Year": "2011"
+    }, 
+    "https://en.wikipedia.org/wiki/Alvin_E._Roth": {
+        "Award": "Nobel", 
+        "Award_date": "2012-10-15", 
+        "Field": "Economics", 
+        "Gender": "male", 
+        "Name": "Alvin E. Roth", 
+        "Page_created": "2008-06-27T19:42:51Z", 
+        "Status": "alive", 
+        "Year": "2012"
+    }, 
+    "https://en.wikipedia.org/wiki/Andre_Geim": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2008-10-07", 
+        "Field": "Physics", 
+        "Gender": "male", 
+        "Name": "Andre Geim", 
+        "Page_created": "2008-04-22T12:40:39Z", 
+        "Status": "alive", 
+        "Year": "2008"
+    }, 
+    "https://en.wikipedia.org/wiki/Andrew_Viterbi": {
+        "Award": "IEEE Medal of Honor", 
+        "Award_date": "2010-06-26", 
+        "Field": "Computer Science", 
+        "Gender": "male", 
+        "Name": "Andrew Viterbi", 
+        "Page_created": "2003-09-24T20:29:46Z", 
+        "Status": "alive", 
+        "Year": "2010"
+    }, 
+    "https://en.wikipedia.org/wiki/Angus_Deaton": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2012-10-15", 
+        "Field": "Economics", 
+        "Gender": "male", 
+        "Name": "Angus Deaton", 
+        "Page_created": "2005-06-17T07:01:48Z", 
+        "Status": "alive", 
+        "Year": "2012"
+    }, 
+    "https://en.wikipedia.org/wiki/Anne_Osborn_Krueger": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2011-10-10", 
+        "Field": "Economics", 
+        "Gender": "female", 
+        "Name": "Anne Osborn Krueger", 
+        "Page_created": "2004-03-05T04:28:14Z", 
+        "Status": "alive", 
+        "Year": "2011"
+    }, 
+    "https://en.wikipedia.org/wiki/Anthony_Pawson": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2012-10-08", 
+        "Field": "Physiology or Medicine", 
+        "Gender": "male", 
+        "Name": "Anthony Pawson", 
+        "Page_created": "2005-03-11T16:05:58Z", 
+        "Status": "dead", 
+        "Year": "2012"
+    }, 
+    "https://en.wikipedia.org/wiki/Anthony_R._Hunter": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2012-10-08", 
+        "Field": "Physiology or Medicine", 
+        "Gender": "male", 
+        "Name": "Anthony R. Hunter", 
+        "Page_created": "2007-03-31T23:51:28Z", 
+        "Status": "alive", 
+        "Year": "2012"
+    }, 
+    "https://en.wikipedia.org/wiki/Anton_Zeilinger": {
+        "Award": "Citation Laureate", 
+        "Award_date": "2011-10-04", 
+        "Field": "Physics", 
+        "Gender": "male", 
+        "Name": "Anton Zeilinger", 
+        "Page_created": "2004-08-21T23:01:43Z", 
+        "Status": "alive", 
+        "Year": "2011"
+    }, 
+    "https://en.wikipedia.org/wiki/Arieh_Warshel": {
+        "Award": "Nobel", 
+        "Award_date": "2013-10-09", 
+        "Field": "Chemistry", 
+        "Gender": "male", 
+        "Name": "Arieh Warshel", 
+        "Page_created": "2007-08-19T07:57:34Z", 
+        "Status": "alive", 
+        "Year": "2013"
+    }
+}

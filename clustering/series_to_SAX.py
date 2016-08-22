@@ -4,7 +4,6 @@ Created on 2 Aug 2016
 @author: sennikta
 '''
 
-# TODO: Check why for neighboring TS SAX is so different
 #TODO play around with the normalization - each ts separately, or all together
 
 # Input:
@@ -57,6 +56,7 @@ topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json
 views_dir = os.path.join(data_dir, 'views')
 edits_dir = os.path.join(data_dir, 'edits')
 google_trends_dir = os.path.join(data_dir, 'google_trends')
+test_dir = os.path.join(data_dir, 'test')
 
 # scientists or topics
 views_sci = os.path.join(views_dir, 'scientists')
@@ -72,6 +72,7 @@ sax_dir = os.path.join(data_dir, 'sax_representation')
 views_sax = os.path.join(sax_dir, 'views')
 edits_sax = os.path.join(sax_dir, 'edits')
 google_trends_sax = os.path.join(sax_dir, 'google_trends')
+test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
@@ -88,7 +89,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(edits_sax_topic, file_name)
+    output_path =  os.path.join(test_sax, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -212,7 +213,7 @@ def scientists_collection(dir):
         #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
         scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
+        symbolic_data = series_to_sax(scientist_series, 900, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
@@ -235,4 +236,4 @@ def topics_collection(dir):
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
     return
 
-topics_collection(edits_topic)
+scientists_collection(test_dir)

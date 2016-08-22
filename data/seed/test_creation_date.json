@@ -1,0 +1,77 @@
+{
+	"https://en.wikipedia.org/wiki/%C4%90%C3%A0m_Thanh_S%C6%A1n": {
+        "Field": "Physics", 
+        "Name": "Dam Thanh Son", 
+        "Page_created": "2013-02-20T06:09:01Z"
+    }, 
+	"https://en.wikipedia.org/wiki/%C5%BDeljko_Reiner": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Zeljko Reiner", 
+        "Page_created": "2014-09-22T23:34:51Z"
+    }, 
+	"https://en.wikipedia.org/wiki/Ada_Yonath": {
+        "Field": "Chemistry", 
+        "Name": "Ada Yonath", 
+        "Page_created": "2005-06-15T13:11:36Z" 
+    }, 
+	"https://en.wikipedia.org/wiki/Akira_Suzuki_(chemist)": {
+		"Field": "Chemistry", 
+		"Name": "Akira Suzuki", 
+		"Page_created": "2010-03-21T05:20:32Z" 
+    },
+	"https://en.wikipedia.org/wiki/Alan_Krueger": {
+        "Field": "Economics", 
+        "Name": "Alan Krueger", 
+        "Page_created": "2006-08-23T22:44:36Z" 
+    },  
+    "https://en.wikipedia.org/wiki/Adrian_Bird": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Adrian Bird", 
+        "Page_created": "2009-02-05T14:17:00Z"
+    },  
+    "https://en.wikipedia.org/wiki/Akira_Fujishima": {
+        "Field": "Chemistry", 
+        "Name": "Akira Fujishima", 
+        "Page_created": "2008-02-06T03:57:43Z"
+    },  
+    "https://en.wikipedia.org/wiki/Allen_J._Bard": {
+        "Field": "Chemistry", 
+        "Name": "Allen J. Bard", 
+        "Page_created": "2008-07-07T21:24:01Z"
+    },  
+    "https://en.wikipedia.org/wiki/Annarosa_Leri": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Annarosa Leri", 
+        "Page_created": "2015-05-07T09:53:11Z"
+    },  
+    "https://en.wikipedia.org/wiki/Anne_O%27Garra": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Anne O'Garra", 
+        "Page_created": "2008-07-20T00:49:53Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Alain_Aspect": {
+        "Field": "Physics", 
+        "Name": "Alain Aspect", 
+        "Page_created": "2004-12-21T18:31:59Z"
+    },  
+    "https://en.wikipedia.org/wiki/Alan_Aderem": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Alan Aderem", 
+        "Page_created": "2006-10-09T08:31:47Z"
+    },  
+    "https://en.wikipedia.org/wiki/Alan_Ashworth": {
+        "Field": "Physiology or Medicine", 
+        "Name": "Alan Ashworth", 
+        "Page_created": "2010-01-28T10:46:02Z"
+    }, 
+    "https://en.wikipedia.org/wiki/Albert_Meyers": {
+        "Field": "Chemistry", 
+        "Name": "Albert Meyers", 
+        "Page_created": "2005-11-14T03:43:34Z"
+    },  
+    "https://en.wikipedia.org/wiki/Albert-L%C3%A1szl%C3%B3_Barab%C3%A1si": {
+        "Field": "Physics", 
+        "Name": "Albert-Laszlo Barabasi", 
+        "Page_created": "2006-12-17T21:53:17Z"
+    }
+}

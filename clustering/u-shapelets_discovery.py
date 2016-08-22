@@ -29,6 +29,7 @@ sax_dir = os.path.join(data_dir, 'sax_representation')
 views_sax = os.path.join(sax_dir, 'views')
 edits_sax = os.path.join(sax_dir, 'edits')
 google_trends_sax = os.path.join(sax_dir, 'google_trends')
+test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
@@ -41,6 +42,7 @@ google_trends_sax_topic = os.path.join(google_trends_sax, 'topics')
 
 # for scientists change seed/baseline
 scientists_file = os.path.join(seed_dir, 'seed_creation_date.json') 
+test_file = os.path.join(seed_dir, 'test_creation_date.json') 
 
 # for topics change seed/baseline
 topic_file =  os.path.join(neighbors_dir, 'seed-topics_list.txt') 
@@ -50,7 +52,7 @@ clustering_dir =os.path.join(data_dir, 'clustering')
 u_shapelets_dir = os.path.join(clustering_dir, 'u-shapelets_candidates')
 u_shapelets_seed = os.path.join(u_shapelets_dir, 'seed')
 u_shapelets_baseline = os.path.join(u_shapelets_dir, 'baseline')
-
+u_shapelets_test = os.path.join(u_shapelets_dir, 'test')
 
 def load_simple_json(filename):
     print filename
@@ -123,7 +125,7 @@ def random_masking(sax_list):
     return candidate_dict
 
 
-dir = views_sax_topic
+dir = test_sax
 sax_list = []
 
 
@@ -137,36 +139,35 @@ sax_list = []
 # candidate_dict = random_masking(sax_list)
 
 #  ------------------------------- REAL CODE  -------------------------------
-
-# scientist_dict = load_simple_json(scientist_file)
-# for scientists
-# for scientist in scientist_dict:
-#     scientist = scientist.rstrip().split('/')[-1]
-#     filename = os.path.join(dir + '\\' + scientist + '.txt')
-#     ts_list=read_sax(filename)
-#     if ts_list!=[]:
-#         sax_list.append(ts_list)
-# candidate_dict = random_masking(sax_list)
-
-# for topics
-with open(topic_file) as f:
-    topic_list = f.read().splitlines()
-    
-for topic in topic_list:
-    topic = topic.encode("utf-8")
-    topic = urllib2.unquote(topic).decode("utf-8")
-    topic = topic.replace('+', '_')
-    topic = urllib.quote_plus(topic.encode("utf-8"))
-    topic = topic.replace('%28', '(')
-    topic = topic.replace('%29', ')')
-    topic = topic.replace('%2C', ',')
-    #topic = topic.replace('%27', '\'')
-    filename = os.path.join(dir + '\\' + topic + '.txt')
+#for scientists
+scientist_dict = load_simple_json(test_file)
+for scientist in scientist_dict:
+    scientist = scientist.rstrip().split('/')[-1]
+    filename = os.path.join(dir + '\\' + scientist + '.txt')
     ts_list=read_sax(filename)
     if ts_list!=[]:
         sax_list.append(ts_list)
 candidate_dict = random_masking(sax_list)
- 
-output_path =  os.path.join(u_shapelets_seed, 'views_topics_candidates.json')    
+print candidate_dict
+# for topics
+# with open(topic_file) as f:
+#     topic_list = f.read().splitlines()
+#     
+# for topic in topic_list:
+#     topic = topic.encode("utf-8")
+#     topic = urllib2.unquote(topic).decode("utf-8")
+#     topic = topic.replace('+', '_')
+#     topic = urllib.quote_plus(topic.encode("utf-8"))
+#     topic = topic.replace('%28', '(')
+#     topic = topic.replace('%29', ')')
+#     topic = topic.replace('%2C', ',')
+#     #topic = topic.replace('%27', '\'')
+#     filename = os.path.join(dir + '\\' + topic + '.txt')
+#     ts_list=read_sax(filename)
+#     if ts_list!=[]:
+#         sax_list.append(ts_list)
+# candidate_dict = random_masking(sax_list)
+#  
+output_path =  os.path.join(u_shapelets_test, 'test_candidates.json')    
 with open(output_path, 'w') as out:
     json.dump(candidate_dict, out, indent=4, sort_keys=True)
