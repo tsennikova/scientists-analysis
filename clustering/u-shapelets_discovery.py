@@ -84,7 +84,8 @@ def random_masking(sax_list):
     for i in range (0,R):
         masked_list = []
         stop_list = []
-        mask_ind = random.sample(range(0, 8), 3)
+        mask_ind = random.sample(range(0, 9), 3)
+        #print 'mask_ind', mask_ind
         masked_dict = {}
         print 'started random masking'
         
@@ -93,12 +94,15 @@ def random_masking(sax_list):
             masked_time_series = []
             for word in time_series:  
                 masked_word = list(word)
+                
                 for l in sorted(mask_ind, reverse=True):
                     del masked_word[l]
                 masked_word = int(''.join(masked_word))
+                
                 masked_time_series.append(masked_word)
             masked_time_series = set(masked_time_series)
             masked_list.append(masked_time_series)
+        #print masked_list
         
         print 'counting frequency'
         for time_series in sax_list:
@@ -115,7 +119,9 @@ def random_masking(sax_list):
                    # Critical point                    
                     for masked_time_series in masked_list:
                         if masked_candidate in masked_time_series:
+                           # print masked_candidate
                             sum+=1
+                    #print candidate, sum
                     candidate_dict[str(candidate)].append(sum)
                     
                     stop_list.append(candidate)
@@ -125,7 +131,7 @@ def random_masking(sax_list):
     return candidate_dict
 
 
-dir = test_sax
+dir = views_sax_sci
 sax_list = []
 
 
@@ -140,7 +146,7 @@ sax_list = []
 
 #  ------------------------------- REAL CODE  -------------------------------
 #for scientists
-scientist_dict = load_simple_json(test_file)
+scientist_dict = load_simple_json(scientists_file)
 for scientist in scientist_dict:
     scientist = scientist.rstrip().split('/')[-1]
     filename = os.path.join(dir + '\\' + scientist + '.txt')
@@ -168,6 +174,6 @@ print candidate_dict
 #         sax_list.append(ts_list)
 # candidate_dict = random_masking(sax_list)
 #  
-output_path =  os.path.join(u_shapelets_test, 'test_candidates.json')    
+output_path =  os.path.join(u_shapelets_seed, 'views_scientists_candidates.json')    
 with open(output_path, 'w') as out:
     json.dump(candidate_dict, out, indent=4, sort_keys=True)
