@@ -17,9 +17,10 @@ seed_dir = os.path.join(data_dir, 'seed')
 baseline_dir = os.path.join(data_dir, 'baseline')
 plots_dir = os.path.join(data_dir, 'plots')
 general_trends = os.path.join(plots_dir, 'general_trends')
+plots_dir = os.path.join(plots_dir, 'trends')
 
 # Change address for each dataset: views, edits, google_trends
-norm_dir = os.path.join(data_dir, 'views_normalized')
+norm_dir = os.path.join(data_dir, 'views')
 norm_scientist_dir = os.path.join(norm_dir, 'scientists')
 
 def load_simple_json(filename):
@@ -35,7 +36,7 @@ def running_mean(x, N):
     return (cumsum[N:] - cumsum[:-N]) / N 
 
 def time_aligning(scientist_dict, norm_dir):
-    
+    print scientist_dict
     for scientist, param_dict in scientist_dict.iteritems():
         print scientist
         plt.figure()
@@ -53,7 +54,7 @@ def time_aligning(scientist_dict, norm_dir):
             year = day_list.pop(0)
             for idx,day in enumerate(day_list):
                 date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
-                print date
+                
                 days_difference = days_between(event_date, date)
                 days_check.append(date)
                 x.append(days_difference)
@@ -64,11 +65,13 @@ def time_aligning(scientist_dict, norm_dir):
         y = running_mean(y, 90)
         x = running_mean(x, 90)
         plt.plot(x, y)
+        plt.savefig(plots_dir+'\\'+scientist+'.pdf')
 #        break
-    plt.show()
+#    plt.show()
+    
     return
 
-filename =  os.path.join(seed_dir, 'test.json')  
+filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
 time_aligning(scientist_dict, norm_dir)
