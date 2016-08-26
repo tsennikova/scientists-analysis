@@ -3,6 +3,9 @@ Created on Aug 24, 2016
 
 @author: Tania
 '''
+# TODO: play around with several rounds of clustering, different normalization and tf-idf
+# check BOP formation with a smaller dataset
+
 import json
 import os
 from os import listdir
@@ -125,25 +128,13 @@ for name, ts in sax_dict.iteritems():
 
 print "finished BOP formation"
 
+bop_matrix = np.asarray(BOP.toarray())
+output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
+dictionary=str(dictionary).replace(',','')
+np.savetxt(output_path, bop_matrix, delimiter=",", header=dictionary)
+
+
 #K means perform clustering
-
-kmeans_model = KMeans(n_clusters=2, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-
-# 
-pca_2 = PCA(2)
-plot_columns = pca_2.fit_transform(BOP.toarray())
-plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
-#plt.show()
-plt.savefig('clusters-2.pdf')
- 
-text_file = open("2_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
-text_file.close()
-
-
 
 kmeans_model = KMeans(n_clusters=3, random_state=1).fit(BOP.tocsr())
 labels = kmeans_model.labels_
@@ -162,43 +153,6 @@ for (row, label) in enumerate(labels):
 text_file.close()
 
 
-kmeans_model = KMeans(n_clusters=4, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-
-# 
-pca_2 = PCA(2)
-plot_columns = pca_2.fit_transform(BOP.toarray())
-plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
-#plt.show()
-plt.savefig('clusters-4.pdf')
- 
-text_file = open("4_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
-text_file.close()
-
-kmeans_model = KMeans(n_clusters=5, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '5 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-
-# 
-pca_2 = PCA(2)
-plot_columns = pca_2.fit_transform(BOP.toarray())
-plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
-#plt.show()
-plt.savefig('clusters-5.pdf')
- 
-text_file = open("5_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
-text_file.close()
-
-
-    
-
-
-
 
 # labeler = KMeans(n_clusters=5)
 # labeler.fit(BOP.tocsr()) 
@@ -209,7 +163,4 @@ text_file.close()
 #    print ts_names[row], label
 
 
-# bop_matrix = np.asarray(BOP.toarray())
-# output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
-# np.savetxt(output_path, bop_matrix, delimiter=",", header=str(ts_names).replace('\'','').strip('[]'))
           
