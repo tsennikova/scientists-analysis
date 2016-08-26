@@ -215,7 +215,7 @@ def scientists_collection(dir):
         #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
         scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 360, 12, 4)
+        symbolic_data = series_to_sax(scientist_series, 810, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)

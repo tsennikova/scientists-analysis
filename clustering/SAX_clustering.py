@@ -15,7 +15,10 @@ import itertools
 from sklearn.cluster import KMeans
 from sklearn import metrics
 from sklearn.metrics import pairwise_distances
-
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from mpl_toolkits.mplot3d import Axes3D
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
 #---------------- Define directories ---------------------- Define directories ---------------- Define directories --------------------------------------
@@ -62,6 +65,7 @@ def read_sax (dir):
         name_list = f.read().splitlines()
         # read only SAX representation of seed or baseline data
         for filename in name_list:
+            
             name = filename
             filename = filename + '.txt'
             if filename in files_list:
@@ -70,31 +74,45 @@ def read_sax (dir):
                 try:
                     with open(dir+'\\'+filename) as f:
                         temp_list = f.read().splitlines()
-                    temp_list = list(set(temp_list))
+                    temp_list = list(temp_list)
                     for word in temp_list: 
-                        #word = list(word.replace(',',''))
+                        #word = word.replace(',','')
                         #word = map(int,word)
                         ts_list.append(word)
                 except IOError:
                     print filename
                     continue
                 if ts_list!=[]:
+
                     ts_dict.update({name:ts_list})
             else:
                 print filename
+            
     return ts_dict
 
+ts_names=[]
+ts_sequences=[]
 sax_dict = read_sax(views_sax_sci)
+for name, list in sax_dict.iteritems():
+    ts_names.append(name)
+    ts_sequences.append(list)
+
+# vectorizer=TfidfVectorizer(min_df=0.1, max_df=0.9, stop_words={'111111111','222222222'}, decode_error='ignore')
+# vectorized=vectorizer.fit_transform(ts_sequences)
+# 
+# kmeans_model=KMeans(n_clusters=4, init='k-means++',n_init=10, verbose=1)
+# kmeans_model.fit(vectorized)
+# labels = kmeans_model.labels_
 
 #print sax_dict
 
 #create dictionary
 dictionary = []
-for combination in itertools.product(xrange(1,5), repeat=12):
+for combination in itertools.product(xrange(1,5), repeat=9):
     dictionary.append(','.join(map(str, combination)))
 print len(dictionary), type(dictionary[0])
 count = 1 
-ts_names=list(sax_dict.keys())
+#ts_names=list(sax_dict.keys())
 print ts_names
 BOP = lil_matrix((len(ts_names), len(dictionary)), dtype=np.int8)
 for name, ts in sax_dict.iteritems():
@@ -107,70 +125,78 @@ for name, ts in sax_dict.iteritems():
 
 print "finished BOP formation"
 
-# perform clustering
+#K means perform clustering
+
 kmeans_model = KMeans(n_clusters=2, random_state=1).fit(BOP.tocsr())
 labels = kmeans_model.labels_
 print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+
+# 
+pca_2 = PCA(2)
+plot_columns = pca_2.fit_transform(BOP.toarray())
+plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
+#plt.show()
+plt.savefig('clusters-2.pdf')
+ 
 text_file = open("2_clust.txt", "w")
 for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
+    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
+
 
 
 kmeans_model = KMeans(n_clusters=3, random_state=1).fit(BOP.tocsr())
 labels = kmeans_model.labels_
 print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+
+# 
+pca_2 = PCA(2)
+plot_columns = pca_2.fit_transform(BOP.toarray())
+plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
+#plt.show()
+plt.savefig('clusters-3.pdf')
+ 
 text_file = open("3_clust.txt", "w")
 for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
+    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
 
 
 kmeans_model = KMeans(n_clusters=4, random_state=1).fit(BOP.tocsr())
 labels = kmeans_model.labels_
-print '4 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+
+# 
+pca_2 = PCA(2)
+plot_columns = pca_2.fit_transform(BOP.toarray())
+plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
+#plt.show()
+plt.savefig('clusters-4.pdf')
+ 
 text_file = open("4_clust.txt", "w")
 for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
+    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
-    
-
-
 
 kmeans_model = KMeans(n_clusters=5, random_state=1).fit(BOP.tocsr())
 labels = kmeans_model.labels_
 print '5 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+
+# 
+pca_2 = PCA(2)
+plot_columns = pca_2.fit_transform(BOP.toarray())
+plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
+#plt.show()
+plt.savefig('clusters-5.pdf')
+ 
 text_file = open("5_clust.txt", "w")
 for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
+    text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
 
 
-kmeans_model = KMeans(n_clusters=6, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '6 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-text_file = open("6_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
-text_file.close()
+    
 
-
-kmeans_model = KMeans(n_clusters=7, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '7 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-text_file = open("7_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
-text_file.close()
-
-
-kmeans_model = KMeans(n_clusters=8, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
-print '8 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-text_file = open("8_clust.txt", "w")
-for (row, label) in enumerate(labels):
-    text_file.write(ts_names[row], label)
-text_file.close()
 
 
 
@@ -183,7 +209,7 @@ text_file.close()
 #    print ts_names[row], label
 
 
-bop_matrix = np.asarray(BOP.toarray())
-output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
-np.savetxt(output_path, bop_matrix, delimiter=",", header=str(ts_names).replace('\'','').strip('[]'))
+# bop_matrix = np.asarray(BOP.toarray())
+# output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
+# np.savetxt(output_path, bop_matrix, delimiter=",", header=str(ts_names).replace('\'','').strip('[]'))
           
