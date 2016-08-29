@@ -4,8 +4,7 @@ Created on Aug 24, 2016
 @author: Tania
 '''
 # TODO: play around with several rounds of clustering, different normalization and tf-idf
-# check BOP formation with a smaller dataset
-
+# TODO play around with hierarchical clustering
 import json
 import os
 from os import listdir
@@ -15,7 +14,7 @@ from itertools import islice
 import pandas as pd
 from scipy.sparse import lil_matrix
 import itertools
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn import metrics
 from sklearn.metrics import pairwise_distances
 import matplotlib.pyplot as plt
@@ -56,7 +55,8 @@ clustering_dir =os.path.join(data_dir, 'clustering')
 bop_dir = os.path.join(clustering_dir, 'bop')
 seed_bop_dir = os.path.join(bop_dir, 'seed')
 
-scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt') 
+scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt')
+test_file = os.path.join(general_dir, 'test.txt')
 
 
 
@@ -128,16 +128,20 @@ for name, ts in sax_dict.iteritems():
 
 print "finished BOP formation"
 
-bop_matrix = np.asarray(BOP.toarray())
-output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
-dictionary=str(dictionary).replace(',','')
-np.savetxt(output_path, bop_matrix, delimiter=",", header=dictionary)
+# bop_matrix = np.asarray(BOP.toarray())
+# output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
+# dictionary=str(dictionary).replace(',','')
+# np.savetxt(output_path, bop_matrix, delimiter=",", header=dictionary)
 
 
 #K means perform clustering
 
-kmeans_model = KMeans(n_clusters=3, random_state=1).fit(BOP.tocsr())
-labels = kmeans_model.labels_
+#kmeans_model = KMeans(n_clusters=3,init='k-means++',n_init=10, verbose=1).fit(BOP.tocsr())
+#labels = kmeans_model.labels_
+#print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+
+hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
+labels = hierarchical_model.labels_
 print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
 # 
@@ -145,9 +149,9 @@ pca_2 = PCA(2)
 plot_columns = pca_2.fit_transform(BOP.toarray())
 plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
 #plt.show()
-plt.savefig('clusters-3.pdf')
+plt.savefig('clusters-3_hierarch.pdf')
  
-text_file = open("3_clust.txt", "w")
+text_file = open("3_clust-hierarch.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
