@@ -22,6 +22,7 @@ from sklearn.decomposition import PCA
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
 #---------------- Define directories ---------------------- Define directories ---------------- Define directories --------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -100,6 +101,7 @@ for name, list in sax_dict.iteritems():
     ts_names.append(name)
     ts_sequences.append(list)
 
+# tf-idf formation
 # vectorizer=TfidfVectorizer(min_df=0.1, max_df=0.9, stop_words={'111111111','222222222'}, decode_error='ignore')
 # vectorized=vectorizer.fit_transform(ts_sequences)
 # 
@@ -107,15 +109,14 @@ for name, list in sax_dict.iteritems():
 # kmeans_model.fit(vectorized)
 # labels = kmeans_model.labels_
 
-#print sax_dict
 
-#create dictionary
+#create BOP matrix
 dictionary = []
 for combination in itertools.product(xrange(1,5), repeat=9):
     dictionary.append(','.join(map(str, combination)))
 print len(dictionary), type(dictionary[0])
 count = 1 
-#ts_names=list(sax_dict.keys())
+
 print ts_names
 BOP = lil_matrix((len(ts_names), len(dictionary)), dtype=np.int8)
 for name, ts in sax_dict.iteritems():
@@ -128,43 +129,28 @@ for name, ts in sax_dict.iteritems():
 
 print "finished BOP formation"
 
-# bop_matrix = np.asarray(BOP.toarray())
-# output_path =  os.path.join(seed_bop_dir, 'views_seed.csv')
-# dictionary=str(dictionary).replace(',','')
-# np.savetxt(output_path, bop_matrix, delimiter=",", header=dictionary)
-
-
-#K means perform clustering
-
-#kmeans_model = KMeans(n_clusters=3,init='k-means++',n_init=10, verbose=1).fit(BOP.tocsr())
-#labels = kmeans_model.labels_
-#print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
-
+# clustering
 hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
 labels = hierarchical_model.labels_
 print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
-# 
+# plot first 2 principal components
 pca_2 = PCA(2)
 plot_columns = pca_2.fit_transform(BOP.toarray())
 plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
+plt.xlabel('principal component 1')
+plt.ylabel('principal component 2')
+plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters-3_hierarch.pdf')
+plt.savefig('clusters-3h_seed.pdf')
  
-text_file = open("3_clust-hierarch.txt", "w")
+# clustering output
+text_file = open("clusters-3h_seed.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
 
 
-
-# labeler = KMeans(n_clusters=5)
-# labeler.fit(BOP.tocsr()) 
-
-# print cluster assignments for each row
-
-#for (row, label) in enumerate(labels):
-#    print ts_names[row], label
 
 
           
