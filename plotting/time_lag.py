@@ -54,14 +54,22 @@ def plotting(array, name):
 
 # Plot the frequency distribution
 def plot_distribution(seed, baseline, name):
+    seed, base_seed = np.histogram(seed, bins=40)
+    baseline, base_baseline = np.histogram(baseline, bins=40)
+    cumulative_seed = np.cumsum(seed)
+    cumulative_baseline = np.cumsum(baseline)
     plt.title("Time lag between the articles creation")
     plt.xlabel("Time lag (months)")
-    plt.ylabel("Probability")
-    bins = range(-50, 50)
-    plt.xticks(bins, ["2^%s" % i for i in bins])
-    plt.hist(seed, normed = True, bins=bins, label = 'seed data', alpha=0.5,)
-    plt.hist(baseline, normed = True, bins=bins, label = 'baseline data', alpha=0.5,)
+    plt.ylabel("Number of pages created")
+    plt.plot(base_seed[:-1], cumulative_seed, c='blue', label = 'seed data')
+    plt.plot(base_baseline[:-1], cumulative_baseline, c='green', label = 'baseline data')
+    plt.plot([0,0], [0,max(cumulative_seed)], c='black', linestyle = 'dashed')
+    #bins = range(-20, 20)
+    #plt.xticks(bins, ["2^%s" % i for i in bins])
+    #plt.hist(seed, normed = True, bins=bins, label = 'seed data',  cumulative = True, histtype = 'step')
+   # plt.hist(baseline, normed = True, bins=bins, label = 'baseline data',  cumulative = True, histtype = 'step')
     plt.legend(loc='upper left')
+#    plt.show()
     plt.savefig(plots_dir+name)
     return
 
@@ -109,7 +117,7 @@ seed = monthly_aggregation(seed)
 baseline = monthly_aggregation(baseline)
 
 
-#plot_distribution(seed, baseline, '/timelag_monthly.pdf')
+plot_distribution(seed, baseline, '/timelag_monthly.jpg')
 #plotting(baseline, '/timelag_monthly_(baseline_creation_date).pdf')
-plotting(seed, '/timelag_monthly_(seed_creation_date).pdf')
+#plotting(seed, '/timelag_monthly_(seed_creation_date).pdf')
 
