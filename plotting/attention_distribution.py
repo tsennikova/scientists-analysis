@@ -23,7 +23,7 @@ plots_dir = os.path.join(data_dir, 'plots')
 powerlaw_dir = os.path.join(plots_dir, 'attention_distribution')
 
 # Change address for each dataset
-edits_dir = os.path.join(data_dir, 'edits')
+edits_dir = os.path.join(data_dir, 'google_trends')
 scientists_dir = os.path.join(edits_dir, 'scientists')
 
 def load_simple_json(filename):
@@ -52,9 +52,9 @@ def box_plot(seed, baseline, name):
     ax = fig.add_subplot(111)
     bp = ax.boxplot(data_to_plot, showfliers=False)
     
-    plt.title("Attention distribution (edits)")
+    plt.title("Attention distribution (google trends)")
     ax.set_xticklabels(['seed data', 'baseline'])
-    plt.ylabel("# of edits")
+    plt.ylabel("# of google trends searches")
     bins = range(10, 25)
     #plt.show()
     plt.savefig(powerlaw_dir+name)
@@ -81,7 +81,6 @@ def read_txt(filename):
             f.close()
             attention_list.append(attention_value)
         except IOError:
-            print scientist
             continue
     return attention_list
 
@@ -107,21 +106,23 @@ def read_csv(filename):
             print scientist, attention_value
             attention_list.append(attention_value)
         except IOError:
-            print scientist
+            attention_list.append(0)
             continue        
+    #print attention_list
     return attention_list
 
 # for views and edits
-filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
-seed = read_txt(filename)
-filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
-baseline = read_txt(filename)
+#filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
+#seed = read_txt(filename)
+#filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+#baseline = read_txt(filename)
 
 # for google trends
-#filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
-#baseline = read_csv(filename)
-#filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
-#seed = read_csv(filename)
+filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+baseline = read_csv(filename)
+filename =  os.path.join(seed_dir, 'seed_creation_date.json')    
+print "seed"
+seed = read_csv(filename)
 
 #print 'average seed', numpy.mean(numpy.absolute(seed))
 #print 'min seed', format(numpy.min(numpy.absolute(seed)),'f')
@@ -132,6 +133,6 @@ baseline = read_txt(filename)
 #print 'min baseline', format(numpy.min(numpy.absolute(baseline)),'f')
 #print 'max baseline',format(numpy.max(numpy.absolute(baseline)),'f')
 
-box_plot(seed, baseline, '/boxplot_edits.pdf')
+box_plot(seed, baseline, '/boxplot_google_trends_zero_values.jpg')
 
 #plot_distribution(seed, baseline, '/loglog_google_trends.pdf')

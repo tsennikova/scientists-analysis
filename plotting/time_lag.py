@@ -18,6 +18,7 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 seed_dir = os.path.join(data_dir, 'seed')
 neighbors_dir = os.path.join(data_dir, 'neighbors')
 plots_dir = os.path.join(data_dir, 'plots')
+plots_dir = os.path.join(plots_dir, 'timelag')
 
 def load_simple_json(filename):
     with open(filename, 'r') as f:
@@ -54,10 +55,14 @@ def plotting(array, name):
 
 # Plot the frequency distribution
 def plot_distribution(seed, baseline, name):
-    seed, base_seed = np.histogram(seed, bins=40)
-    baseline, base_baseline = np.histogram(baseline, bins=40)
+    seed, base_seed = np.histogram(seed, bins=50)
+    baseline, base_baseline = np.histogram(baseline, bins=50)
     cumulative_seed = np.cumsum(seed)
+    print cumulative_seed
+    cumulative_seed = np.float32(cumulative_seed)/np.max(cumulative_seed)
+    print cumulative_seed
     cumulative_baseline = np.cumsum(baseline)
+    cumulative_baseline = np.float32(cumulative_baseline)/np.max(cumulative_baseline)
     plt.title("Time lag between the articles creation")
     plt.xlabel("Time lag (months)")
     plt.ylabel("Number of pages created")
@@ -69,7 +74,7 @@ def plot_distribution(seed, baseline, name):
     #plt.hist(seed, normed = True, bins=bins, label = 'seed data',  cumulative = True, histtype = 'step')
    # plt.hist(baseline, normed = True, bins=bins, label = 'baseline data',  cumulative = True, histtype = 'step')
     plt.legend(loc='upper left')
-#    plt.show()
+  #  plt.show()
     plt.savefig(plots_dir+name)
     return
 
@@ -117,7 +122,7 @@ seed = monthly_aggregation(seed)
 baseline = monthly_aggregation(baseline)
 
 
-plot_distribution(seed, baseline, '/timelag_monthly.jpg')
+plot_distribution(seed, baseline, '/timelag_monthly_normed.jpg')
 #plotting(baseline, '/timelag_monthly_(baseline_creation_date).pdf')
 #plotting(seed, '/timelag_monthly_(seed_creation_date).pdf')
 
