@@ -44,6 +44,8 @@ test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
+views_sax_sci_cut = os.path.join(views_sax, 'scientists_cut')
+
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
 gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists')
 
@@ -96,7 +98,7 @@ def read_sax (dir):
 
 ts_names=[]
 ts_sequences=[]
-sax_dict = read_sax(views_sax_sci)
+sax_dict = read_sax(views_sax_sci_cut)
 for name, list in sax_dict.iteritems():
     ts_names.append(name)
     ts_sequences.append(list)
@@ -142,10 +144,10 @@ plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
 plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters-3h_seed.pdf')
+plt.savefig('clusters-3h_seed_cut.pdf')
  
 # clustering output
-text_file = open("clusters-3h_seed.txt", "w")
+text_file = open("clusters-3h_seed_cut.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
