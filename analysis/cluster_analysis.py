@@ -31,19 +31,19 @@ def load_simple_json(filename):
         return json.load(f)
 
 
-filename =  os.path.join(clustered_views_seed, '1-cluster.txt')  
+filename =  os.path.join(clustered_views_seed, '1-cluster-cut.txt')  
 with open(filename) as f:
     x_1 = f.read().splitlines()
 f.close()
 
 
-filename =  os.path.join(clustered_views_seed, '2-cluster.txt')  
+filename =  os.path.join(clustered_views_seed, '2-cluster-cut.txt')  
 with open(filename) as f:
     x_2 = f.read().splitlines()
 f.close()
 
 
-filename =  os.path.join(clustered_views_seed, '3-cluster.txt')  
+filename =  os.path.join(clustered_views_seed, '3-cluster-cut.txt')  
 with open(filename) as f:
     x_3 = f.read().splitlines()
 f.close()

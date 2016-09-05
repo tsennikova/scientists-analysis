@@ -31,7 +31,7 @@ clustered_views  = os.path.join(sax_clustering_dir, 'views')
 clustered_views_seed  = os.path.join(clustered_views, 'seed')
 clustered_views_baseline  = os.path.join(clustered_views, 'baseline')
 # for plotting
-data_for_plotting  = os.path.join(clustered_views_baseline, 'data_for_plotting')
+data_for_plotting  = os.path.join(clustered_views_seed, 'data_for_plotting')
 
 def load_simple_json(filename):
     print filename
@@ -101,10 +101,10 @@ def take_average(ts_list, time_list):
         avg_dict.update({day:avg})    
     return avg_dict
 
-filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_views_baseline, '1-cluster.txt')  
+filename =  os.path.join(clustered_views_seed, '1-cluster-cut.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -128,14 +128,14 @@ for item in sorted_dict:
 
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
 
-filename =  os.path.join(data_for_plotting, '1-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster-cut_x.txt')  
 
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
 
-filename =  os.path.join(data_for_plotting, '1-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster-cut_y.txt')  
 
 text_file = open(filename, "w")
 for item in y:
@@ -145,10 +145,10 @@ text_file.close()
 
 plt.xlabel('days')
 plt.ylabel('attention (views)')
-plt.title('Trend inside cluster 1 (baseline)')
+plt.title('Trend inside cluster 1 (seed)')
  
-x = running_mean(x, 360)
-y = running_mean(y, 360)
+x = running_mean(x, 90)
+y = running_mean(y, 90)
 plt.plot(x, y)
 
-plt.savefig(plots_dir+'\\'+'cluster_1_views_baseline.pdf')
+plt.savefig(plots_dir+'\\'+'cluster_1_cut_views_seed.pdf')

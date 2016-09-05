@@ -20,13 +20,13 @@ clustered_views  = os.path.join(sax_clustering_dir, 'views')
 clustered_views_seed  = os.path.join(clustered_views, 'seed')
 clustered_views_baseline  = os.path.join(clustered_views, 'baseline')
 
-data_for_plotting  = os.path.join(clustered_views_baseline, 'data_for_plotting')
+data_for_plotting  = os.path.join(clustered_views_seed, 'data_for_plotting')
 
 def running_mean(x, N):
     cumsum = np.cumsum(np.insert(x, 0, 0)) 
     return (cumsum[N:] - cumsum[:-N]) / N 
 
-filename =  os.path.join(data_for_plotting, '1-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster-cut_x.txt')  
 with open(filename) as f:
     x_1 = f.read().splitlines()
 
@@ -34,7 +34,7 @@ x_1 = map(int, x_1)
 x_1 = running_mean(x_1[:5000], 360)
 f.close()
 
-filename =  os.path.join(data_for_plotting, '1-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster-cut_y.txt')  
 with open(filename) as f:
     y_1 = f.read().splitlines()
 
@@ -42,7 +42,7 @@ y_1 = map(float, y_1)
 y_1 = running_mean(y_1[:5000], 360)
 f.close()
 
-filename =  os.path.join(data_for_plotting, '2-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '2-cluster-cut_x.txt')  
 with open(filename) as f:
     x_2 = f.read().splitlines()
 
@@ -51,7 +51,7 @@ x_2 = running_mean(x_2, 360)
 f.close()
 
 
-filename =  os.path.join(data_for_plotting, '2-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '2-cluster-cut_y.txt')  
 with open(filename) as f:
     y_2 = f.read().splitlines()
 
@@ -60,7 +60,7 @@ y_2 = running_mean(y_2, 360)
 f.close()
 
 
-filename =  os.path.join(data_for_plotting, '3-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '3-cluster-cut_x.txt')  
 with open(filename) as f:
     x_3 = f.read().splitlines()
 
@@ -69,7 +69,7 @@ x_3 = running_mean(x_3[:4500], 360)
 f.close()
 
 
-filename =  os.path.join(data_for_plotting, '3-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '3-cluster-cut_y.txt')  
 with open(filename) as f:
     y_3 = f.read().splitlines()
 
@@ -88,4 +88,4 @@ plt.plot(x_3, y_3)
 plt.legend(['cluster 1', 'cluster 2', 'cluster 3'], loc='upper left')
 
 #plt.show()
-plt.savefig(plots_dir+'\\'+'clusters_views_baseline.pdf')
+plt.savefig(plots_dir+'\\'+'clusters_views_cut_seed.pdf')
