@@ -147,8 +147,8 @@ plt.xlabel('days')
 plt.ylabel('attention (views)')
 plt.title('Trend inside cluster 1 (seed)')
  
-x = running_mean(x, 90)
-y = running_mean(y, 90)
+x = running_mean(x, 360)
+y = running_mean(y, 360)
 plt.plot(x, y)
 
 plt.savefig(plots_dir+'\\'+'cluster_1_cut_views_seed.pdf')
