@@ -24,7 +24,7 @@ trends_dir = os.path.join(plots_dir, 'trends')
 # Change address for each dataset: views, edits, google_trends
 views_dir = os.path.join(data_dir, 'views')
 views_scientist_dir = os.path.join(views_dir, 'scientists')
-views_scientist_cut_dir = os.path.join(views_dir, 'scientists_cut')
+views_scientist_cut_dir = os.path.join(views_dir, 'scientists_after_the_award')
 
 def load_simple_json(filename):
     print filename
@@ -74,14 +74,14 @@ def time_aligning(scientist_dict):
         output_path =  os.path.join(views_scientist_cut_dir, scientist+'.txt')
         text_file = open(output_path, "w")
         for i in range(0, len(x)):
-            if x[i]<0:
+            if x[i]>0:
                 ts_list.append(y[i])
         text_file.write(",".join(map(lambda x: str(x), ts_list)))
         text_file.close()
-        ts_list = running_mean(ts_list, 90)
-        plt.plot(ts_list)
-        plt.savefig(trends_dir+'\\'+scientist+'.pdf')
-        plt.cla()   
+        #ts_list = running_mean(ts_list, 90)
+        #plt.plot(ts_list)
+        #plt.savefig(trends_dir+'\\'+scientist+'.pdf')
+        #plt.cla()   
 
 
     return list(ts_list), list(time_list)
