@@ -4,7 +4,6 @@ Created on 2 Aug 2016
 @author: sennikta
 '''
 
-#TODO play around with the normalization - each ts separately, or all together
 
 # Input:
 #    data              is the raw time series. 
@@ -94,7 +93,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(views_sax_sci_cut, file_name)
+    output_path =  os.path.join(google_trends_sax, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -217,12 +216,12 @@ def scientists_collection(dir):
     files_list = listdir(dir)
     for scientist in files_list:
         print scientist
-        scientist = scientist.replace('.txt','')
+        scientist = scientist.replace('.csv','')
         # for Google Trends
-        #scientist_series = get_series_from_csv(scientist, dir)
+        scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
-        scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 90, 9, 4)
+        #scientist_series = get_series_from_txt(scientist, dir)
+        symbolic_data = series_to_sax(scientist_series, 54, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
@@ -245,4 +244,4 @@ def topics_collection(dir):
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
     return
 
-scientists_collection(views_scientist_cut_dir)
+scientists_collection(gooogle_trends_sci)

@@ -9,6 +9,9 @@ import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 import operator
+import csv
+from itertools import islice
+
 
 # The result of the plotting is not readable
 
@@ -19,23 +22,22 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 
 # Change address for each dataset: views, edits, google_trends
-norm_dir = os.path.join(data_dir, 'google_trends')
+norm_dir = os.path.join(data_dir, 'google_trends_normalized')
 norm_scientist_dir = os.path.join(norm_dir, 'scientists')
 
 # for cluster input
 clustering_dir = os.path.join(data_dir, 'clustering')
 sax_clustering_dir = os.path.join(clustering_dir, 'sax_clustering')
-clustered_views  = os.path.join(sax_clustering_dir, 'views')
-clustered_views_seed  = os.path.join(clustered_views, 'seed')
-clustered_views_baseline  = os.path.join(clustered_views, 'baseline')
-
 clustered_gt  = os.path.join(sax_clustering_dir, 'google_trends')
+
 clustered_gt_seed  = os.path.join(clustered_gt, 'seed')
 clustered_gt_baseline  = os.path.join(clustered_gt, 'baseline')
 
 # for plotting
+clustered_gt_plots  = os.path.join(clustered_gt, 'plots')
 data_for_plotting  = os.path.join(clustered_gt_seed, 'data_for_plotting')
-plots_dir = os.path.join(clustered_gt, 'plots')
+
+
 
 def load_simple_json(filename):
     print filename
@@ -49,7 +51,7 @@ def running_mean(x, N):
     cumsum = np.cumsum(np.insert(x, 0, 0)) 
     return (cumsum[N:] - cumsum[:-N]) / N 
 
-def time_aligning(scientist_dict, norm_dir):
+def time_aligning(scientist_dict):
     ts_list = []
     time_list = []
     for scientist, param_dict in scientist_dict.iteritems():
@@ -59,29 +61,32 @@ def time_aligning(scientist_dict, norm_dir):
         days_check = []
         # comment for baseline
         event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
+        
         scientist = scientist.rstrip().split('/')[-1]
-        txtname = os.path.join(norm_scientist_dir + '\\' + scientist + '.txt')      
-        f = open(txtname)
-        # converting string to dates
-        for line in f:
-            day_list = line.rstrip().split(',')
-            year = day_list.pop(0)
-            for idx,day in enumerate(day_list):
-                # comment for baseline
-                date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
-                
-                days_difference = days_between(event_date, date)
-                days_check.append(date)
-                x.append(days_difference)
-                y.append(day)     
-        f.close()
- 
-#        x = list(range(len(y))) # only for baseline
-        x = np.array(x, dtype=np.int)
-        y = np.array(y, dtype=np.float)
-        time_list.append(x)
-        ts_list.append(y)
+        csvname = os.path.join(norm_scientist_dir + '\\' + scientist + '.csv')      
+        try:
+            f = open(csvname)
+            reader = csv.reader(f)
+            for row in islice(reader, 1, 653):
+                year = int(row[2].rstrip().split('-')[0])
+                if year>2004 and year<2016:
+                    y.append(float(row[1]))
+                    week_beg = datetime.datetime.strptime(row[2].rstrip().split(' - ')[0], "%Y-%m-%d")
+                    week_end = datetime.datetime.strptime(row[2].rstrip().split(' - ')[1], "%Y-%m-%d")
+                    if event_date>week_beg and event_date<week_end:
+                        ind=len(y)-1
+            f.close()
+            for i in range(0,len(y)):
+                x.append(i-ind)
+            #x = running_mean(x, 13)
+            #y = running_mean(y, 13)
+            ts_list.append(y)
+            time_list.append(x)
+        except IOError:
+            continue
+        print ts_list
     return list(ts_list), list(time_list)
+
 
 def take_average(ts_list, time_list):
     # make dict
@@ -108,7 +113,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_gt_seed, '2-cluster.txt')  
+filename =  os.path.join(clustered_gt_seed, '1-cluster.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -119,7 +124,7 @@ for scientist, param_list in scientist_dict.iteritems():
         cluster_dict.update({scientist:param_list})
 
 
-ts_list, time_list = time_aligning(cluster_dict, norm_dir)
+ts_list, time_list = time_aligning(cluster_dict)
 avg_dict=take_average(ts_list, time_list)
 
 x=[]
@@ -132,14 +137,14 @@ for item in sorted_dict:
 
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
 
-filename =  os.path.join(data_for_plotting, '2-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster_x.txt')  
 
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
 
-filename =  os.path.join(data_for_plotting, '2-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster_y.txt')  
 
 text_file = open(filename, "w")
 for item in y:
@@ -149,10 +154,10 @@ text_file.close()
 
 plt.xlabel('days before the award')
 plt.ylabel('attention (google_trends)')
-plt.title('Trend inside cluster 2 (seed)')
+plt.title('Trend inside cluster 1 (seed)')
  
-x = running_mean(x, 360)
-y = running_mean(y, 360)
+x = running_mean(x, 3)
+y = running_mean(y, 3)
 plt.plot(x, y)
 
-plt.savefig(plots_dir+'\\'+'cluster_2_google_trends_seed.pdf')
+plt.savefig(clustered_gt_plots+'\\'+'cluster_1_google_trends_seed.pdf')

@@ -98,7 +98,7 @@ def read_sax (dir):
 
 ts_names=[]
 ts_sequences=[]
-sax_dict = read_sax(views_sax_sci_cut)
+sax_dict = read_sax(gooogle_trends_sax_sci)
 for name, list in sax_dict.iteritems():
     ts_names.append(name)
     ts_sequences.append(list)
@@ -132,7 +132,7 @@ for name, ts in sax_dict.iteritems():
 print "finished BOP formation"
 
 # clustering
-hierarchical_model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward').fit(BOP.toarray())
+hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
 labels = hierarchical_model.labels_
 print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
@@ -144,10 +144,10 @@ plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
 plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters-2h_seed_cut.pdf')
+plt.savefig('clusters3_gt_scientists_seed.pdf')
  
 # clustering output
-text_file = open("clusters-2h_seed_cut.txt", "w")
+text_file = open("clusters3_gt_scientists_seed.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()
