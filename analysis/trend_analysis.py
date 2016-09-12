@@ -22,7 +22,7 @@ views_dir = os.path.join(data_dir, 'views')
 views_baseline_dir = os.path.join(views_dir, 'baseline')
 views_seed_dir = os.path.join(views_dir, 'seed')
 views_scientist_dir = os.path.join(views_dir, 'scientists')
-views_scientist_cut_dir = os.path.join(views_seed_dir, 'topics_before_the_award')
+views_scientist_cut_dir = os.path.join(views_seed_dir, 'topics_after_the_award')
 
 scientists_file = os.path.join(general_dir, 'seed_topics_list.txt')
 

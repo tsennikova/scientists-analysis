@@ -37,8 +37,6 @@ def days_between(d1, d2):
     return (d2 - d1).days
 
 def time_aligning(scientist_dict, topic_dict):
-    print scientist_dict
-    print topic_dict
     name_list=[]
     error_list = []
     files_list = listdir(views_topic_dir)
@@ -53,8 +51,9 @@ def time_aligning(scientist_dict, topic_dict):
         event = param_dict["Page_created"].rstrip().split('T')[0]
         event_date = datetime.datetime.strptime(event, "%Y-%m-%d")
         if scientist in topic_dict:
+            print scientist
             for topic in topic_dict[scientist]:
-                
+            
                 #topic = topic.encode("utf-8")
                 #topic = urllib2.unquote(topic).decode("utf-8")
                 
@@ -73,15 +72,17 @@ def time_aligning(scientist_dict, topic_dict):
                 days_check = []
                 ts_list = []    
                 if topic in name_list:
-                    txtname = os.path.join(views_topic_dir + '\\' + fname)
-                    
+                    print topic
+                    idx=name_list.index(topic)
+                    txtname = os.path.join(views_topic_dir + '\\' + files_list[idx])
                     try:
                         f = open(txtname)
-                        
+                       
                         # converting string to dates
                         for line in f:
                             day_list = line.rstrip().split(',')
                             year = day_list.pop(0)
+                            
                             for idx,day in enumerate(day_list):
                                 # comment for baseline
                                 date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
