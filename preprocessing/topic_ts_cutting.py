@@ -23,7 +23,7 @@ neighbors_dir = os.path.join(data_dir, 'neighbors')
 views_dir = os.path.join(data_dir, 'views')
 views_baseline_dir = os.path.join(views_dir, 'baseline')
 views_topic_dir = os.path.join(views_dir, 'topics')
-views_topic_cut_dir = os.path.join(views_baseline_dir, 'topics_after_creation')
+views_topic_cut_dir = os.path.join(views_baseline_dir, 'topics_full')
 
 scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
 topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
@@ -51,7 +51,7 @@ def time_aligning(scientist_dict, topic_dict):
         event = param_dict["Page_created"].rstrip().split('T')[0]
         event_date = datetime.datetime.strptime(event, "%Y-%m-%d")
         if scientist in topic_dict:
-            print scientist
+            
             for topic in topic_dict[scientist]:
             
                 #topic = topic.encode("utf-8")
@@ -72,7 +72,7 @@ def time_aligning(scientist_dict, topic_dict):
                 days_check = []
                 ts_list = []    
                 if topic in name_list:
-                    print topic
+                    
                     idx=name_list.index(topic)
                     txtname = os.path.join(views_topic_dir + '\\' + files_list[idx])
                     try:
@@ -97,8 +97,8 @@ def time_aligning(scientist_dict, topic_dict):
                         output_path =  os.path.join(views_topic_cut_dir, name)
                         text_file = open(output_path, "w")
                         for i in range(0, len(x)):
-                            if x[i]>0:
-                                ts_list.append(y[i])
+                            #if x[i]>0:
+                            ts_list.append(y[i])
                         text_file.write(",".join(map(lambda x: str(x), ts_list)))
                         text_file.close()
                     except IOError:
