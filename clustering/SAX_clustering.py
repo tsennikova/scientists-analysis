@@ -58,7 +58,7 @@ clustering_dir =os.path.join(data_dir, 'clustering')
 bop_dir = os.path.join(clustering_dir, 'bop')
 seed_bop_dir = os.path.join(bop_dir, 'seed')
 
-scientists_file = os.path.join(general_dir, 'baseline_scientists_list.txt')
+scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt')
 test_file = os.path.join(general_dir, 'test.txt')
 
 
@@ -133,7 +133,7 @@ for name, ts in sax_dict.iteritems():
 print "finished BOP formation"
 
 # clustering
-hierarchical_model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward').fit(BOP.toarray())
+hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
 labels = hierarchical_model.labels_
 print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
@@ -143,12 +143,12 @@ plot_columns = pca_2.fit_transform(BOP.toarray())
 plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
 plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
-plt.title('Baseline Clusters')
+plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters2_gt_scientists_baseline.pdf')
+plt.savefig('clusters3_gt_scientists_seed.pdf')
  
 # clustering output
-text_file = open("clusters2_gt_scientists_baseline.txt", "w")
+text_file = open("clusters3_gt_scientists_seed.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()

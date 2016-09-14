@@ -20,7 +20,7 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 
 # Change address for each dataset: views, edits, google_trends
-dir = os.path.join(data_dir, 'google_trends')
+dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 scientist_dir = os.path.join(dir, 'scientists')
 
 
@@ -56,8 +56,8 @@ def time_aligning(scientist_dict):
         try:
             f = open(csvname)
             reader = csv.reader(f)
-            for row in islice(reader, 5, 657):
-                year = int(row[0].rstrip().split('-')[0])
+            for row in islice(reader, 1, 653):
+                year = int(row[2].rstrip().split('-')[0])
                 if year>2004 and year<2016:
                     y.append(float(row[1]))
             f.close()

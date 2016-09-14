@@ -54,7 +54,7 @@ topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json
 # views, edits or google trends
 views_dir = os.path.join(data_dir, 'views')
 edits_dir = os.path.join(data_dir, 'edits')
-google_trends_dir = os.path.join(data_dir, 'google_trends')
+google_trends_dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 test_dir = os.path.join(data_dir, 'test')
 
 # scientists or topics
@@ -200,10 +200,10 @@ def get_series_from_csv(scientist, dir):
         f = open(csvname)
         reader = csv.reader(f)
         # skip template
-        for row in islice(reader, 5, 657):
+        for row in islice(reader, 1, 653):
         #for row in islice(reader, 6, 30):
 
-            year = int(row[0].rstrip().split('-')[0])
+            year = int(row[2].rstrip().split('-')[0])
             if year>2004 and year<2016:
                 scientist_series.append(float(row[1]))
         f.close()

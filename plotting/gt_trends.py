@@ -22,7 +22,7 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 
 # Change address for each dataset: views, edits, google_trends
-norm_dir = os.path.join(data_dir, 'google_trends_normalized')
+norm_dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 norm_scientist_dir = os.path.join(norm_dir, 'scientists')
 
 # for cluster input
@@ -60,7 +60,7 @@ def time_aligning(scientist_dict):
         y = []
         days_check = []
         # comment for baseline
-        #event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
+        event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
         
         scientist = scientist.rstrip().split('/')[-1]
         csvname = os.path.join(norm_scientist_dir + '\\' + scientist + '.csv')      
@@ -73,13 +73,13 @@ def time_aligning(scientist_dict):
                     y.append(float(row[1]))
                     week_beg = datetime.datetime.strptime(row[2].rstrip().split(' - ')[0], "%Y-%m-%d")
                     week_end = datetime.datetime.strptime(row[2].rstrip().split(' - ')[1], "%Y-%m-%d")
-                    #if event_date>week_beg and event_date<week_end:
-                    #    ind=len(y)-1
+                    if event_date>week_beg and event_date<week_end:
+                        ind=len(y)-1
             f.close()
             for i in range(0,len(y)):
                 # comment for baseline
-#                x.append(i-ind)
-                x.append(i)
+                x.append(i-ind)
+                #x.append(i)
             #x = running_mean(x, 13)
             #y = running_mean(y, 13)
             ts_list.append(y)
@@ -112,10 +112,10 @@ def take_average(ts_list, time_list):
         avg_dict.update({day:avg})    
     return avg_dict
 
-filename =  os.path.join(baseline_dir, 'baseline_creation_date.json')  
+filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_gt_baseline, '1-cluster.txt')  
+filename =  os.path.join(clustered_gt_seed, '1-cluster.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -156,10 +156,10 @@ text_file.close()
 
 plt.xlabel('days before the award')
 plt.ylabel('attention (google trends)')
-plt.title('Trend inside cluster 1 (baseline)')
+plt.title('Trend inside cluster 1')
  
 x = running_mean(x, 6)
 y = running_mean(y, 6)
-plt.plot(x, y)
+plt.plot(x[:850], y[:850])
 
-plt.savefig(clustered_gt_plots+'\\'+'cluster_1_google_trends_baseline.pdf')
+plt.savefig(clustered_gt_plots+'\\'+'cluster_1_google_trends.pdf')

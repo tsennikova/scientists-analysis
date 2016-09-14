@@ -17,13 +17,13 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 general_dir = os.path.join(data_dir, 'general')
 
 # Change address for each dataset: views, edits, google_trends
-views_dir = os.path.join(data_dir, 'views')
-views_baseline_dir = os.path.join(views_dir, 'baseline')
-views_seed_dir = os.path.join(views_dir, 'seed')
-views_scientist_dir = os.path.join(views_dir, 'scientists')
-views_scientist_cut_dir = os.path.join(views_baseline_dir, 'scientists_full')
+dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
+#views_baseline_dir = os.path.join(views_dir, 'baseline')
+#views_seed_dir = os.path.join(views_dir, 'seed')
+scientist_dir = os.path.join(dir, 'scientists')
+scientist_cut_dir = os.path.join(dir, 'scientists_after_the_award')
 
-scientists_file = os.path.join(general_dir, 'baseline_scientists_list.txt')
+scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt')
 
 
 def read_ts (dir):
@@ -115,7 +115,7 @@ decreasing_trend = 0
 increasing_trend = 0
 stable_trend = 0
 
-ts_dict=read_ts(views_scientist_cut_dir)
+ts_dict=read_ts(scientist_cut_dir)
 count = 0
 for name, ts in ts_dict.iteritems():
     print count

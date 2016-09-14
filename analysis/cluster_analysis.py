@@ -43,10 +43,10 @@ with open(filename) as f:
 f.close()
 
 
-# filename =  os.path.join(clustered_seed, '3-cluster.txt')  
-# with open(filename) as f:
-#     x_3 = f.read().splitlines()
-# f.close()
+filename =  os.path.join(clustered_seed, '3-cluster.txt')  
+with open(filename) as f:
+    x_3 = f.read().splitlines()
+f.close()
 
 scientist_dict = load_simple_json(scientists_file)
 
@@ -57,7 +57,7 @@ gender_list = []
 status_list = []
 for scientist in scientist_dict:
     scientist_name = scientist.rstrip().split('/')[-1]
-    if scientist_name in x_2:
+    if scientist_name in x_3:
         award_year_list.append(scientist_dict[scientist]['Year'])
         award_list.append(scientist_dict[scientist]['Award'])
         field_list.append(scientist_dict[scientist]['Field'])
