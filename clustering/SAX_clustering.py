@@ -47,7 +47,7 @@ views_sax_sci = os.path.join(views_sax, 'scientists')
 views_sax_sci_cut = os.path.join(views_sax, 'scientists_cut')
 
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
-gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists')
+gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists_cut')
 
 views_sax_topic = os.path.join(views_sax, 'topics')
 edits_sax_topic = os.path.join(edits_sax, 'topics')
@@ -133,9 +133,9 @@ for name, ts in sax_dict.iteritems():
 print "finished BOP formation"
 
 # clustering
-hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
+hierarchical_model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward').fit(BOP.toarray())
 labels = hierarchical_model.labels_
-print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
 # plot first 2 principal components
 pca_2 = PCA(2)
@@ -143,12 +143,12 @@ plot_columns = pca_2.fit_transform(BOP.toarray())
 plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
 plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
-plt.title('Seed Clusters')
+plt.title('Seed Clusters (before th award)')
 #plt.show()
-plt.savefig('clusters3_gt_scientists_seed.pdf')
+plt.savefig('clusters2_gt_scientists_cut.pdf')
  
 # clustering output
-text_file = open("clusters3_gt_scientists_seed.txt", "w")
+text_file = open("clusters2_gt_scientists_cut.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()

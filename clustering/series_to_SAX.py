@@ -60,7 +60,7 @@ test_dir = os.path.join(data_dir, 'test')
 # scientists or topics
 views_sci = os.path.join(views_dir, 'scientists')
 edits_sci = os.path.join(edits_dir, 'scientists')
-gooogle_trends_sci = os.path.join(google_trends_dir, 'scientists')
+gooogle_trends_sci = os.path.join(google_trends_dir, 'scientists_before_the_award')
 
 views_topic = os.path.join(views_dir, 'topics')
 edits_topic = os.path.join(edits_dir, 'topics')
@@ -76,7 +76,7 @@ test_sax = os.path.join(sax_dir, 'test')
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
-gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists')
+gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists_cut')
 
 views_sax_topic = os.path.join(views_sax, 'topics')
 edits_sax_topic = os.path.join(edits_sax, 'topics')
@@ -93,7 +93,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(google_trends_sax, file_name)
+    output_path =  os.path.join(gooogle_trends_sax_sci, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -216,11 +216,11 @@ def scientists_collection(dir):
     files_list = listdir(dir)
     for scientist in files_list:
         print scientist
-        scientist = scientist.replace('.csv','')
+        scientist = scientist.replace('.txt','')
         # for Google Trends
-        scientist_series = get_series_from_csv(scientist, dir)
+        #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
-        #scientist_series = get_series_from_txt(scientist, dir)
+        scientist_series = get_series_from_txt(scientist, dir)
         symbolic_data = series_to_sax(scientist_series, 54, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)

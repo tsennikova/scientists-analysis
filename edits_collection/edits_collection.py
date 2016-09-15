@@ -29,9 +29,10 @@ def parse_url(link):
 
 def revisions_extraction(username_list, timestamp_list,lang, name, rvcontinue):
     timestamp = "" 
+   # title = 'Main_Page'
     title = name.replace('_', ' ')
     title = urllib.quote_plus(title.encode("utf-8"))
-
+    
     if rvcontinue != 0:
         # if there are more than 500 edits - recoursive call
         site= "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvlimit=500&titles=%s" %title + "&rvcontinue=%s" %rvcontinue
@@ -93,7 +94,8 @@ time_dict = {}
 
 with open(filename) as f:
     link_list = f.read().splitlines()
-    
+
+link_list = ['Main_Page']  
 for link in link_list:
     print count
     print link
@@ -149,4 +151,5 @@ for link in link_list:
         text_file.write("\n")
     text_file.close()  
     time_dict = {} 
+    break
     

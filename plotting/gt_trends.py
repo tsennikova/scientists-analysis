@@ -31,12 +31,13 @@ sax_clustering_dir = os.path.join(clustering_dir, 'sax_clustering')
 clustered_gt  = os.path.join(sax_clustering_dir, 'google_trends')
 
 clustered_gt_seed  = os.path.join(clustered_gt, 'seed')
+clustered_gt_seed_cut  = os.path.join(clustered_gt_seed, 'cut')
 clustered_gt_baseline  = os.path.join(clustered_gt, 'baseline')
 
 # for plotting
-clustered_gt_plots  = os.path.join(clustered_gt, 'plots')
-data_for_plotting  = os.path.join(clustered_gt_baseline, 'data_for_plotting')
+clustered_gt_plots  = os.path.join(clustered_gt_seed_cut, 'plots')
 
+data_for_plotting  = os.path.join(clustered_gt_seed_cut, 'data_for_plotting')
 
 
 def load_simple_json(filename):
@@ -115,7 +116,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_gt_seed, '1-cluster.txt')  
+filename =  os.path.join(clustered_gt_seed_cut, '1-cluster.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -158,8 +159,8 @@ plt.xlabel('days before the award')
 plt.ylabel('attention (google trends)')
 plt.title('Trend inside cluster 1')
  
-x = running_mean(x, 6)
-y = running_mean(y, 6)
-plt.plot(x[:850], y[:850])
+x = running_mean(x, 15)
+y = running_mean(y, 15)
+plt.plot(x[:500], y[:500])
 
-plt.savefig(clustered_gt_plots+'\\'+'cluster_1_google_trends.pdf')
+plt.savefig(clustered_gt_plots+'\\'+'cluster_1_google_trends_cut.pdf')
