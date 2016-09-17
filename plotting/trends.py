@@ -19,8 +19,10 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 
 # Change address for each dataset: views, edits, google_trends
-norm_dir = os.path.join(data_dir, 'google_trends')
-norm_scientist_dir = os.path.join(norm_dir, 'scientists')
+norm_dir = os.path.join(data_dir, 'edits_normed_by_main_page')
+norm_seed_dir = os.path.join(norm_dir, 'seed')
+
+norm_scientist_dir = os.path.join(norm_seed_dir, 'scientists')
 
 # for cluster input
 clustering_dir = os.path.join(data_dir, 'clustering')
@@ -33,9 +35,13 @@ clustered_gt  = os.path.join(sax_clustering_dir, 'google_trends')
 clustered_gt_seed  = os.path.join(clustered_gt, 'seed')
 clustered_gt_baseline  = os.path.join(clustered_gt, 'baseline')
 
+clustered_edits  = os.path.join(sax_clustering_dir, 'edits')
+clustered_edits_seed  = os.path.join(clustered_edits, 'seed')
+clustered_edits_baseline  = os.path.join(clustered_edits, 'baseline')
+
 # for plotting
-data_for_plotting  = os.path.join(clustered_gt_seed, 'data_for_plotting')
-plots_dir = os.path.join(clustered_gt, 'plots')
+data_for_plotting  = os.path.join(clustered_edits_seed, 'data_for_plotting')
+plots_dir = os.path.join(clustered_edits, 'plots')
 
 def load_simple_json(filename):
     print filename
@@ -77,14 +83,26 @@ def time_aligning(scientist_dict, norm_dir):
         f.close()
  
 #        x = list(range(len(y))) # only for baseline
-        x = np.array(x, dtype=np.int)
-        y = np.array(y, dtype=np.float)
+      
+        x = np.array(x[:6000], dtype=np.int)
+        y = np.array(y[:6000], dtype=np.float)
+        y = (y - np.mean(y))/np.std(y)
+        #x = running_mean(x, 360)
+        #y = running_mean(y, 360)
+        #plt.plot(x, y)
+
+        #plt.savefig(plots_dir+'\\'+scientist+'.pdf')
+        #plt.clf()
         time_list.append(x)
         ts_list.append(y)
+    #print list(ts_list)
+    #print list(time_list)
+        
     return list(ts_list), list(time_list)
 
 def take_average(ts_list, time_list):
     # make dict
+    #print ts_list, time_list
     ts_dict = {}
     avg_dict = {}
     for i in range(0, len(time_list)):
@@ -108,7 +126,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_gt_seed, '2-cluster.txt')  
+filename =  os.path.join(clustered_edits_seed, '2-cluster.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -148,11 +166,11 @@ text_file.close()
 
 
 plt.xlabel('days before the award')
-plt.ylabel('attention (google_trends)')
+plt.ylabel('attention (edits)')
 plt.title('Trend inside cluster 2 (seed)')
  
-x = running_mean(x, 360)
-y = running_mean(y, 360)
-plt.plot(x, y)
+x = running_mean(x, 50)
+y = running_mean(y, 50)
+plt.plot(x[800:6000], y[800:6000])
 
-plt.savefig(plots_dir+'\\'+'cluster_2_google_trends_seed.pdf')
+plt.savefig(plots_dir+'\\'+'cluster_2_edits_seed.pdf')

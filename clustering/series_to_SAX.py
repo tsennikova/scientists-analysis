@@ -53,7 +53,10 @@ topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json
 
 # views, edits or google trends
 views_dir = os.path.join(data_dir, 'views')
-edits_dir = os.path.join(data_dir, 'edits')
+edits_dir = os.path.join(data_dir, 'edits_normed_by_main_page')
+edits_seed_dir = os.path.join(edits_dir, 'seed')
+scientist_dir = os.path.join(edits_seed_dir, 'scientists')
+
 google_trends_dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 test_dir = os.path.join(data_dir, 'test')
 
@@ -93,7 +96,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(gooogle_trends_sax_sci, file_name)
+    output_path =  os.path.join(edits_sax_sci, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -183,9 +186,9 @@ def get_series_from_txt(scientist, dir):
         for line in f:
             time_list = map(float, line.split(','))
             #comment for cutted ts
-            #year = int(time_list.pop(0))
-            #if  year>2004 and year<2016:
-            #    scientist_series += time_list
+            year = int(time_list.pop(0))
+            if  year>2001 and year<2016:
+                scientist_series += time_list
             scientist_series += time_list 
         f.close()
     except IOError:
@@ -221,7 +224,7 @@ def scientists_collection(dir):
         #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
         scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 54, 9, 4)
+        symbolic_data = series_to_sax(scientist_series, 810, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
@@ -244,4 +247,4 @@ def topics_collection(dir):
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
     return
 
-scientists_collection(gooogle_trends_sci)
+scientists_collection(scientist_dir)

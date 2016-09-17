@@ -98,7 +98,7 @@ def read_sax (dir):
 
 ts_names=[]
 ts_sequences=[]
-sax_dict = read_sax(gooogle_trends_sax_sci)
+sax_dict = read_sax(edits_sax_sci)
 for name, list in sax_dict.iteritems():
     ts_names.append(name)
     ts_sequences.append(list)
@@ -143,12 +143,12 @@ plot_columns = pca_2.fit_transform(BOP.toarray())
 plt.scatter(plot_columns[:,0], plot_columns[:,1], c=labels)
 plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
-plt.title('Seed Clusters (before th award)')
+plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters2_gt_scientists_cut.pdf')
+plt.savefig('clusters2_edits_scientists.pdf')
  
 # clustering output
-text_file = open("clusters2_gt_scientists_cut.txt", "w")
+text_file = open("clusters2_edits_scientists.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()

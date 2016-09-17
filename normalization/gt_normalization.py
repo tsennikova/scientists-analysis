@@ -32,6 +32,8 @@ google_trends_dir_normed = os.path.join(data_dir, 'google_trends_normed_by_basel
 scientists_dir_normed = os.path.join(google_trends_dir_normed, 'scientists')
 topic_dir_normed = os.path.join(google_trends_dir_normed, 'topics')
 
+topic_baseline = os.path.join(general_dir, 'baseline_topics_list.txt')
+
 
 def get_baseline(dir):    
     baseline_dict = {}

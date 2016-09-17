@@ -20,10 +20,12 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 neighbors_dir = os.path.join(data_dir, 'neighbors')
 
 # Change address for each dataset: views, edits, google_trends
-views_dir = os.path.join(data_dir, 'views')
-views_baseline_dir = os.path.join(views_dir, 'baseline')
-views_topic_dir = os.path.join(views_dir, 'topics')
-views_topic_cut_dir = os.path.join(views_baseline_dir, 'topics_full')
+dir = os.path.join(data_dir, 'edits_normed_by_main_page')
+edits_baseline_dir = os.path.join(dir, 'baseline')
+edits_seed_dir = os.path.join(dir, 'seed')
+
+topic_dir = os.path.join(edits_seed_dir, 'topics')
+topic_cut_dir = os.path.join(edits_baseline_dir, 'topics_full')
 
 scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
 topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
@@ -39,7 +41,7 @@ def days_between(d1, d2):
 def time_aligning(scientist_dict, topic_dict):
     name_list=[]
     error_list = []
-    files_list = listdir(views_topic_dir)
+    files_list = listdir(topic_dir)
     for fname in files_list:
         name = fname.replace('.txt','')
         name = name.lower()
@@ -74,7 +76,7 @@ def time_aligning(scientist_dict, topic_dict):
                 if topic in name_list:
                     
                     idx=name_list.index(topic)
-                    txtname = os.path.join(views_topic_dir + '\\' + files_list[idx])
+                    txtname = os.path.join(topic_dir + '\\' + files_list[idx])
                     try:
                         f = open(txtname)
                        
@@ -94,7 +96,7 @@ def time_aligning(scientist_dict, topic_dict):
                         x = np.array(x, dtype=np.int)
                         y = np.array(y, dtype=np.float)
                         name = scientist.rstrip().split('/')[-1]+"_"+topic+".txt"
-                        output_path =  os.path.join(views_topic_cut_dir, name)
+                        output_path =  os.path.join(topic_cut_dir, name)
                         text_file = open(output_path, "w")
                         for i in range(0, len(x)):
                             #if x[i]>0:
