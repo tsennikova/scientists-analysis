@@ -18,11 +18,12 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 general_dir = os.path.join(data_dir, 'general')
 
 # Change address for each dataset: views, edits, google_trends
-dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
+dir = os.path.join(data_dir, 'edits_normed_by_main_page')
 #views_baseline_dir = os.path.join(views_dir, 'baseline')
 #views_seed_dir = os.path.join(views_dir, 'seed')
-scientist_dir = os.path.join(dir, 'scientists')
-scientist_cut_dir = os.path.join(dir, 'topics_after_the_award')
+dir_seed = os.path.join(dir, 'seed')
+scientist_dir = os.path.join(dir_seed, 'topics')
+scientist_cut_dir = os.path.join(dir_seed, 'topics_before_the_award')
 
 scientists_file = os.path.join(general_dir, 'seed_topics_list.txt')
 

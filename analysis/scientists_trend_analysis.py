@@ -9,6 +9,7 @@ import numpy as np
 from scipy.stats import norm, mstats
 import os
 from os import listdir
+import math
 
 base_dir = os.path.dirname(os.path.dirname(__file__))
 data_dir = os.path.join(base_dir, 'data')
@@ -17,13 +18,14 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 general_dir = os.path.join(data_dir, 'general')
 
 # Change address for each dataset: views, edits, google_trends
-dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
+dir = os.path.join(data_dir, 'edits_normed_by_main_page')
 #views_baseline_dir = os.path.join(views_dir, 'baseline')
-#views_seed_dir = os.path.join(views_dir, 'seed')
-scientist_dir = os.path.join(dir, 'scientists')
-scientist_cut_dir = os.path.join(dir, 'scientists_after_the_award')
+#views_seed_dir = o s.path.join(views_dir, 'seed')
+dir_seed = os.path.join(dir, 'baseline')
+scientist_dir = os.path.join(dir_seed, 'scientists')
+scientist_cut_dir = os.path.join(dir_seed, 'scientists_full')
 
-scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt')
+scientists_file = os.path.join(general_dir, 'baseline_scientists_list.txt')
 
 
 def read_ts (dir):
@@ -40,8 +42,9 @@ def read_ts (dir):
                 temp_list = list(temp_list)
                 if temp_list!=['']:
                     temp_list = map(float, temp_list)
+                    #temp_list = (temp_list - np.mean(temp_list))/np.std(temp_list)
             except IOError:
-                print "IOError ", filename
+                print "IOError ", dir, filename
                 continue
             if temp_list!=[]:
                 ts_dict.update({filename:temp_list})
@@ -86,18 +89,20 @@ def mk_test(x, alpha = 0.05):
         for i in range(len(unique_x)):
             tp[i] = sum(unique_x[i] == x)
         var_s = (n*(n-1)*(2*n+5) + np.sum(tp*(tp-1)*(2*tp+5)))/18
-
+    print s
     if s>0:
         z = (s - 1)/np.sqrt(var_s)
-    elif s == 0:
-            z = 0
-    elif s<0:
+    if s == 0:
+        z = 0
+    if s<0:
         z = (s + 1)/np.sqrt(var_s)
+    if math.isnan(s) == True:
+        z = 0
 
     # calculate the p_value
     p = 2*(1-norm.cdf(abs(z))) # two tail test
     h = abs(z) > norm.ppf(1-alpha/2) 
-
+   
     if (z<0) and h:
         trend = 'decreasing'
     elif (z>0) and h:

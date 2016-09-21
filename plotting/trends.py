@@ -126,7 +126,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_edits_seed, '2-cluster.txt')  
+filename =  os.path.join(clustered_edits_seed, '1-cluster-cut.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -150,14 +150,14 @@ for item in sorted_dict:
 
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
 
-filename =  os.path.join(data_for_plotting, '2-cluster_x.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster_x_cut.txt')  
 
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
 
-filename =  os.path.join(data_for_plotting, '2-cluster_y.txt')  
+filename =  os.path.join(data_for_plotting, '1-cluster_y_cut.txt')  
 
 text_file = open(filename, "w")
 for item in y:
@@ -165,12 +165,12 @@ for item in y:
 text_file.close()
 
 
-plt.xlabel('days before the award')
+plt.xlabel('days')
 plt.ylabel('attention (edits)')
-plt.title('Trend inside cluster 2 (seed)')
+plt.title('Trend inside cluster 1 (seed) before the award')
  
 x = running_mean(x, 50)
 y = running_mean(y, 50)
-plt.plot(x[800:6000], y[800:6000])
+plt.plot(x[250:4000], y[250:4000])
 
-plt.savefig(plots_dir+'\\'+'cluster_2_edits_seed.pdf')
+plt.savefig(plots_dir+'\\'+'cluster_1_edits_seed_cut.pdf')

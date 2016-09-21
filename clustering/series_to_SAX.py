@@ -55,7 +55,9 @@ topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json
 views_dir = os.path.join(data_dir, 'views')
 edits_dir = os.path.join(data_dir, 'edits_normed_by_main_page')
 edits_seed_dir = os.path.join(edits_dir, 'seed')
-scientist_dir = os.path.join(edits_seed_dir, 'scientists')
+edits_baseline_dir = os.path.join(edits_dir, 'baseline')
+
+scientist_dir = os.path.join(edits_baseline_dir, 'scientists_full')
 
 google_trends_dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 test_dir = os.path.join(data_dir, 'test')
@@ -186,9 +188,9 @@ def get_series_from_txt(scientist, dir):
         for line in f:
             time_list = map(float, line.split(','))
             #comment for cutted ts
-            year = int(time_list.pop(0))
-            if  year>2001 and year<2016:
-                scientist_series += time_list
+            #year = int(time_list.pop(0))
+            #if  year>2001 and year<2016:
+            #    scientist_series += time_list
             scientist_series += time_list 
         f.close()
     except IOError:

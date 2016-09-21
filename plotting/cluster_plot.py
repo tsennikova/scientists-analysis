@@ -62,22 +62,22 @@ y_2 = running_mean(y_2, 50)
 f.close()
 
 
-# filename =  os.path.join(data_for_plotting, '3-cluster_x.txt')  
-# with open(filename) as f:
-#     x_3 = f.read().splitlines()
-#  
-# x_3 = map(int, x_3)
-# x_3 = running_mean(x_3, 100)
-# f.close()
-#  
-#  
-# filename =  os.path.join(data_for_plotting, '3-cluster_y.txt')  
-# with open(filename) as f:
-#     y_3 = f.read().splitlines()
-#  
-# y_3 = map(float, y_3)
-# y_3 = running_mean(y_3, 100)
-# f.close()
+filename =  os.path.join(data_for_plotting, '3-cluster_x.txt')  
+with open(filename) as f:
+    x_3 = f.read().splitlines()
+  
+x_3 = map(int, x_3)
+x_3 = running_mean(x_3, 100)
+f.close()
+  
+  
+filename =  os.path.join(data_for_plotting, '3-cluster_y.txt')  
+with open(filename) as f:
+    y_3 = f.read().splitlines()
+  
+y_3 = map(float, y_3)
+y_3 = running_mean(y_3, 100)
+f.close()
 
 
 plt.xlabel('days')
@@ -85,9 +85,9 @@ plt.ylabel('attention (edits)')
 plt.title('Trend inside the clusters')
 plt.plot(x_1[800:5500], y_1[800:5500])
 plt.plot(x_2[800:5500], y_2[800:5500])
-#plt.plot(x_3[:850], y_3[:850])
+plt.plot(x_3[800:5500], y_3[800:5500])
 
-plt.legend(['cluster 1', 'cluster 2'], loc='upper right')
+plt.legend(['cluster 1', 'cluster 2', 'cluster 3'], loc='upper right')
 
 #plt.show()
 plt.savefig(plots_dir+'\\'+'clusters_edits_seed.pdf')
