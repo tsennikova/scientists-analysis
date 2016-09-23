@@ -40,7 +40,7 @@ clustered_edits_seed  = os.path.join(clustered_edits, 'seed')
 clustered_edits_baseline  = os.path.join(clustered_edits, 'baseline')
 
 # for plotting
-data_for_plotting  = os.path.join(clustered_edits_seed, 'data_for_plotting')
+data_for_plotting  = os.path.join(clustered_edits_baseline, 'data_for_plotting')
 plots_dir = os.path.join(clustered_edits, 'plots')
 
 def load_simple_json(filename):
@@ -64,7 +64,7 @@ def time_aligning(scientist_dict, norm_dir):
         y = []
         days_check = []
         # comment for baseline
-        event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
+        #event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
         scientist = scientist.rstrip().split('/')[-1]
         txtname = os.path.join(norm_scientist_dir + '\\' + scientist + '.txt')      
         f = open(txtname)
@@ -76,13 +76,13 @@ def time_aligning(scientist_dict, norm_dir):
                 # comment for baseline
                 date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
                 
-                days_difference = days_between(event_date, date)
+                #days_difference = days_between(event_date, date)
                 days_check.append(date)
-                x.append(days_difference)
+                #x.append(days_difference)
                 y.append(day)     
         f.close()
  
-#        x = list(range(len(y))) # only for baseline
+        x = list(range(len(y))) # only for baseline
       
         x = np.array(x[:6000], dtype=np.int)
         y = np.array(y[:6000], dtype=np.float)
@@ -126,7 +126,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_edits_seed, '1-cluster-cut.txt')  
+filename =  os.path.join(clustered_edits_baseline, '2-cluster.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -150,14 +150,14 @@ for item in sorted_dict:
 
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
 
-filename =  os.path.join(data_for_plotting, '1-cluster_x_cut.txt')  
+filename =  os.path.join(data_for_plotting, '2-cluster_x.txt')  
 
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
 
-filename =  os.path.join(data_for_plotting, '1-cluster_y_cut.txt')  
+filename =  os.path.join(data_for_plotting, '2-cluster_y.txt')  
 
 text_file = open(filename, "w")
 for item in y:
@@ -167,10 +167,10 @@ text_file.close()
 
 plt.xlabel('days')
 plt.ylabel('attention (edits)')
-plt.title('Trend inside cluster 1 (seed) before the award')
+plt.title('Trend inside cluster 2 (baseline)')
  
-x = running_mean(x, 50)
-y = running_mean(y, 50)
-plt.plot(x[250:4000], y[250:4000])
+x = running_mean(x, 300)
+y = running_mean(y, 300)
+plt.plot(x, y)
 
-plt.savefig(plots_dir+'\\'+'cluster_1_edits_seed_cut.pdf')
+plt.savefig(plots_dir+'\\'+'cluster_2_edits_baseline.pdf')

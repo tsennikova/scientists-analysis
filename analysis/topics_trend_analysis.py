@@ -23,7 +23,7 @@ dir = os.path.join(data_dir, 'edits_normed_by_main_page')
 #views_seed_dir = os.path.join(views_dir, 'seed')
 dir_seed = os.path.join(dir, 'seed')
 scientist_dir = os.path.join(dir_seed, 'topics')
-scientist_cut_dir = os.path.join(dir_seed, 'topics_before_the_award')
+scientist_cut_dir = os.path.join(dir_seed, 'topics_after_creation')
 
 scientists_file = os.path.join(general_dir, 'seed_topics_list.txt')
 

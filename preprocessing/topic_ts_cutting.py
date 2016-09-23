@@ -25,10 +25,10 @@ edits_baseline_dir = os.path.join(dir, 'baseline')
 edits_seed_dir = os.path.join(dir, 'seed')
 
 topic_dir = os.path.join(edits_seed_dir, 'topics')
-topic_cut_dir = os.path.join(edits_baseline_dir, 'topics_full')
+topic_cut_dir = os.path.join(edits_seed_dir, 'topics_after_creation')
 
-scientists_file =  os.path.join(baseline_dir, 'baseline_creation_date.json') 
-topic_file =  os.path.join(neighbors_dir, 'baseline_neighbors_list_clean_en.json') 
+scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
+topic_file =  os.path.join(neighbors_dir, 'seed_neighbors_list_clean_en.json') 
 
 def load_simple_json(filename):
     print filename
@@ -99,8 +99,8 @@ def time_aligning(scientist_dict, topic_dict):
                         output_path =  os.path.join(topic_cut_dir, name)
                         text_file = open(output_path, "w")
                         for i in range(0, len(x)):
-                            #if x[i]>0:
-                            ts_list.append(y[i])
+                            if x[i]>0:
+                                ts_list.append(y[i])
                         text_file.write(",".join(map(lambda x: str(x), ts_list)))
                         text_file.close()
                     except IOError:
