@@ -44,7 +44,7 @@ test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
-views_sax_sci_cut = os.path.join(views_sax, 'scientists_cut')
+views_sax_sci_cut = os.path.join(views_sax, 'scientists')
 
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
 gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists_cut')
@@ -58,7 +58,7 @@ clustering_dir =os.path.join(data_dir, 'clustering')
 bop_dir = os.path.join(clustering_dir, 'bop')
 seed_bop_dir = os.path.join(bop_dir, 'seed')
 
-scientists_file = os.path.join(general_dir, 'baseline_scientists_list.txt')
+scientists_file = os.path.join(general_dir, 'seed_scientists_list.txt')
 test_file = os.path.join(general_dir, 'test.txt')
 
 
@@ -98,7 +98,7 @@ def read_sax (dir):
 
 ts_names=[]
 ts_sequences=[]
-sax_dict = read_sax(edits_sax_sci)
+sax_dict = read_sax(views_sax_sci_cut)
 for name, list in sax_dict.iteritems():
     ts_names.append(name)
     ts_sequences.append(list)
@@ -133,9 +133,9 @@ for name, ts in sax_dict.iteritems():
 print "finished BOP formation"
 
 # clustering
-hierarchical_model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward').fit(BOP.toarray())
+hierarchical_model = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward').fit(BOP.toarray())
 labels = hierarchical_model.labels_
-print '2 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
+print '3 clusters: ', metrics.silhouette_score(BOP.tocsr(), labels, metric='euclidean')
 
 # plot first 2 principal components
 pca_2 = PCA(2)
@@ -145,10 +145,10 @@ plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
 plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters2_edits_scientists_baseline.pdf')
+plt.savefig('clusters3_views_scientists_seed.pdf')
  
 # clustering output
-text_file = open("clusters2_edits_scientists_baseline.txt", "w")
+text_file = open("clusters3_views_scientists_seed.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()

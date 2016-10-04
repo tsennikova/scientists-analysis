@@ -19,10 +19,10 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 
 
 # Change address for each dataset: views, edits, google_trends
-norm_dir = os.path.join(data_dir, 'edits_normed_by_main_page')
+norm_dir = os.path.join(data_dir, 'views')
 norm_seed_dir = os.path.join(norm_dir, 'seed')
 
-norm_scientist_dir = os.path.join(norm_seed_dir, 'scientists')
+norm_scientist_dir = os.path.join(norm_dir, 'scientists')
 
 # for cluster input
 clustering_dir = os.path.join(data_dir, 'clustering')
@@ -40,8 +40,8 @@ clustered_edits_seed  = os.path.join(clustered_edits, 'seed')
 clustered_edits_baseline  = os.path.join(clustered_edits, 'baseline')
 
 # for plotting
-data_for_plotting  = os.path.join(clustered_edits_baseline, 'data_for_plotting')
-plots_dir = os.path.join(clustered_edits, 'plots')
+data_for_plotting  = os.path.join(clustered_views_seed, 'data_for_plotting')
+plots_dir = os.path.join(clustered_views, 'plots')
 
 def load_simple_json(filename):
     print filename
@@ -62,9 +62,11 @@ def time_aligning(scientist_dict, norm_dir):
         time_dict = {}
         x = []
         y = []
+        x_cut = []
+        y_cut = []
         days_check = []
         # comment for baseline
-        #event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
+        event_date = datetime.datetime.strptime(param_dict["Award_date"], "%Y-%m-%d")
         scientist = scientist.rstrip().split('/')[-1]
         txtname = os.path.join(norm_scientist_dir + '\\' + scientist + '.txt')      
         f = open(txtname)
@@ -75,28 +77,30 @@ def time_aligning(scientist_dict, norm_dir):
             for idx,day in enumerate(day_list):
                 # comment for baseline
                 date = datetime.datetime(int(year), 1, 1) + datetime.timedelta(idx+1)
-                
-                #days_difference = days_between(event_date, date)
+                days_difference = days_between(event_date, date)
                 days_check.append(date)
-                #x.append(days_difference)
+                x.append(days_difference)
                 y.append(day)     
         f.close()
- 
-        x = list(range(len(y))) # only for baseline
-      
-        x = np.array(x[:6000], dtype=np.int)
-        y = np.array(y[:6000], dtype=np.float)
-        y = (y - np.mean(y))/np.std(y)
-        #x = running_mean(x, 360)
-        #y = running_mean(y, 360)
-        #plt.plot(x, y)
 
-        #plt.savefig(plots_dir+'\\'+scientist+'.pdf')
-        #plt.clf()
+       # x = list(range(len(y))) # only for baseline
+        for i in range(0, len(x)):
+            if (x[i]>-1068) and (x[i]<356):
+                y_cut.append(y[i])
+                x_cut.append(x[i])
+        x = np.array(x_cut, dtype=np.int)
+        y = np.array(y_cut, dtype=np.float)
+        y = (y - np.mean(y))/np.std(y)
+#         x = running_mean(x, 90)
+#         y = running_mean(y, 90)
+#         plt.plot(x, y)
+# 
+#         plt.savefig(plots_dir+'\\'+scientist+'.pdf')
+#         plt.clf()
+        
         time_list.append(x)
         ts_list.append(y)
-    #print list(ts_list)
-    #print list(time_list)
+
         
     return list(ts_list), list(time_list)
 
@@ -119,14 +123,14 @@ def take_average(ts_list, time_list):
    
     for day in ts_dict:
         avg = np.median(np.array(ts_dict[day]))
-        #avg=sum(ts_dict[day]) / float(len(ts_dict[day]))
+        #avg=sum(ts_dict[day] / float(len(ts_dict[day])))
         avg_dict.update({day:avg})    
     return avg_dict
 
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_edits_baseline, '2-cluster.txt')  
+filename =  os.path.join(clustered_views_seed, '3-cluster-810-9.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -139,38 +143,38 @@ for scientist, param_list in scientist_dict.iteritems():
 
 ts_list, time_list = time_aligning(cluster_dict, norm_dir)
 avg_dict=take_average(ts_list, time_list)
-
+ 
 x=[]
 y=[]
 sorted_dict=sorted(avg_dict.items(), key=operator.itemgetter(0))
 for item in sorted_dict:
     x.append(item[0])
     y.append(item[1])
-    
-
+     
+ 
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
-
-filename =  os.path.join(data_for_plotting, '2-cluster_x.txt')  
-
+ 
+filename =  os.path.join(data_for_plotting, '3-cluster_x-810-9.txt')  
+ 
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
-
-filename =  os.path.join(data_for_plotting, '2-cluster_y.txt')  
-
+ 
+filename =  os.path.join(data_for_plotting, '3-cluster_y-810-9.txt')  
+ 
 text_file = open(filename, "w")
 for item in y:
     text_file.write("%s\n" % item)
 text_file.close()
-
-
-plt.xlabel('days')
-plt.ylabel('attention (edits)')
-plt.title('Trend inside cluster 2 (baseline)')
  
-x = running_mean(x, 300)
-y = running_mean(y, 300)
+ 
+plt.xlabel('days')
+plt.ylabel('attention (views)')
+plt.title('Trend inside cluster 3 (seed)')
+  
+x = running_mean(x, 90)
+y = running_mean(y, 90)
 plt.plot(x, y)
-
-plt.savefig(plots_dir+'\\'+'cluster_2_edits_baseline.pdf')
+ 
+plt.savefig(plots_dir+'\\'+'cluster_3_views_3b_1a_seed-810-9.pdf')

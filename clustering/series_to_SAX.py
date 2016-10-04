@@ -63,7 +63,8 @@ google_trends_dir = os.path.join(data_dir, 'google_trends_normed_by_baseline')
 test_dir = os.path.join(data_dir, 'test')
 
 # scientists or topics
-views_sci = os.path.join(views_dir, 'scientists')
+vews_seed_dir = os.path.join(views_dir, 'seed')
+views_sci = os.path.join(vews_seed_dir, 'scientists_full')
 edits_sci = os.path.join(edits_dir, 'scientists')
 gooogle_trends_sci = os.path.join(google_trends_dir, 'scientists_before_the_award')
 
@@ -98,7 +99,7 @@ def load_simple_json(filename):
         return json.load(f)
 
 def output_txt(symbolic_data, file_name):
-    output_path =  os.path.join(edits_sax_sci, file_name)
+    output_path =  os.path.join(views_sax_sci, file_name)
     text_file = open(output_path, "w")
     for string in symbolic_data:
         text_file.write(",".join(map(lambda x: str(x), string)))
@@ -249,4 +250,4 @@ def topics_collection(dir):
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)
     return
 
-scientists_collection(scientist_dir)
+scientists_collection(views_sci)
