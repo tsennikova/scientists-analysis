@@ -27,7 +27,7 @@ vews_seed_dir = os.path.join(dir, 'seed')
 vews_baseline_dir = os.path.join(dir, 'baseline')
 
 scientist_dir = os.path.join(dir, 'scientists')
-scientist_cut_dir = os.path.join(vews_seed_dir, '3_years_before_1_after')
+scientist_cut_dir = os.path.join(vews_seed_dir, '3_years_after')
 scientists_file =  os.path.join(seed_dir, 'seed_creation_date.json') 
 
 
@@ -79,7 +79,7 @@ def time_aligning(scientist_dict):
             output_path =  os.path.join(scientist_cut_dir, scientist+'.txt')
             text_file = open(output_path, "w")
             for i in range(0, len(x)):
-                if (x[i]>-1068) and (x[i]<356):
+                if (x[i]>30) and (x[i]<1095):
                     ts_list.append(y[i])
             text_file.write(",".join(map(lambda x: str(x), ts_list)))
             text_file.close()

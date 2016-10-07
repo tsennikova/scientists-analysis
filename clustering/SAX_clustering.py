@@ -44,7 +44,7 @@ test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
 views_sax_sci = os.path.join(views_sax, 'scientists')
-views_sax_sci_cut = os.path.join(views_sax, 'scientists')
+views_sax_sci_cut = os.path.join(views_sax, 'scientists_3_years_before_1_after')
 
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
 gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists_cut')
@@ -145,10 +145,10 @@ plt.xlabel('principal component 1')
 plt.ylabel('principal component 2')
 plt.title('Seed Clusters')
 #plt.show()
-plt.savefig('clusters3_views_scientists_seed.pdf')
+plt.savefig('clusters2_views_scientists_seed_full_norm.pdf')
  
 # clustering output
-text_file = open("clusters3_views_scientists_seed.txt", "w")
+text_file = open("clusters3_views_scientists_before_seed-270-9-full-norm.txt", "w")
 for (row, label) in enumerate(labels):
     text_file.write(str(ts_names[row])+" "+str(label)+"\n")
 text_file.close()

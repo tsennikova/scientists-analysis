@@ -64,7 +64,7 @@ test_dir = os.path.join(data_dir, 'test')
 
 # scientists or topics
 vews_seed_dir = os.path.join(views_dir, 'seed')
-views_sci = os.path.join(vews_seed_dir, 'scientists_full')
+views_sci = os.path.join(vews_seed_dir, '3_years_before_1_after')
 edits_sci = os.path.join(edits_dir, 'scientists')
 gooogle_trends_sci = os.path.join(google_trends_dir, 'scientists_before_the_award')
 
@@ -80,7 +80,7 @@ google_trends_sax = os.path.join(sax_dir, 'google_trends')
 test_sax = os.path.join(sax_dir, 'test')
 
 # scientists or topics
-views_sax_sci = os.path.join(views_sax, 'scientists')
+views_sax_sci = os.path.join(views_sax, 'scientists_3_years_before_1_after')
 edits_sax_sci = os.path.join(edits_sax, 'scientists')
 gooogle_trends_sax_sci = os.path.join(google_trends_sax, 'scientists_cut')
 
@@ -138,8 +138,8 @@ def series_to_sax(data, N, n, alphabet_size):
         print 'Currently alphabet_size cannot be larger than 10.  Please update the breakpoint table if you wish to do so'
         return
     #Z normalize entire data
-    #data = (data - numpy.mean(data))/numpy.std(data)
-    # win_size is the number of data points on the raw time series that will be mapped to a single symbol
+    data = (data - numpy.mean(data))/numpy.std(data)
+    #win_size is the number of data points on the raw time series that will be mapped to a single symbol
     win_size = int(N/n)      
     #symbolic_data = numpy.zeros(shape=(1,n))
     symbolic_data = [0]
@@ -152,10 +152,10 @@ def series_to_sax(data, N, n, alphabet_size):
         sub_section = data[i:i+N]
         zero_array = [0]*len(sub_section)
         #Z normalize subsequence
-        if sub_section!= zero_array:
-            sub_section = (sub_section - numpy.mean(sub_section))/numpy.std(sub_section)
-        else:
-            sub_section =[-numpy.inf]*len(sub_section)
+        #if sub_section!= zero_array:
+        #    sub_section = (sub_section - numpy.mean(sub_section))/numpy.std(sub_section)
+        #else:
+        #    sub_section =[-numpy.inf]*len(sub_section)
         # take care of the special case where there is no dimensionality reduction
         if N == n:
             PAA = sub_section
@@ -227,7 +227,7 @@ def scientists_collection(dir):
         #scientist_series = get_series_from_csv(scientist, dir)
         # For views and edits
         scientist_series = get_series_from_txt(scientist, dir)
-        symbolic_data = series_to_sax(scientist_series, 810, 9, 4)
+        symbolic_data = series_to_sax(scientist_series, 270, 9, 4)
         file_name = scientist.rstrip().split('/')[-1]+'.txt'
         output_txt(symbolic_data, file_name)
     #    series_to_sax([1,2,3,4,5,6,7,8], 8, 4, 3)

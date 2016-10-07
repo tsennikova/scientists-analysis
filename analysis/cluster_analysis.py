@@ -32,19 +32,19 @@ def load_simple_json(filename):
         return json.load(f)
 
 
-filename =  os.path.join(clustered_seed, '1-cluster-810-9.txt')  
+filename =  os.path.join(clustered_seed, '1-cluster-360-9-full-norm(before).txt')  
 with open(filename) as f:
     x_1 = f.read().splitlines()
 f.close()
 
 
-filename =  os.path.join(clustered_seed, '2-cluster-810-9.txt')  
+filename =  os.path.join(clustered_seed, '2-cluster-360-9-full-norm(before).txt')  
 with open(filename) as f:
     x_2 = f.read().splitlines()
 f.close()
 
 
-filename =  os.path.join(clustered_seed, '3-cluster-810-9.txt')  
+filename =  os.path.join(clustered_seed, '3-cluster-360-9-full-norm(before).txt')  
 with open(filename) as f:
     x_3 = f.read().splitlines()
 f.close()
@@ -52,7 +52,7 @@ f.close()
 scientist_dict = load_simple_json(scientists_file)
 
 award_year_list = []
-award_list = []
+award_list = {}
 field_list = []
 gender_list = []
 status_list = []
@@ -60,23 +60,24 @@ for scientist in scientist_dict:
     scientist_name = scientist.rstrip().split('/')[-1]
     if scientist_name in x_3:
         award_year_list.append(scientist_dict[scientist]['Year'])
-        award_list.append(scientist_dict[scientist]['Award'])
+        award_list.update({scientist_name:scientist_dict[scientist]['Award']})
         field_list.append(scientist_dict[scientist]['Field'])
         gender_list.append(scientist_dict[scientist]['Gender'])
         status_list.append(scientist_dict[scientist]['Status'])
 
 
-counter=collections.Counter(award_year_list)
-print(counter)
-
-counter=collections.Counter(award_list)
-print(counter)
-
-counter=collections.Counter(field_list)
-print(counter)
-
-counter=collections.Counter(gender_list)
-print(counter)
-
-counter=collections.Counter(status_list)
-print(counter)
+# counter=collections.Counter(award_year_list)
+# print(counter)
+# 
+# counter=collections.Counter(award_list)
+# print(counter)
+# 
+# counter=collections.Counter(field_list)
+# print(counter)
+# 
+# counter=collections.Counter(gender_list)
+# print(counter)
+# 
+# counter=collections.Counter(status_list)
+# print(counter)
+print award_list

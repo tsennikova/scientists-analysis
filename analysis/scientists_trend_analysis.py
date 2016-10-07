@@ -18,14 +18,14 @@ baseline_dir = os.path.join(data_dir, 'baseline')
 general_dir = os.path.join(data_dir, 'general')
 
 # Change address for each dataset: views, edits, google_trends
-dir = os.path.join(data_dir, 'edits_normed_by_main_page')
+dir = os.path.join(data_dir, 'views')
 #views_baseline_dir = os.path.join(views_dir, 'baseline')
 #views_seed_dir = o s.path.join(views_dir, 'seed')
-dir_seed = os.path.join(dir, 'baseline')
+dir_seed = os.path.join(dir, 'seed')
 scientist_dir = os.path.join(dir_seed, 'scientists')
-scientist_cut_dir = os.path.join(dir_seed, 'scientists_full')
+scientist_cut_dir = os.path.join(dir_seed, '3_years_after')
 
-scientists_file = os.path.join(general_dir, 'baseline_scientists_list.txt')
+scientists_file = os.path.join(general_dir, 'nobel_scientists.txt')
 
 
 def read_ts (dir):
@@ -85,9 +85,13 @@ def mk_test(x, alpha = 0.05):
     if n == g: # there is no tie
         var_s = (n*(n-1)*(2*n+5))/18
     else: # there are some ties in data
+        
         tp = np.zeros(unique_x.shape)
         for i in range(len(unique_x)):
-            tp[i] = sum(unique_x[i] == x)
+            try:
+                tp[i] = sum(unique_x[i] == x)
+            except:
+                tp[i] = 0
         var_s = (n*(n-1)*(2*n+5) + np.sum(tp*(tp-1)*(2*tp+5)))/18
     print s
     if s>0:
