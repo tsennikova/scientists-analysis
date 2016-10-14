@@ -25,7 +25,7 @@ dir_seed = os.path.join(dir, 'seed')
 scientist_dir = os.path.join(dir_seed, 'scientists')
 scientist_cut_dir = os.path.join(dir_seed, '3_years_after')
 
-scientists_file = os.path.join(general_dir, 'nobel_scientists.txt')
+scientists_file = os.path.join(general_dir, 'citation_scientists.txt')
 
 
 def read_ts (dir):
@@ -127,7 +127,7 @@ stable_trend = 0
 ts_dict=read_ts(scientist_cut_dir)
 count = 0
 for name, ts in ts_dict.iteritems():
-    print count
+    print name
     count += 1
     #rm=running_mean(ts_dict[name],90)
     trend,h,p,z = mk_test(ts_dict[name], 0.05)
@@ -137,6 +137,7 @@ for name, ts in ts_dict.iteritems():
         increasing_trend +=1
     if trend == 'no trend':
         stable_trend +=1
+    print trend
 
 print len(ts_dict)
 print "decreasing ", decreasing_trend

@@ -85,12 +85,12 @@ def time_aligning(scientist_dict, norm_dir):
 
        # x = list(range(len(y))) # only for baseline
         for i in range(0, len(x)):
-            if (x[i]>-1825) and (x[i]<0):
+            if (x[i]>-1825) and (x[i]<-30):
                 y_cut.append(y[i])
                 x_cut.append(x[i])
         x = np.array(x_cut, dtype=np.int)
         y = np.array(y_cut, dtype=np.float)
-        y = (y - np.mean(y))/np.std(y)
+#        y = (y - np.mean(y))/np.std(y)
 #         x = running_mean(x, 90)
 #         y = running_mean(y, 90)
 #         plt.plot(x, y)
@@ -130,7 +130,7 @@ def take_average(ts_list, time_list):
 filename =  os.path.join(seed_dir, 'seed_creation_date.json')  
 scientist_dict = load_simple_json(filename)
 
-filename =  os.path.join(clustered_views_seed, '2-cluster-360-9-full-norm(before).txt')  
+filename =  os.path.join(clustered_views_seed, 'nobel_cl_1.txt')  
 with open(filename) as f:
     cluster_list = f.read().splitlines()
 
@@ -154,14 +154,14 @@ for item in sorted_dict:
  
 #plt.savefig(plots_dir+'\\'+'cluster_1_views.pdf')
  
-filename =  os.path.join(data_for_plotting, '2-cluster_x-360-9-full-norm(before).txt')  
+filename =  os.path.join(data_for_plotting, 'nobel_cl_1_x.txt')  
  
 text_file = open(filename, "w")
 for item in x:
     text_file.write("%s\n" % item)
 text_file.close()
  
-filename =  os.path.join(data_for_plotting, '2-cluster_y-360-9-full-norm(before).txt')  
+filename =  os.path.join(data_for_plotting, 'nobel_cl_1_y.txt')  
  
 text_file = open(filename, "w")
 for item in y:
@@ -171,10 +171,10 @@ text_file.close()
  
 plt.xlabel('days')
 plt.ylabel('attention (views)')
-plt.title('Trend inside cluster 2 (seed)')
+plt.title('Trend inside cluster 1')
   
-x = running_mean(x, 180)
-y = running_mean(y, 180)
+x = running_mean(x, 30)
+y = running_mean(y, 30)
 plt.plot(x, y)
  
-plt.savefig(plots_dir+'\\'+'cluster_2_views_3b_1a_seed-360-9-full-norm(before).pdf')
+plt.savefig(plots_dir+'\\'+'nobel_cl_1.pdf')
